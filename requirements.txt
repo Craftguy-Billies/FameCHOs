@@ -1,1 +1,11 @@
-
+feedparser
+openai
+trafilatura
+beautifulsoup4
+requests
+ipython
+langchain
+langchain-core
+langchain-community
+langgraph
+typing-extensions
