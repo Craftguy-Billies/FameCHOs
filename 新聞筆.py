@@ -1119,7 +1119,7 @@ def parse_full_text(url, title, model, lines = 14, splitcount = 3):
     dict1 = extract_headers_and_content_from_list(content)
     dict2 = extract_headers_and_content(finale)
     if len(extract_headers(finale)) > 5:
-        toc = generate_toc(finale, model)
+        toc = generate_toc(finale)
     else:
         toc = None
     modified_content = modify_content(dict1, dict2, toc)
