@@ -1168,6 +1168,23 @@ def url_check(news_items, model, max_retries=3, delay=5):
             time.sleep(delay)
     raise ValueError("Max retries reached, unable to get a valid response.")
 
+def commit_changes():
+    try:
+        # Step 1: Set Git config to always merge changes (avoids rebase conflicts)
+        subprocess.run(["git", "config", "pull.rebase", "false"], check=True)
+
+        # Step 2: Fetch the latest changes from GitHub
+        subprocess.run(["git", "fetch", "origin"], check=True)
+        
+        # Step 3: Add all local changes
+        subprocess.run(["git", "add", "--all"], check=True)
+        
+        # Step 4: Commit local changes
+        subprocess.run(["git", "commit", "-m", "讀萬卷書不如寫萬篇文"], check=True)
+        
+        # Step 5: Pull the latest changes from GitHub and merge
+        subprocess.run(["git", "pull", "--strategy=recursive", "--strategy-option=theirs"], check=True)
+
 def main():
     try:
         #parse_full_text("https://www.voyagefamily.com/ou-partir-vacances-france-famille_251/", "Top 10 des paradis où partir en vacances en France", lines, splitcount)
@@ -1192,6 +1209,7 @@ def main():
                     parse_full_text(new['link'], new['title'], model, lines, splitcount)
                     with open(file_path, 'a') as file:
                         file.write(new['link'] + '\n')
+                    commit_changes()
                 else:
                     print('News already used: ' + str(new['title']))
                     print("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
