@@ -1201,7 +1201,8 @@ def main():
         #parse_full_text("https://www.travelandleisure.com/travel-tips/basic-french-words-phrases", "Basic French Words, Phrases, and Sayings Every Traveler Should Know", lines, splitcount)
         #parse_full_text("https://medium.com/pythons-gurus/python-web-scraping-best-libraries-and-practices-86344aa3f703", "Python Web Scraping: Best Libraries and Practices", lines, splitcount)
         model = "meta/llama-3.1-405b-instruct"
-        news = url_check(news_items, model)
+        #news = url_check(news_items, model)
+        news = news_items
         print(news)
         file_path = "news.txt"
         for new in news:
