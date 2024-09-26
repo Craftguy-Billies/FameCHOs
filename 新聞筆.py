@@ -1185,6 +1185,16 @@ def commit_changes():
         # Step 5: Pull the latest changes from GitHub and merge
         subprocess.run(["git", "pull", "--strategy=recursive", "--strategy-option=theirs"], check=True)
 
+    except subprocess.CalledProcessError as e:
+        print(f"Error occurred during git operation: {e}")
+        # Continue even if pull fails due to conflicts
+
+    try:
+        # Step 6: Push the changes, force if needed
+        subprocess.run(["git", "push", "--force"], check=True)
+    except subprocess.CalledProcessError as e:
+        print(f"Error occurred during git push: {e}")
+
 def main():
     try:
         #parse_full_text("https://www.voyagefamily.com/ou-partir-vacances-france-famille_251/", "Top 10 des paradis où partir en vacances en France", lines, splitcount)
