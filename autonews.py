@@ -16,6 +16,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
+from datetime import datetime, timedelta
 
 DEBUG = False
 
@@ -99,25 +100,42 @@ def fetch_news(rss_urls):
     news_items = []
     seen_titles = set()
 
+    # Get the current time and the time two weeks ago
+    now = datetime.now()
+    two_weeks_ago = now - timedelta(weeks=2)
+
     for url in rss_urls:
         feed = feedparser.parse(url)
 
         for entry in feed.entries:
+            # Check if the entry has a publication date
+            if 'published_parsed' in entry:
+                # Convert the published date to a datetime object
+                pub_date = datetime(*entry.published_parsed[:6])
+                
+                # Only consider articles published within the last two weeks
+                if pub_date < two_weeks_ago or pub_date > now:
+                    continue
+
+            # Check for duplicates based on title
             if entry.title not in seen_titles:
                 news_item = {
                     'title': entry.title,
                     'link': entry.link,
                     'summary': entry.summary
                 }
+                
+                # Fetch the article content
                 downloaded = trafilatura.fetch_url(entry.link)
                 if downloaded:
                     website_text = trafilatura.extract(downloaded)
                     if website_text:
                         word_count = len(website_text.split())
-                        if word_count <= 200:
+                        # Filter out articles that are too short or too long
+                        if word_count <= 200 or word_count >= 900:
                             continue
-                        elif word_count >= 900:
-                            continue
+                
+                # Add the news item to the list
                 news_items.append(news_item)
                 seen_titles.add(entry.title)
 
@@ -604,6 +622,7 @@ def commit_changes():
         print(f"Error occurred during git push: {e}")
 
 rss_urls = [
+    'https://www.koreaherald.com/common/rss_xml.php?ct=105',
     'https://tokyocheapo.com/feed/'
 ]
 
