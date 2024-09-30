@@ -447,7 +447,7 @@ def parse_full_text(url, title, model, lines = 22):
             full_article += consideration_test(segment, title, sample, model)
             full_article += "\n"
 
-        file_path = clean_title(title, 'html', r"C:\Users\billiez\Pictures\Translated News")
+        file_path = clean_title(title, 'html', r"Translated News")
         write_file(file_path, full_article, title)
     
 def commit_changes():
