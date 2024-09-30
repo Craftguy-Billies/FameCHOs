@@ -5,11 +5,6 @@ from openai import OpenAI
 import trafilatura
 from bs4 import BeautifulSoup
 import requests
-from IPython.display import display, Markdown, Latex
-from langchain.prompts import PromptTemplate
-from langchain_core.output_parsers import JsonOutputParser, StrOutputParser
-from langgraph.graph import END, StateGraph
-from typing_extensions import TypedDict
 import os
 import time
 import re
@@ -17,6 +12,10 @@ import threading
 import uuid
 import random
 import subprocess
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
 
 DEBUG = False
 
@@ -56,6 +55,45 @@ def extract_json_content(input_string):
     else:
         print("No valid JSON found in the input string.")
         return {}
+
+def get_first_youtube_embed(query):
+    # Set up Chrome options for Selenium
+    chrome_options = Options()
+    chrome_options.binary_location = r'/usr/bin/google-chrome'
+    chrome_options.add_argument("--headless")  # Headless mode
+    chrome_options.add_argument("--no-sandbox")  # Required for some CI environments
+    chrome_options.add_argument("--disable-dev-shm-usage")  # Overcome limited resource problems
+    
+    # Start the browser
+    driver = webdriver.Chrome(options=chrome_options)
+    
+    # Format the YouTube search URL
+    search_url = f"https://www.youtube.com/results?search_query={query.replace(' ', '+')}"
+    
+    # Load the page
+    driver.get(search_url)
+    
+    # Wait for the page to fully load
+    time.sleep(3)  # You may adjust this if the page is slow
+    
+    # Find the first video link
+    first_video = driver.find_element(By.XPATH, '//a[@href and contains(@href, "/watch?v=")]')
+    print(first_video)
+    
+    if first_video:
+        video_url = f"https://www.youtube.com{first_video.get_attribute('href')}"
+        video_url = video_url.split('&')[0]
+        video_id = video_url.split('v=')[1]
+        embed_code = f'<iframe width="560" height="315" src="https://www.youtube.com/embed/{video_id}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+        
+        # Close the browser
+        driver.quit()
+        
+        return embed_code
+    
+    # If no video found, return None
+    driver.quit()
+    return "No video found."
 
 def fetch_news(rss_urls):
     news_items = []
@@ -351,6 +389,8 @@ def consideration_test(segment, title, dictionary, model):
 
     現在處理這段文字：
     {segment}
+
+    如果該行文字是小標題，用<h2>來標記。
     只回覆我中文的html，不需其它任何字。
     """
 
@@ -369,6 +409,65 @@ def consideration_test(segment, title, dictionary, model):
             if "no" not in chunk.choices[0].delta.content.lower():
                 print(chunk.choices[0].delta.content, end="")
                 full_article += chunk.choices[0].delta.content
+    full_article = recheck(full_article, model)
+    return full_article
+
+def recheck(article, model, max_retries=3, retry_delay=5):
+    full_article = ""
+    processes = split_article_into_segments(article, lines_per_segment=17)
+
+    for process in processes:
+        prompt = f"""
+        現在我有一篇文章。當中有一些部分需要你刪除和改寫。
+        文章：{process}
+
+        刪除：
+        - 宣傳部分，包括「查看更多文章」，「或許你會喜歡」等等。整行刪掉。
+        - 格式的段落，比如整個<p> 只有一個 "---"，整個刪掉。
+        - 圖片來源，記者報道等無關文章主旨的句子，整個刪掉。
+        - 不相干的東西，如果與前文和文章主旨完全不相干，刪掉。
+
+        改寫：
+        - 身份：我是一個香港人，想要帶資訊給讀者，所有經歷都只有自己和朋友，沒有和家人孩子一起。
+        - 不需要強調身份，但所有不符合這個設定的句子需要改寫成符合我身份的描述。原文作者的家人名稱、工作地點、懷孕狀況等全部刪除。
+        - 除此之外甚麼都不要改寫，以免改變了原文的意思。
+        - 改寫必須合理，需要文句通順。
+        - 如果內容許可，增加<ul> <ol> <table>等元素來協助描述。整理段落的內容來寫。
+
+        不要回覆我任何其它字，我只需要處理好的中文的html structure回覆。
+        """
+
+        retries = 0
+        success = False
+
+        while retries < max_retries and not success:
+            try:
+                print(prompt)
+                completion = client.chat.completions.create(
+                    model=model,
+                    messages=[{"role": "user", "content": prompt.strip()}],
+                    temperature=0.2,
+                    top_p=0.7,
+                    max_tokens=8192,
+                    stream=True
+                )
+
+                for chunk in completion:
+                    if chunk.choices[0].delta.content is not None:
+                        content = chunk.choices[0].delta.content.encode('utf-8', errors='ignore').decode('utf-8')
+                        print(content, end="")
+                        full_article += content
+
+                success = True
+
+            except Exception as e:
+                print(f"Error: {e}")
+                retries += 1
+                if retries < max_retries:
+                    print(f"Retrying in {retry_delay} seconds...")
+                    time.sleep(retry_delay)
+                else:
+                    print("Max retries reached. Moving to next segment.")
 
     return full_article
 
@@ -414,11 +513,38 @@ def titler(website_text, model, max_retries=3, delay=2):
             else:
                 raise
 
+# Regex to check if line is already wrapped with any HTML tags
+html_tag_regex = re.compile(r'^<.*>.*</.*>$')
+
+def process_line(line):
+    # Check if the line is already wrapped with any HTML tags
+    if html_tag_regex.match(line.strip()):
+        return line  # Line is already wrapped with an HTML tag, return as is
+
+    # Check if the line starts and ends with "**" for <h2>
+    elif line.strip().startswith('**') and line.strip().endswith('**'):
+        return '<h2>' + line.strip().strip('**') + '</h2>\n'
+
+    # Otherwise, wrap with <p> for plain text
+    else:
+        return '<p>' + line.strip() + '</p>\n'
+
 def write_file(file_path, content, title):
     with open(file_path, 'w', encoding='utf-8') as file:
-        file.write('<h1>' + title + '</h1>\n')
-        for line in content.splitlines():
-            file.write('<p>' + line + '</p>\n')
+        file.write('<h1>' + title + '</h1>\n\n')
+	embed_code = get_first_youtube_embed("168減肥")
+	if embed_code:
+	    file.write(embed_code + '\n\n')
+        # Split content into lines
+        lines = content.splitlines()
+
+        # Remove the first line (pop)
+        if lines:
+            lines.pop(0)
+	for line in lines:
+            # Remove empty lines and process non-empty lines
+            if line.strip():  # Ignore empty lines
+                file.write(process_line(line))
 
 def parse_full_text(url, title, model, lines = 22):
     full_article = ""
