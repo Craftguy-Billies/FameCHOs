@@ -14,12 +14,31 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
 
       # Set up Python environment
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'  # Specify the Python version you need
+
+      - name: Install Selenium dependencies
+        run: |
+          pip install selenium
+
+      - name: Install Chrome browser
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
+
+      - name: Install ChromeDriver for Chrome 129.x
+        run: |
+          sudo apt-get install -yqq unzip
+          wget https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/129.0.6668.70/linux64/chromedriver-linux64.zip
+          unzip chromedriver-linux64.zip
+          sudo mv chromedriver-linux64/chromedriver /usr/local/bin/
+          sudo chmod +x /usr/local/bin/chromedriver
 
       # Install dependencies
       - name: Install dependencies
@@ -41,3 +60,5 @@ jobs:
         id: auto-commit-action
         with:
             commit_message: Changed files
+            branch: ${{ github.ref }}
+            force: true
