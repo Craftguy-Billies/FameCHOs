@@ -15,10 +15,12 @@ import time
 import re
 import threading
 import uuid
+import random
+import subprocess
 
 DEBUG = False
 
-lines = 22
+lines = 17
 
 model = "meta/llama-3.1-405b-instruct"
 
