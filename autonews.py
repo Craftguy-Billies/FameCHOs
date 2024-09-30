@@ -550,8 +550,8 @@ def process_line(line):
 def write_file(file_path, content, title):
     with open(file_path, 'w', encoding='utf-8') as file:
         file.write('<h1>' + title + '</h1>\n\n')
-	embed_code = get_first_youtube_embed("168減肥")
-	if embed_code:
+        embed_code = get_first_youtube_embed(title)
+        if embed_code:
 	    file.write(embed_code + '\n\n')
         # Split content into lines
         lines = content.splitlines()
