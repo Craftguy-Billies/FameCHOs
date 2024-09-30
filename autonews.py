@@ -476,10 +476,7 @@ def commit_changes():
         print(f"Error occurred during git push: {e}")
 
 rss_urls = [
-    'https://tokyocheapo.com/feed/',
-    'https://www.scmp.com/rss/2/feed',
-    'https://www.scmp.com/rss/321716/feed',
-    'https://www.scmp.com/rss/321720/feed'
+    'https://tokyocheapo.com/feed/'
 ]
 
 def main():
