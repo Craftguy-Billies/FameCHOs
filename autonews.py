@@ -559,7 +559,7 @@ def write_file(file_path, content, title):
         # Remove the first line (pop)
         if lines:
             lines.pop(0)
-	for line in lines:
+        for line in lines:
             # Remove empty lines and process non-empty lines
             if line.strip():  # Ignore empty lines
                 file.write(process_line(line))
