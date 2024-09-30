@@ -76,9 +76,9 @@ def fetch_news(rss_urls):
                     website_text = trafilatura.extract(downloaded)
                     if website_text:
                         word_count = len(website_text.split())
-                        if word_count <= 50:
+                        if word_count <= 200:
                             continue
-                        elif word_count >= 300:
+                        elif word_count >= 900:
                             continue
                 news_items.append(news_item)
                 seen_titles.add(entry.title)
