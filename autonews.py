@@ -552,7 +552,7 @@ def write_file(file_path, content, title):
         file.write('<h1>' + title + '</h1>\n\n')
         embed_code = get_first_youtube_embed(title)
         if embed_code:
-	    file.write(embed_code + '\n\n')
+            file.write(embed_code + '\n\n')
         # Split content into lines
         lines = content.splitlines()
 
