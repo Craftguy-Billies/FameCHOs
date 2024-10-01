@@ -279,7 +279,7 @@ def is_valid_dict(refined):
     """Check if the refined response is a valid dictionary."""
     return isinstance(refined, dict) and all(isinstance(k, str) and isinstance(v, str) for k, v in refined.items())
 
-def process_segments(segments, title, model, max_retries=3):
+def process_segments(segments, model, max_retries=3):
     translated = {}
     for segment in segments:
         retries = 0
@@ -391,10 +391,10 @@ def clean_title(title, extension, directory=None):
     # If no directory is provided, just return the file name
     return file_name
 
-def consideration_test(segment, title, dictionary, model):
+def consideration_test(segment, dictionary, model):
     full_article = ""
     prompt = f"""
-    文章的大標題是{title}。給我整理成一篇文章。改寫並翻譯成香港語氣的中文版本。
+    對於下面的文章，給我改寫並翻譯成香港語氣的中文版本。
     刪除原文的所有圖片說明
     改寫必須合理，需要文句通順。
     語氣：專業、分享感受
@@ -503,7 +503,7 @@ def titler(website_text, model, max_retries=3, delay=2):
             i want a news article title that is clickbait enough, in moderate length and humanized tone.     
 	    the news title should include the highlight theme of the news, instead of a short phrase.
             return me a single JSON object with single key 'title' without premable and explanations.
-            output in traditional chinese
+            output in traditional chinese.
             AGAIN: NO premable and explanation needed.
             """
 
@@ -552,7 +552,7 @@ def process_line(line):
 def write_file(file_path, content, title, source):
     with open(file_path, 'w', encoding='utf-8') as file:
         file.write('<h1>' + title + '</h1>\n\n')
-        embed_code = get_first_youtube_embed(title)
+        embed_code = get_first_youtube_embed(title[:10])
         if embed_code:
             file.write(embed_code + '\n\n')
         # Split content into lines
@@ -582,18 +582,18 @@ def parse_full_text(url, title, source, model, lines = 22):
         return
 
     if website_text:
-        # form a clickbait title
-        title = titler(website_text, model)
-
+	    
         # Split the article into segments
         segments = split_article_into_segments(website_text, lines_per_segment=lines)
 
         # Process each segment
-        sample = process_segments(segments, title, model)
+        sample = process_segments(segments, model)
 
         for segment in segments:
-            full_article += consideration_test(segment, title, sample, model)
+            full_article += consideration_test(segment, sample, model)
             full_article += "\n"
+
+	title = titler(full_article, model)
 
         file_path = clean_title(title, 'html', r"Translated News")
         write_file(file_path, full_article, title, source)
