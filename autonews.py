@@ -593,7 +593,7 @@ def parse_full_text(url, title, source, model, lines = 22):
             full_article += consideration_test(segment, sample, model)
             full_article += "\n"
 
-	title = titler(full_article, model)
+        title = titler(full_article, model)
 
         file_path = clean_title(title, 'html', r"Translated News")
         write_file(file_path, full_article, title, source)
