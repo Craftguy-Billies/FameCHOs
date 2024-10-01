@@ -13,9 +13,11 @@ import uuid
 import random
 import subprocess
 from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from datetime import datetime, timedelta
 
 DEBUG = False
@@ -74,28 +76,28 @@ def get_first_youtube_embed(query):
     # Load the page
     driver.get(search_url)
     
-    # Wait for the page to fully load
-    time.sleep(15)  # You may adjust this if the page is slow
-    
-    # Find the first video link
-    first_video = driver.find_element(By.XPATH, '//a[@href and contains(@href, "/watch?v=")]')
-    print(first_video)
-    
-    if first_video:
+    try:
+        # Wait for the first video link to be present, up to 10 seconds
+        first_video = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.XPATH, '//a[@href and contains(@href, "/watch?v=")]'))
+        )
+        
+        # Get the video URL and extract the video ID
         video_url = f"https://www.youtube.com{first_video.get_attribute('href')}"
-        video_url = video_url.split('&')[0]
+        video_url = video_url.split('&')[0]  # Clean up extra parameters
         video_id = video_url.split('v=')[1]
+        
+        # Construct the embed code
         embed_code = f'<iframe width="560" height="315" src="https://www.youtube.com/embed/{video_id}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
         
-        # Close the browser
-        driver.quit()
-        
-        return embed_code
+    except (NoSuchElementException, TimeoutException):
+        # Handle the case where no video is found or page takes too long to load
+        embed_code = ""
     
-    # If no video found, return None
+    # Close the browser
     driver.quit()
-    return "No video found."
-
+    
+    return embed_code
 def fetch_news(rss_urls):
     news_items = []
     seen_titles = set()
