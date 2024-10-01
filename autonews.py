@@ -75,7 +75,7 @@ def get_first_youtube_embed(query):
     driver.get(search_url)
     
     # Wait for the page to fully load
-    time.sleep(3)  # You may adjust this if the page is slow
+    time.sleep(15)  # You may adjust this if the page is slow
     
     # Find the first video link
     first_video = driver.find_element(By.XPATH, '//a[@href and contains(@href, "/watch?v=")]')
