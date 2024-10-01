@@ -104,7 +104,7 @@ def fetch_news(rss_urls):
     now = datetime.now()
     two_weeks_ago = now - timedelta(weeks=2)
 
-    for url in rss_urls:
+    for url, source in rss_urls:
         feed = feedparser.parse(url)
 
         for entry in feed.entries:
@@ -112,7 +112,6 @@ def fetch_news(rss_urls):
             if 'published_parsed' in entry:
                 # Convert the published date to a datetime object
                 pub_date = datetime(*entry.published_parsed[:6])
-                
                 # Only consider articles published within the last two weeks
                 if pub_date < two_weeks_ago or pub_date > now:
                     continue
@@ -122,7 +121,8 @@ def fetch_news(rss_urls):
                 news_item = {
                     'title': entry.title,
                     'link': entry.link,
-                    'summary': entry.summary
+                    'summary': entry.summary,
+                     'source' : source
                 }
                 
                 # Fetch the article content
@@ -448,7 +448,7 @@ def recheck(article, model, max_retries=3, retry_delay=5):
         改寫：
         - 身份：我是一個香港人，想要帶資訊給讀者，所有經歷都只有自己和朋友，沒有和家人孩子一起。
         - 不需要強調身份，但所有不符合這個設定的句子需要改寫成符合我身份的描述。原文作者的家人名稱、工作地點、懷孕狀況等全部刪除。
-        - 除此之外甚麼都不要改寫，以免改變了原文的意思。
+        - 全部改寫原文內容的句式（paraphrase），但保留原文的意思，以免誤導讀者。如果是內容有括號，括號內容需要保留。
         - 改寫必須合理，需要文句通順。
         - 如果內容許可，增加<ul> <ol> <table>等元素來協助描述。整理段落的內容來寫。
 
@@ -547,7 +547,7 @@ def process_line(line):
     else:
         return '<p>' + line.strip() + '</p>\n'
 
-def write_file(file_path, content, title):
+def write_file(file_path, content, title, source):
     with open(file_path, 'w', encoding='utf-8') as file:
         file.write('<h1>' + title + '</h1>\n\n')
         embed_code = get_first_youtube_embed(title)
@@ -563,8 +563,10 @@ def write_file(file_path, content, title):
             # Remove empty lines and process non-empty lines
             if line.strip():  # Ignore empty lines
                 file.write(process_line(line))
+                
+        file.write('\n<p>資料來源： ' + source + '</p>')
 
-def parse_full_text(url, title, model, lines = 22):
+def parse_full_text(url, title, source, model, lines = 22):
     full_article = ""
     downloaded = trafilatura.fetch_url(url)
     website_text = trafilatura.extract(downloaded)
@@ -592,7 +594,7 @@ def parse_full_text(url, title, model, lines = 22):
             full_article += "\n"
 
         file_path = clean_title(title, 'html', r"Translated News")
-        write_file(file_path, full_article, title)
+        write_file(file_path, full_article, title, source)
     
 def commit_changes():
     try:
@@ -622,8 +624,8 @@ def commit_changes():
         print(f"Error occurred during git push: {e}")
 
 rss_urls = [
-    'https://www.koreaherald.com/common/rss_xml.php?ct=105',
-    'https://tokyocheapo.com/feed/'
+    ['https://www.koreaherald.com/common/rss_xml.php?ct=105', 'Korea Herald'],
+    ['https://tokyocheapo.com/feed/', 'Tokyo Cheapo']
 ]
 
 def main():
@@ -644,7 +646,7 @@ def main():
 
             for new in news:
                 if new['link'] not in existing_links:
-                    parse_full_text(new['link'], new['title'], model, lines)
+                    parse_full_text(new['link'], new['title'], new['source'], model, lines)
                     with open(file_path, 'a') as file:
                         file.write(new['link'] + '\n')
                     commit_changes()
