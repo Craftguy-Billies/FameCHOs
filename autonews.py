@@ -268,7 +268,8 @@ def websearch(word, description, model, max_retries=3):
                     refined_response += chunk.choices[0].delta.content
 
             modified_string = extract_json_content(refined_response)
-            return modified_string
+            if isinstance(modified_string, dict):
+                return modified_string
 
         except Exception as e:
             retries += 1
@@ -299,7 +300,7 @@ def process_segments(segments, model, max_retries=3):
     for key, value in translated.items():
         query = websearch(key, value, model)
         print(query)
-        if not query["query"]:
+        if not query.get("query"):
             continue
         results = search(query["query"])
         if not results:
