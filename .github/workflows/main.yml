@@ -27,19 +27,6 @@ jobs:
         run: |
           pip install selenium
 
-      - name: Install Chrome browser
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y google-chrome-stable
-
-      - name: Install ChromeDriver for Chrome 129.x
-        run: |
-          sudo apt-get install -yqq unzip
-          wget https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/129.0.6668.70/linux64/chromedriver-linux64.zip
-          unzip chromedriver-linux64.zip
-          sudo mv chromedriver-linux64/chromedriver /usr/local/bin/
-          sudo chmod +x /usr/local/bin/chromedriver
-
       # Install dependencies
       - name: Install dependencies
         run: |
