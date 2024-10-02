@@ -812,7 +812,7 @@ def write_file(file_path, content, title, source, model):
         <meta name="apple-touch-fullscreen" content="yes"/>
         '''
 
-        style = r'<style> * {box-sizing: border-box;margin: 0;padding: 0;font-family: 'Noto Sans TC', sans-serif;scroll-behavior: smooth;}</style>'
+        style = r"<style> * {box-sizing: border-box;margin: 0;padding: 0;font-family: 'Noto Sans TC', sans-serif;scroll-behavior: smooth;}</style>"
 
         file.write(meta_tags + '\n' + style + '\n')
 	    
