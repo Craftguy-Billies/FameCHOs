@@ -59,7 +59,7 @@ def extract_json_content(input_string):
         print("No valid JSON found in the input string.")
         return {}
 
-def get_first_youtube_embed(query):
+def get_first_youtube_embed(query, model, max_retries = 3):
     prompt = f"""
     For this news article title: {query}
     Generate me a short but concise youtube search query, such that optimally I can search of the exact issue in youtube results.
@@ -623,7 +623,7 @@ def process_line(line, model, last_was_h2):
 def write_file(file_path, content, title, source, model):
     with open(file_path, 'w', encoding='utf-8') as file:
         file.write('<h1>' + title + '</h1>\n\n')
-        embed_code = get_first_youtube_embed(title)
+        embed_code = get_first_youtube_embed(title, model)
         if embed_code:
             file.write(embed_code + '\n\n')
         # Split content into lines
