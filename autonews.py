@@ -753,6 +753,7 @@ def get_current_hk_time():
     return current_time.isoformat()
 
 def write_file(file_path, content, title, source, model):
+    url = "https://www.famechos.me/" + title + '/'
     with open(file_path, 'w', encoding='utf-8') as file:
         # Dynamic data for the schema
         schema_data = {
@@ -762,8 +763,8 @@ def write_file(file_path, content, title, source, model):
                 "@type": "Article",
                 "headline": title,
                 "description": intro,
-                "url": og_url,
-                "image": og_image,
+                "url": url,
+                "image": "https://www.famechos.me/images/banner.jpg",
                 "datePublished": get_current_hk_time(),
                 "author": {
                     "@type": "Person",
@@ -791,10 +792,10 @@ def write_file(file_path, content, title, source, model):
  
         # Convert the dictionary to a JSON string
         schema_json = json.dumps(schema_data)
-        file.write(f"<script type='application/ld+json'>{schema_json}</script>")
+        file.write(f"<head>\n<script type='application/ld+json'>\n{schema_json}\n</script>")
         metadata = metadataer(title, model)
         file.write(metadata + '\n')
-        file.write('<h1>' + title + '</h1>\n\n')
+        file.write('<h1>' + title + '</h1>\n</head>\n\n')
         embed_code = get_first_youtube_embed(title, model)
         if embed_code:
             file.write(embed_code + '\n\n')
