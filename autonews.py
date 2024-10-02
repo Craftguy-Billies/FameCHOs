@@ -124,7 +124,7 @@ def fetch_news(rss_urls):
                     'title': entry.title,
                     'link': entry.link,
                     'summary': entry.summary,
-                     'source' : source
+                    'source' : source
                 }
                 
                 # Fetch the article content
@@ -534,23 +534,55 @@ def titler(website_text, model, max_retries=3, delay=2):
             else:
                 raise
 
-# Regex to check if line is already wrapped with any HTML tags
-html_tag_regex = re.compile(r'^<.*>.*</.*>$')
 
-def process_line(line):
+html_tag_regex = re.compile(r'^<.*>.*</.*>$')
+contains_html_tag_regex = re.compile(r'<(ul|h2|table|td|li|ol|tr|th)>')
+
+def rewrite_h2(content, model):
+    prompt = f"""
+    for this h2 title, rewrite it. you can write with another writing style, or simply just change the sentence structure, as long as the overall meaning remains the same.
+    {content}
+    return me the <h2> with tag wrapped. no premable and explanation.
+    """
+
+    completion = client.chat.completions.create(
+        model=model,
+        messages=[{"role": "user", "content": prompt.strip()}],
+        temperature=0.2,
+        top_p=0.7,
+        max_tokens=8000,
+        stream=True
+    )
+
+    h2_content = ""
+    for chunk in completion:
+        if chunk.choices[0].delta.content is not None:
+            h2_content += chunk.choices[0].delta.content
+    return h2_content
+
+def process_line(line, model):
+    stripped_line = line.strip()
+
     # Check if the line is already wrapped with any HTML tags
-    if html_tag_regex.match(line.strip()):
-        return line  # Line is already wrapped with an HTML tag, return as is
+    if html_tag_regex.match(stripped_line):
+        if stripped_line.startswith('<h2>') and stripped_line.endswith('</h2>'):
+            return rewrite_h2(stripped_line, model) + '\n'
+        return stripped_line + '\n'
+
+    # Check if the line contains HTML tags and avoid wrapping with <p>
+    elif contains_html_tag_regex.search(stripped_line):
+        return stripped_line + '\n'
 
     # Check if the line starts and ends with "**" for <h2>
-    elif line.strip().startswith('**') and line.strip().endswith('**'):
-        return '<h2>' + line.strip().strip('**') + '</h2>\n'
+    elif stripped_line.startswith('**') and stripped_line.endswith('**'):
+        h2_content = '<h2>' + stripped_line.strip('**') + '</h2>'
+        return rewrite_h2(h2_content, model) + '\n'
 
     # Otherwise, wrap with <p> for plain text
     else:
-        return '<p>' + line.strip() + '</p>\n'
+        return '<p>' + stripped_line + '</p>\n'
 
-def write_file(file_path, content, title, source):
+def write_file(file_path, content, title, source, model):
     with open(file_path, 'w', encoding='utf-8') as file:
         file.write('<h1>' + title + '</h1>\n\n')
         embed_code = get_first_youtube_embed(title[:10])
@@ -565,7 +597,7 @@ def write_file(file_path, content, title, source):
         for line in lines:
             # Remove empty lines and process non-empty lines
             if line.strip():  # Ignore empty lines
-                file.write(process_line(line))
+                file.write(process_line(line, model))
                 
         file.write('\n<p>資料來源： ' + source + '</p>')
 
@@ -597,7 +629,7 @@ def parse_full_text(url, title, source, model, lines = 22):
         title = titler(full_article, model)
 
         file_path = clean_title(title, 'html', r"Translated News")
-        write_file(file_path, full_article, title, source)
+        write_file(file_path, full_article, title, source, model)
     
 def commit_changes():
     try:
