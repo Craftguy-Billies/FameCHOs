@@ -84,7 +84,7 @@ def get_first_youtube_embed(query, model, max_retries = 3):
 
     modified_string = extract_json_content(refined_response)
     if isinstance(modified_string, dict):
-        query = modified_string
+        query = modified_string['query']
     else:
         query = "kpop music instrumental"
     
