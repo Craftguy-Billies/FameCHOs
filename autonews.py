@@ -651,17 +651,12 @@ def process_line(line, model, last_was_h2):
     # Otherwise, wrap with <p> for plain text and reset the <h2> flag
     return '<p>' + stripped_line + '</p>\n', False
 
-def add_rss_item(template_path, link, blog):
+def add_rss_item(template_path, title, link):
     tree = parse(template_path)
     root = tree.getroot()
     channel = root.find('channel')
     last_build_date = channel.find('lastBuildDate')
     last_build_date.text = datetime.now(hk_timezone).strftime('%a, %d %b %Y %H:%M:%S %z')
-  
-    soup = BeautifulSoup(blog, 'html.parser')
-    title = soup.title.string
-    enclosure_url = soup.find('img', class_='banner')['src']
-    description = soup.find('div', class_='description').find('p').text
 
     # Create a new item
     item = Element('item')
@@ -670,7 +665,7 @@ def add_rss_item(template_path, link, blog):
     item_link = SubElement(item, 'link')
     item_link.text = link
     item_description = SubElement(item, 'description')
-    item_description.text = description
+    item_description.text = title
 
     item_pub_date = SubElement(item, 'pubDate')
     item_pub_date.text = datetime.now(hk_timezone).strftime('%a, %d %b %Y %H:%M:%S %z')
@@ -843,7 +838,7 @@ def write_file(file_path, content, title, source, model):
         file.write('\n<p>資料來源： ' + source + '</p>\n<\body>\n</html>')
 	
     append_to_sitemap(url, "0.90")
-    add_rss_item('rss.xml', url)
+    add_rss_item('rss.xml', title, url)
     commit_changes()
 
 def parse_full_text(url, title, source, model, lines = 22):
