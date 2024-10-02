@@ -756,44 +756,39 @@ def write_file(file_path, content, title, source, model):
     with open(file_path, 'w', encoding='utf-8') as file:
         # Dynamic data for the schema
         schema_data = {
-            "@context": "https://schema.org",
-            "@graph": [
-	        {
-	          "@type": "Article",
-	          "headline": title,
-	          "description": intro,
-	          "url": og_url,
-	          "image": og_image,
-	          "datePublished": get_current_hk_time(),
-	          "author": {
-	              "@type": "Person",
-	              "name": "Avoir"
-	          },
-	          "publisher": {
-	              "@type": "Organization",
-	              "name": "Avoir",
-	              "url": "https://www.avoir.me"
-	          }
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Article",
+                "headline": title,
+                "description": intro,
+                "url": og_url,
+                "image": og_image,
+                "datePublished": get_current_hk_time(),
+                "author": {
+                    "@type": "Person",
+                    "name": "Famechos"
                 },
-	        {
-	          "@type": "Organization",
-	          "name": "Avoir",
-	          "url": "https://www.avoir.me",
-	          "logo": "https://www.avoir.me/icons/favicon.png",
-	          "sameAs": [
-	              "https://www.facebook.com/avoir.me",
-		      "https://www.instagram.com/avoir.hk/",
-		      "https://x.com/avoir_me"
-	          ]
-	        },
-	        {
-	          "@type": "WebSite",
-	          "name": "Avoir",
-	          "url": "https://www.avoir.me"
-	        }
-	    ]
-        } 
-
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Famechos",
+                    "url": "https://www.famechos.me"
+                }
+            },
+            {
+                "@type": "Organization",
+                "name": "Famechos",
+                "url": "https://www.famechos.me",
+                "logo": "https://www.famechos.me/icons/favicon.png"
+            },
+            {
+                "@type": "WebSite",
+                "name": "Famechos",
+                "url": "https://www.famechos.me"
+            }
+        ]
+    }
+ 
         # Convert the dictionary to a JSON string
         schema_json = json.dumps(schema_data)
         file.write(f"<script type='application/ld+json'>{schema_json}</script>")
