@@ -60,6 +60,38 @@ def extract_json_content(input_string):
         return {}
 
 def get_first_youtube_embed(query):
+    prompt = f"""
+    For this news article title: {query}
+    Generate me a short but concise youtube search query, such that optimally I can search of the exact issue in youtube results.
+    The query can be in chinese or english. but make sure it is in moderate length that can get optimal search results.
+    Return me a JSON object with single key "query", without premable and explanation.
+    Again, only return me ONE JSON OBJECT with single key QUERY without premable and explanation.
+    """
+
+    retries = 0
+    while retries < max_retries:
+        try:
+            completion = client.chat.completions.create(
+                model=model,
+                messages=[{"role": "user", "content": prompt.strip()}],
+                temperature=0.2,
+                top_p=0.7,
+                max_tokens=8192,
+                stream=True
+            )
+            
+            refined_response = ""
+            for chunk in completion:
+                if chunk.choices[0].delta.content:
+                    refined_response += chunk.choices[0].delta.content
+
+            modified_string = extract_json_content(refined_response)
+            if isinstance(modified_string, dict):
+                query = modified_string
+
+        except Exception as e:
+            retries += 1
+    
     # Set up Chrome options for Selenium
     chrome_options = Options()
     chrome_options.binary_location = r'/usr/bin/google-chrome'
@@ -98,6 +130,7 @@ def get_first_youtube_embed(query):
     driver.quit()
     
     return embed_code
+
 def fetch_news(rss_urls):
     news_items = []
     seen_titles = set()
@@ -590,7 +623,7 @@ def process_line(line, model, last_was_h2):
 def write_file(file_path, content, title, source, model):
     with open(file_path, 'w', encoding='utf-8') as file:
         file.write('<h1>' + title + '</h1>\n\n')
-        embed_code = get_first_youtube_embed(title[:10])
+        embed_code = get_first_youtube_embed(title)
         if embed_code:
             file.write(embed_code + '\n\n')
         # Split content into lines
