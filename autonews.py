@@ -560,27 +560,32 @@ def rewrite_h2(content, model):
             h2_content += chunk.choices[0].delta.content
     return h2_content
 
-def process_line(line, model):
+def process_line(line, model, last_was_h2):
     stripped_line = line.strip()
 
     # Check if the line is already wrapped with any HTML tags
     if html_tag_regex.match(stripped_line):
         if stripped_line.startswith('<h2>') and stripped_line.endswith('</h2>'):
-            return rewrite_h2(stripped_line, model) + '\n'
-        return stripped_line + '\n'
+            if last_was_h2:  # Skip this <h2> if the previous line was also an <h2>
+                return '', True
+            else:
+                return rewrite_h2(stripped_line, model) + '\n', True
+        return stripped_line + '\n', False
 
     # Check if the line contains HTML tags and avoid wrapping with <p>
     elif contains_html_tag_regex.search(stripped_line):
-        return stripped_line + '\n'
+        return stripped_line + '\n', False
 
     # Check if the line starts and ends with "**" for <h2>
     elif stripped_line.startswith('**') and stripped_line.endswith('**'):
         h2_content = '<h2>' + stripped_line.strip('**') + '</h2>'
-        return rewrite_h2(h2_content, model) + '\n'
+        if last_was_h2:  # Skip this <h2> if the previous line was also an <h2>
+            return '', True
+        else:
+            return rewrite_h2(h2_content, model) + '\n', True
 
-    # Otherwise, wrap with <p> for plain text
-    else:
-        return '<p>' + stripped_line + '</p>\n'
+    # Otherwise, wrap with <p> for plain text and reset the <h2> flag
+    return '<p>' + stripped_line + '</p>\n', False
 
 def write_file(file_path, content, title, source, model):
     with open(file_path, 'w', encoding='utf-8') as file:
@@ -594,10 +599,14 @@ def write_file(file_path, content, title, source, model):
         # Remove the first line (pop)
         if lines:
             lines.pop(0)
+        # Processing the lines
+        last_was_h2 = False  # To track if the last processed line was an <h2>
+
         for line in lines:
-            # Remove empty lines and process non-empty lines
             if line.strip():  # Ignore empty lines
-                file.write(process_line(line, model))
+                processed_line, last_was_h2 = process_line(line, model, last_was_h2)
+                if processed_line:  # Only write non-empty lines
+                    file.write(process_line)
                 
         file.write('\n<p>資料來源： ' + source + '</p>')
 
