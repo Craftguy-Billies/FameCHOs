@@ -566,6 +566,7 @@ def titler(website_text, model, max_retries=3, delay=2):
 
 html_tag_regex = re.compile(r'^<.*>.*</.*>$')
 contains_html_tag_regex = re.compile(r'<(ul|h2|table|td|li|ol|tr|th)>')
+contains_html_close_tag_regex = re.compile(r'</(ul|h2|table|td|li|ol|tr|th)>')
 
 def rewrite_h2(content, model):
     prompt = f"""
@@ -589,6 +590,32 @@ def rewrite_h2(content, model):
             h2_content += chunk.choices[0].delta.content
     return h2_content
 
+def metadataer(title, model):
+    prompt = f"""
+    i am writing a news article with this keyword: {title}
+    now i need two HTML tags, <meta name="description" content=""> and <meta name="keywords" content="">
+    i need you to help me fill in the content part, using NLP techniques, SEO optimized naturally with the title content.
+    i only want you to return me the two HTML meta tags, properly formatted as HTML structure, and return me without premable and explanations.
+    output the description content and keywords content in traditional chinese.
+    AGAIN: NO premable and explanations.
+    """
+
+    completion = client.chat.completions.create(
+        model=model,
+        messages=[{"role": "user", "content": prompt.strip()}],
+        temperature=0.2,
+        top_p=0.7,
+        max_tokens=8000,
+        stream=True
+    )
+
+    metadata = ""
+    for chunk in completion:
+        if chunk.choices[0].delta.content is not None:
+            metadata += chunk.choices[0].delta.content
+
+    return metadata
+
 def process_line(line, model, last_was_h2):
     stripped_line = line.strip()
 
@@ -605,6 +632,10 @@ def process_line(line, model, last_was_h2):
     elif contains_html_tag_regex.search(stripped_line):
         return stripped_line + '\n', False
 
+    # Check if the line contains HTML closing tags and avoid wrapping with <p>
+    elif contains_html_close_tag_regex.search(stripped_line):
+        return stripped_line + '\n', False
+
     # Check if the line starts and ends with "**" for <h2>
     elif stripped_line.startswith('**') and stripped_line.endswith('**'):
         h2_content = '<h2>' + stripped_line.strip('**') + '</h2>'
@@ -616,8 +647,154 @@ def process_line(line, model, last_was_h2):
     # Otherwise, wrap with <p> for plain text and reset the <h2> flag
     return '<p>' + stripped_line + '</p>\n', False
 
+def add_rss_item(template_path, link, blog):
+    tree = parse(template_path)
+    root = tree.getroot()
+    channel = root.find('channel')
+    last_build_date = channel.find('lastBuildDate')
+    last_build_date.text = datetime.now(hk_timezone).strftime('%a, %d %b %Y %H:%M:%S %z')
+  
+    soup = BeautifulSoup(blog, 'html.parser')
+    title = soup.title.string
+    enclosure_url = soup.find('img', class_='banner')['src']
+    description = soup.find('div', class_='description').find('p').text
+
+    # Create a new item
+    item = Element('item')
+    item_title = SubElement(item, 'title')
+    item_title.text = title
+    item_link = SubElement(item, 'link')
+    item_link.text = link
+    item_description = SubElement(item, 'description')
+    item_description.text = description
+
+    item_pub_date = SubElement(item, 'pubDate')
+    item_pub_date.text = datetime.now(hk_timezone).strftime('%a, %d %b %Y %H:%M:%S %z')
+  
+    root_url = "https://www.avoir.me"
+    if enclosure_url.startswith(".."):
+        enclosure_url = os.path.join(root_url, os.path.normpath(enclosure_url)[3:])
+    if enclosure_url:
+        item_enclosure = SubElement(item, 'enclosure', url=enclosure_url, type="image/jpeg")
+
+    # Prettify the item
+    pretty_item_str = prettify_element(item)
+    pretty_item = fromstring(pretty_item_str.encode('utf-8'))
+    channel.append(pretty_item)
+    tree.write(template_path, encoding='utf-8', xml_declaration=True)
+
+def append_to_sitemap(loc, priority):
+    # File path to the sitemap.xml
+    file_path = 'sitemap.xml'
+
+    # Parse the existing sitemap.xml file
+    tree = parse(file_path)
+    root = tree.getroot()
+
+    # Declare the sitemap namespace
+    sitemap_ns = "http://www.sitemaps.org/schemas/sitemap/0.9"
+    nsmap = {"ns0": sitemap_ns}
+
+    # Create a new <url> element in the sitemap namespace
+    new_url = Element(f"{{{sitemap_ns}}}url")
+
+    # Add <loc> element
+    loc_element = SubElement(new_url, f"{{{sitemap_ns}}}loc")
+    loc_element.text = loc
+
+    # Add <lastmod> element with the current time in Hong Kong timezone
+    hk_timezone = pytz.timezone('Asia/Hong_Kong')
+    current_time = datetime.now(hk_timezone)
+    lastmod_element = SubElement(new_url, f"{{{sitemap_ns}}}lastmod")
+    lastmod_element.text = current_time.strftime('%Y-%m-%dT%H:%M:%S%z')
+    lastmod_element.text = lastmod_element.text[:-2] + ':' + lastmod_element.text[-2:]
+
+    # Add <changefreq> element
+    changefreq_element = SubElement(new_url, f"{{{sitemap_ns}}}changefreq")
+    changefreq_element.text = "weekly"
+
+    # Add <priority> element
+    priority_element = SubElement(new_url, f"{{{sitemap_ns}}}priority")
+    priority_element.text = priority
+
+    # Append the new <url> element to the root <urlset> element
+    root.append(new_url)
+
+    # Internal prettify function with a different name
+    def prettify_xml_tree(element, level=0):
+        """Prettifies the XML tree in place by adding indentation and newlines."""
+        indent = "\n" + level * "  "
+        if len(element):  # If the element has children
+            if not element.text or not element.text.strip():
+                element.text = indent + "  "
+            for elem in element:
+                prettify_xml_tree(elem, level + 1)
+            if not elem.tail or not elem.tail.strip():
+                elem.tail = indent
+        else:
+            if not element.text or not element.text.strip():
+                element.text = ""
+            if level and (not element.tail or not element.tail.strip()):
+                element.tail = indent
+
+    prettify_xml_tree(root)  # Call the renamed prettify function
+
+    # Write the updated and prettified XML back to the file
+    tree = ElementTree(root)
+    tree.write(file_path, encoding='UTF-8', xml_declaration=True)
+
+def get_current_hk_time():
+    tz_hk = pytz.timezone('Asia/Hong_Kong')
+    current_time = datetime.now(tz_hk)
+    return current_time.isoformat()
+
 def write_file(file_path, content, title, source, model):
     with open(file_path, 'w', encoding='utf-8') as file:
+        # Dynamic data for the schema
+        schema_data = {
+            "@context": "https://schema.org",
+            "@graph": [
+	        {
+	          "@type": "Article",
+	          "headline": title,
+	          "description": intro,
+	          "url": og_url,
+	          "image": og_image,
+	          "datePublished": get_current_hk_time(),
+	          "author": {
+	              "@type": "Person",
+	              "name": "Avoir"
+	          },
+	          "publisher": {
+	              "@type": "Organization",
+	              "name": "Avoir",
+	              "url": "https://www.avoir.me"
+	          }
+                },
+	        {
+	          "@type": "Organization",
+	          "name": "Avoir",
+	          "url": "https://www.avoir.me",
+	          "logo": "https://www.avoir.me/icons/favicon.png",
+	          "sameAs": [
+	              "https://www.facebook.com/avoir.me",
+		      "https://www.instagram.com/avoir.hk/",
+		      "https://x.com/avoir_me"
+	          ]
+	        },
+	        {
+	          "@type": "WebSite",
+	          "name": "Avoir",
+	          "url": "https://www.avoir.me"
+	        }
+	    ]
+        } 
+
+        # Convert the dictionary to a JSON string
+        schema_json = json.dumps(schema_data)
+        file.write(f"<script type='application/ld+json'>{schema_json}</script>")
+        metadata = metadataer(title, model)
+        file.write(metadata + '\n')
         file.write('<h1>' + title + '</h1>\n\n')
         embed_code = get_first_youtube_embed(title, model)
         if embed_code:
