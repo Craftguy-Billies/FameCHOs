@@ -674,12 +674,6 @@ def add_rss_item(template_path, link, blog):
 
     item_pub_date = SubElement(item, 'pubDate')
     item_pub_date.text = datetime.now(hk_timezone).strftime('%a, %d %b %Y %H:%M:%S %z')
-  
-    root_url = "https://www.avoir.me"
-    if enclosure_url.startswith(".."):
-        enclosure_url = os.path.join(root_url, os.path.normpath(enclosure_url)[3:])
-    if enclosure_url:
-        item_enclosure = SubElement(item, 'enclosure', url=enclosure_url, type="image/jpeg")
 
     # Prettify the item
     pretty_item_str = prettify_element(item)
@@ -753,49 +747,81 @@ def get_current_hk_time():
     return current_time.isoformat()
 
 def write_file(file_path, content, title, source, model):
-    url = "https://www.famechos.me/" + title + '/'
+    url = "https://www.famechos.me/news/" + title + '/'
     with open(file_path, 'w', encoding='utf-8') as file:
         # Dynamic data for the schema
         schema_data = {
-        "@context": "https://schema.org",
-        "@graph": [
-            {
-                "@type": "Article",
-                "headline": title,
-                "description": intro,
-                "url": url,
-                "image": "https://www.famechos.me/images/banner.jpg",
-                "datePublished": get_current_hk_time(),
-                "author": {
-                    "@type": "Person",
-                    "name": "Famechos"
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "Article",
+                    "headline": title,
+                    "description": intro,
+                    "url": url,
+                    "image": "https://www.famechos.me/images/banner.jpg",
+                    "datePublished": get_current_hk_time(),
+                    "author": {
+                        "@type": "Person",
+                        "name": "Famechos"
+                    },
+                    "publisher": {
+                        "@type": "Organization",
+                        "name": "Famechos",
+                        "url": "https://www.famechos.me"
+                    }
                 },
-                "publisher": {
+                {
                     "@type": "Organization",
+                    "name": "Famechos",
+                    "url": "https://www.famechos.me",
+                    "logo": "https://www.famechos.me/icons/favicon.png"
+                },
+                {
+                    "@type": "WebSite",
                     "name": "Famechos",
                     "url": "https://www.famechos.me"
                 }
-            },
-            {
-                "@type": "Organization",
-                "name": "Famechos",
-                "url": "https://www.famechos.me",
-                "logo": "https://www.famechos.me/icons/favicon.png"
-            },
-            {
-                "@type": "WebSite",
-                "name": "Famechos",
-                "url": "https://www.famechos.me"
-            }
-        ]
-    }
+            ]
+        }
  
         # Convert the dictionary to a JSON string
         schema_json = json.dumps(schema_data)
-        file.write(f"<head>\n<script type='application/ld+json'>\n{schema_json}\n</script>")
+        file.write(f"<!DOCTYPE html>\n<head>\n<script type='application/ld+json'>\n{schema_json}\n</script>\n")
+        file.write('<link rel="canonical" href="' + url + '/>\n')
         metadata = metadataer(title, model)
         file.write(metadata + '\n')
-        file.write('<h1>' + title + '</h1>\n</head>\n\n')
+	    
+	# Dynamically construct the meta tags
+        meta_tags = f'''
+        <meta property="og:url" content="{url}" />
+        <meta property="og:title" content="{title}" />
+        <meta property="og:description" content="{title}" />
+        <meta property="og:image" content="https://www.famechos.me/images/banner.jpg" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="{title}" />
+        <meta property="twitter:description" content="{title}" />
+        <meta property="twitter:image" content="https://www.famechos.me/images/banner.jpg" />
+	<meta name="theme-color" content="white">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanstc.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <meta property="og:locale" content="zh_TW" />
+        <meta property="og:site_name" content="Famechos" />
+	<meta property="og:type" content="article" />
+	<meta name="robots" content="index, follow" />
+	<meta name="author" content="Famechos" />
+        <meta name="referrer" content="origin">
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+        <meta name="apple-mobile-web-app-title" content="Avoir"/>
+        <meta name="apple-touch-fullscreen" content="yes"/>
+        '''
+
+	style = r'<style> * {box-sizing: border-box;margin: 0;padding: 0;font-family: 'Noto Sans TC', sans-serif;scroll-behavior: smooth;}</style>'
+
+        file.write(meta_tags + '\n' + style + '\n')
+	    
+        file.write('<h1>' + title + '</h1>\n</head>\n\n<body>\n')
         embed_code = get_first_youtube_embed(title, model)
         if embed_code:
             file.write(embed_code + '\n\n')
@@ -814,7 +840,11 @@ def write_file(file_path, content, title, source, model):
                 if processed_line:  # Only write non-empty lines
                     file.write(processed_line)
                 
-        file.write('\n<p>資料來源： ' + source + '</p>')
+        file.write('\n<p>資料來源： ' + source + '</p>\n<\body>\n</html>')
+	
+    append_to_sitemap(url, "0.90")
+    add_rss_item('rss.xml', url)
+    commit_changes()
 
 def parse_full_text(url, title, source, model, lines = 22):
     full_article = ""
@@ -899,7 +929,6 @@ def main():
                     parse_full_text(new['link'], new['title'], new['source'], model, lines)
                     with open(file_path, 'a') as file:
                         file.write(new['link'] + '\n')
-                    commit_changes()
                 else:
                     print('News already used: ' + str(new['title']))
                     print("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
