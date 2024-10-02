@@ -606,7 +606,7 @@ def write_file(file_path, content, title, source, model):
             if line.strip():  # Ignore empty lines
                 processed_line, last_was_h2 = process_line(line, model, last_was_h2)
                 if processed_line:  # Only write non-empty lines
-                    file.write(process_line)
+                    file.write(processed_line)
                 
         file.write('\n<p>資料來源： ' + source + '</p>')
 
