@@ -67,11 +67,8 @@ def get_first_youtube_embed(query, model, max_retries = 3):
     Return me a JSON object with single key "query", without premable and explanation.
     Again, only return me ONE JSON OBJECT with single key QUERY without premable and explanation.
     """
-
-    retries = 0
-    while retries < max_retries:
-        try:
-            completion = client.chat.completions.create(
+	
+    completion = client.chat.completions.create(
                 model=model,
                 messages=[{"role": "user", "content": prompt.strip()}],
                 temperature=0.2,
@@ -80,17 +77,16 @@ def get_first_youtube_embed(query, model, max_retries = 3):
                 stream=True
             )
             
-            refined_response = ""
-            for chunk in completion:
-                if chunk.choices[0].delta.content:
-                    refined_response += chunk.choices[0].delta.content
+    refined_response = ""
+    for chunk in completion:
+        if chunk.choices[0].delta.content:
+            refined_response += chunk.choices[0].delta.content
 
-            modified_string = extract_json_content(refined_response)
-            if isinstance(modified_string, dict):
-                query = modified_string
-
-        except Exception as e:
-            retries += 1
+    modified_string = extract_json_content(refined_response)
+    if isinstance(modified_string, dict):
+        query = modified_string
+    else:
+        query = "kpop music instrumental"
     
     # Set up Chrome options for Selenium
     chrome_options = Options()
