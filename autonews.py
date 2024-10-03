@@ -63,6 +63,12 @@ def extract_json_content(input_string):
         print("No valid JSON found in the input string.")
         return {}
 
+def prettify_element(elem):
+    """Return a pretty-printed XML string for the Element."""
+    rough_string = tostring(elem, 'utf-8')
+    reparsed = minidom.parseString(rough_string)
+    return reparsed.toprettyxml(indent="  ")
+
 def get_first_youtube_embed(query, model, max_retries = 3):
     prompt = f"""
     For this news article title: {query}
