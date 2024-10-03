@@ -842,7 +842,7 @@ def write_file(file_path, content, title, source, model):
                 if processed_line:  # Only write non-empty lines
                     file.write(processed_line)
                 
-        file.write('\n<p>資料來源： ' + source + '</p>\n<\body>\n</html>')
+        file.write('\n<p>資料來源： ' + source + '</p>\n</body>\n</html>')
 	
     append_to_sitemap(url, "0.90")
     add_rss_item('rss.xml', title, url)
