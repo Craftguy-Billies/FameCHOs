@@ -656,6 +656,7 @@ def add_rss_item(template_path, title, link):
     root = tree.getroot()
     channel = root.find('channel')
     last_build_date = channel.find('lastBuildDate')
+    hk_timezone = pytz.timezone('Asia/Hong_Kong')
     last_build_date.text = datetime.now(hk_timezone).strftime('%a, %d %b %Y %H:%M:%S %z')
 
     # Create a new item
