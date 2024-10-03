@@ -1,8 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
 <ns0:urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<script/>
+  <script />
   <ns0:url>
     <ns0:loc>https://www.famechos.me/</ns0:loc>
     <ns0:lastmod>2024-10-02T21:23:09+08:00</ns0:lastmod>
     <ns0:priority>1.00</ns0:priority>
+  </ns0:url>
+<ns0:url>
+    <ns0:loc>https://www.famechos.me/news/G-Dragon終於打破沉默！將在《劉QUIZ ON THE BLOCK》首次亮相，分享BIGBANG歲月、毒品風波和音樂復出計劃/</ns0:loc>
+    <ns0:lastmod>2024-10-03T12:57:00+08:00</ns0:lastmod>
+    <ns0:changefreq>weekly</ns0:changefreq>
+    <ns0:priority>0.90</ns0:priority>
   </ns0:url>
 </ns0:urlset>

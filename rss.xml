@@ -1,10 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
 <rss version="2.0">
-<script/>
+<script />
 <channel>
   <title>Famechos</title>
   <link>https://www.famechos.me/</link>
   <description>Famechos - News Article</description>
-  <lastBuildDate>Wed, 02 Oct 2024 21:15:00 +0800</lastBuildDate>
+  <lastBuildDate>Thu, 03 Oct 2024 12:57:00 +0800</lastBuildDate>
 
-  </channel>
+  <item>
+  <title>G-Dragon終於打破沉默！將在《劉QUIZ ON THE BLOCK》首次亮相，分享BIGBANG歲月、毒品風波和音樂復出計劃</title>
+  <link>https://www.famechos.me/news/G-Dragon終於打破沉默！將在《劉QUIZ ON THE BLOCK》首次亮相，分享BIGBANG歲月、毒品風波和音樂復出計劃/</link>
+  <description>G-Dragon終於打破沉默！將在《劉QUIZ ON THE BLOCK》首次亮相，分享BIGBANG歲月、毒品風波和音樂復出計劃</description>
+  <pubDate>Thu, 03 Oct 2024 12:57:00 +0800</pubDate>
+</item></channel>
 </rss>
