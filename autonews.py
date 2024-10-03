@@ -751,7 +751,7 @@ def write_file(file_path, content, title, source, model):
                 {
                     "@type": "Article",
                     "headline": title,
-                    "description": intro,
+                    "description": title,
                     "url": url,
                     "image": "https://www.famechos.me/images/banner.jpg",
                     "datePublished": get_current_hk_time(),
