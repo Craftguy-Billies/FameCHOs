@@ -789,7 +789,7 @@ def write_file(file_path, content, title, source, model):
         # Convert the dictionary to a JSON string
         schema_json = json.dumps(schema_data)
         file.write(f"<!DOCTYPE html>\n<head>\n<script type='application/ld+json'>\n{schema_json}\n</script>\n")
-        file.write('<link rel="canonical" href="' + url + '/>\n')
+        file.write('<link rel="canonical" href="' + url + '"/>\n')
         metadata = metadataer(title, model)
         file.write(metadata + '\n')
 	    
@@ -875,7 +875,7 @@ def parse_full_text(url, title, source, model, lines = 22):
 
         title = titler(full_article, model)
 
-        file_path = clean_title(title, 'html', r"Translated News")
+        file_path = clean_title(title, 'html', r"news")
         write_file(file_path, full_article, title, source, model)
     
 def commit_changes():
