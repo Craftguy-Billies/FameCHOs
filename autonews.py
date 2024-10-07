@@ -797,6 +797,14 @@ def write_file(file_path, content, title, source, model):
 	    
 	# Dynamically construct the meta tags
         meta_tags = f'''
+	<link rel="stylesheet" href="../main-nav.css">
+	<link rel="stylesheet" href="../main-content.css">
+	<link rel="stylesheet" href="../main-small.css">
+	<link rel="stylesheet" href="../post.css">
+	<link rel="stylesheet" href="../main-footer.css">
+	<link rel="stylesheet" href="../news.css">
+ 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> 
+	<link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanstc.css">
         <meta property="og:url" content="{url}" />
         <meta property="og:title" content="{title}" />
         <meta property="og:description" content="{title}" />
@@ -807,8 +815,6 @@ def write_file(file_path, content, title, source, model):
         <meta property="twitter:image" content="https://www.famechos.me/images/banner.jpg" />
 	<meta name="theme-color" content="white">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanstc.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <meta property="og:locale" content="zh_TW" />
         <meta property="og:site_name" content="Famechos" />
 	<meta property="og:type" content="article" />
@@ -825,7 +831,108 @@ def write_file(file_path, content, title, source, model):
 
         file.write(meta_tags + '\n' + style + '\n')
 	    
-        file.write('<h1>' + title + '</h1>\n</head>\n\n<body>\n')
+        file.write('\n</head>\n\n<body>\n')
+        navbar = r'''
+<nav class="nav">
+    <div class="nav-outerbox">
+      <div class="nav-inner-left">
+        <div class="nav-name-logo">
+          <img class="famechos-logo" src="../img/famechos_logo.png">
+          
+        </div>
+        <div class="nav-separate">
+          <p>|</p>
+        </div>
+        <div class="nav-type-1 nav-type">
+          <button class="nav-type-btn1 nav-type-btn">
+          <h2>K-POP</h2>
+        </button>
+  
+        </div>
+        <div class="nav-type-2 nav-type">
+          <button class="nav-type-btn2 nav-type-btn">
+          <h2>J-POP</h2>
+        </button>
+  
+        </div>
+        <div class="nav-type-3 nav-type">
+          <button class="nav-type-btn3 nav-type-btn">
+          <h2>影視</h2>
+        </button>
+          
+        </div>
+        <div class="nav-type-4 nav-type">
+          <button class="nav-type-btn4 nav-type-btn">
+          <h2>其他</h2>
+        </button>
+        </div>  
+      </div>
+      <div class="nav-inner-right">
+        <div class="nav-feedback-outer">
+          <button class="feedback-btn nav-type-btn">
+            <i class="bi bi-headset"></i>
+          </button>
+        </div>
+        <div class="nav-setting">
+          <button class="setting-btn nav-type-btn">
+            <i class="bi bi-gear"></i>
+          </button>
+        </div>
+        <div class="nav-list">
+          <button id="list-btn" class="list-btn nav-type-btn">
+            <i class="bi bi-list"></i>
+          </button>
+        </div>
+
+      </div>
+
+      <div id="list" class="nav-list-outer">
+        <div class="nav-type-1 nav-type list-type">
+          <button class="list-type-btn">
+          <p>K-POP</p>
+        </button>
+  
+        </div>
+        <div class="nav-type-2 nav-type list-type">
+          <button class="list-type-btn">
+          <p>J-POP</p>
+        </button>
+  
+        </div>
+        <div class="nav-type-3 nav-type list-type">
+          <button class="list-type-btn">
+          <p>影視</p>
+        </button>
+          
+        </div>
+        <div class="nav-type-4 nav-type list-type">
+          <button class="list-type-btn">
+          <p>其他</p>
+        </button>
+        </div>  
+
+      </div>
+      
+    </div>
+  </nav>
+
+  <main>
+    <div class="news-main-outer">
+      <div class="news-title-outer">
+        '''
+        file.write(navbar)
+        file.write('<h1>' + title + '</h1>')
+        then = r'''
+	</div>
+
+      <div class="news-content-outer">
+
+        <div class="news-info-outer">
+          <p class="news-content-type">K-POP</p>
+          <p class="news-date">25/9/2099</p>
+        </div>
+	'''
+        file.write(then)
         embed_code = get_first_youtube_embed(title, model)
         if embed_code:
             file.write(embed_code + '\n\n')
@@ -844,8 +951,72 @@ def write_file(file_path, content, title, source, model):
                 if processed_line:  # Only write non-empty lines
                     file.write(processed_line)
                 
-        file.write('\n<p>資料來源： ' + source + '</p>\n</body>\n</html>')
-	
+        file.write('\n<p>資料來源： ' + source + '</p>\n')
+
+	footer = r'''
+ <footer class="footer">
+    <div class="footer-outer">
+
+
+      <div class="footer-up-outer">
+        <div class="footer-right-name-box">
+          <img class="famechos-logo-footer" src="../img/famechos_logo.png">
+        </div>
+        <div class="footer-right-text-box">
+          <p class="footer-right-text">每日為你提供最新、最全面的日韓資訊。</p>
+        </div>
+        <div class="footer-button-box">
+          <button class="facebook-btn footer-btn">
+            <i class="bi bi-facebook footer-logo"></i>
+          </button>
+          <button class="ig-btn footer-btn">
+            <i class="bi bi-instagram footer-logo"></i>
+          </button>
+          <button class="x-btn footer-btn">
+            <i class="bi bi-twitter-x footer-logo"></i>
+          </button>
+          <button class="x-btn footer-btn">
+            <i class="bi bi-envelope-fill footer-logo"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="footer-down-outer">
+        <div class="kpop-footer-box footer-box">
+          <p class="footer-text">K-POP</p>
+        </div>
+        <div class="jpop-footer-box footer-box">
+          <p class="footer-text">J-POP</p>
+        </div>
+        <div class="drama-footer-box footer-box">
+          <p class="footer-text">影視</p>
+        </div>
+        <div class="other-footer-box footer-box">
+          <p class="footer-text">其他</p>
+        </div>
+
+
+      </div>
+
+      <div class="copyright-outer">
+        <p class="copyright-text">
+          Copyright © 2024 by <strong>Famechos.me</strong> All Rights Reserved.
+        </p>
+      </div>
+
+      
+    </div>
+
+
+
+  </footer>
+
+<script src="../nav-list.js"></script>
+
+</body>
+</html>
+'''
+    file_write(footer)
     append_to_sitemap(url, "0.90")
     add_rss_item('rss.xml', title, url)
     commit_changes()
