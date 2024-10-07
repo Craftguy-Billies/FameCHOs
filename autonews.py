@@ -1016,7 +1016,7 @@ def write_file(file_path, content, title, source, model):
 </body>
 </html>
 '''
-    file.write(footer)
+        file.write(footer)
     append_to_sitemap(url, "0.90")
     add_rss_item('rss.xml', title, url)
     commit_changes()
