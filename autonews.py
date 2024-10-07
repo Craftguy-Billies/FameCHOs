@@ -951,7 +951,7 @@ def write_file(file_path, content, title, source, model):
                 if processed_line:  # Only write non-empty lines
                     file.write(processed_line)
                 
-        file.write('\n<p>資料來源： ' + source + '</p>\n')
+        file.write('\n<p>資料來源： ' + source + '</p>\n</div>\n</main>\n\n')
 
         footer = r'''
  <footer class="footer">
