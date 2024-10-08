@@ -953,7 +953,7 @@ def write_file(file_path, content, title, source, model):
         embed_code = get_first_youtube_embed(title, model)
         if embed_code:
             file.write(embed_code + '\n\n')
-	file.write('\n<p class="news-text-inner">資料來源： ' + source + '</p>\n</div>\n</div>\n</main>\n\n')
+        file.write('\n<p class="news-text-inner">資料來源： ' + source + '</p>\n</div>\n</div>\n</main>\n\n')
 
         footer = r'''
  <footer class="footer">
