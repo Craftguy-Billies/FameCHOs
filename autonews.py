@@ -949,10 +949,11 @@ def write_file(file_path, content, title, source, model):
                     file.write(processed_line)
                 
         file.write('\n<div class ="news-vid-outer">\n<div class="related-vid-text-outer title-bar ">\n')
+        file.write('<p class="related-vid-text">相關影片：</p>\n</div>\n')
         embed_code = get_first_youtube_embed(title, model)
         if embed_code:
             file.write(embed_code + '\n\n')
-        file.write('<p class="related-vid-text">相關影片：</p>\n</div>\n\n<p class="news-text-inner">資料來源： ' + source + '</p>\n</div>\n</div>\n</main>\n\n')
+	file.write('\n<p class="news-text-inner">資料來源： ' + source + '</p>\n</div>\n</div>\n</main>\n\n')
 
         footer = r'''
  <footer class="footer">
