@@ -84,4 +84,10 @@
     <ns0:changefreq>weekly</ns0:changefreq>
     <ns0:priority>0.90</ns0:priority>
   </ns0:url>
+<ns0:url>
+    <ns0:loc>https://www.famechos.me/news/東京萬聖節新規出爐！澀谷、新宿嚴禁街頭飲酒，185名保安人員將巡邏維持秩序/</ns0:loc>
+    <ns0:lastmod>2024-10-08T12:19:31+08:00</ns0:lastmod>
+    <ns0:changefreq>weekly</ns0:changefreq>
+    <ns0:priority>0.90</ns0:priority>
+  </ns0:url>
 </ns0:urlset>
