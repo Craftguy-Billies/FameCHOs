@@ -1006,19 +1006,6 @@ def write_file(file_path, content, title, source, category, model):
       
       <div class ="related-news-box">
         '''
-        
-        <p class ="related-news">
-          <i class="bi bi-dot"></i>
-          K-pop 偶像「假唱門」再起！你知道他們的現場表演有多少是假唱嗎？
-        </p>
-        <p class ="related-news">
-          <i class="bi bi-dot"></i>
-          K-pop 偶像「假唱門」再起！你知道他們的現場表演有多少是假唱嗎？
-        </p>
-        <p class ="related-news">
-          <i class="bi bi-dot"></i>
-          K-pop 偶像「假唱門」再起！你知道他們的現場表演有多少是假唱嗎？
-        </p>
 
         rss_file_path = './' + category.lower()
         the_json = get_bottom_items(rss_file_path)
