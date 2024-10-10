@@ -696,17 +696,14 @@ def get_bottom_items(feed_url, max_items=3):
     # Get the entries (items) in the feed
     items = feed.entries
     
-    # Get the bottom-most 'max_items' (or less if fewer items exist)
-    bottom_items = items[-4:-1] if len(items) >= max_items else items
+    # Get the bottom 2-4 items (or fewer if there are fewer than 4 items)
+    bottom_items = items[-4:-1] if len(items) >= 4 else items
     
     # Create a dictionary with {title: url} format
     result = {item.title: item.link for item in bottom_items}
     
-    # Convert the result to JSON format
-    result_json = json.dumps(result, indent=4)
-    result_dict = json.loads(result_json)
-
-    return result_dict
+    # Return the result as a dictionary of title and link
+    return result
 
 def append_to_sitemap(loc, priority):
     # File path to the sitemap.xml
@@ -1165,7 +1162,7 @@ def main():
         model = "meta/llama-3.1-405b-instruct"
         news = fetch_news(rss_urls)
         print(news)
-        file_path = "news.txt"
+        file_path = "./news.txt"
         try:
             with open(file_path, 'r') as file:
                 existing_links = file.readlines()
