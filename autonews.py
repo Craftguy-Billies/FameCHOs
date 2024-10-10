@@ -173,7 +173,7 @@ def fetch_news(rss_urls):
                     if website_text:
                         word_count = len(website_text.split())
                         # Filter out articles that are too short or too long
-                        if word_count <= 200 or word_count >= 900:
+                        if word_count <= 300 or word_count >= 1300:
                             continue
                 
                 # Add the news item to the list
@@ -845,37 +845,37 @@ def write_file(file_path, content, title, source, model):
         </div>
         <div class="nav-type-1 nav-type">
           <button class="nav-type-btn1 nav-type-btn">
-          <h2>K-POP</h2>
+          <h2 class="nav-type-text">K-POP</h2>
         </button>
   
         </div>
         <div class="nav-type-2 nav-type">
           <button class="nav-type-btn2 nav-type-btn">
-          <h2>J-POP</h2>
+          <h2 class="nav-type-text">J-POP</h2>
         </button>
   
         </div>
         <div class="nav-type-3 nav-type">
           <button class="nav-type-btn3 nav-type-btn">
-          <h2>影視</h2>
+          <h2 class="nav-type-text">影視</h2>
         </button>
           
         </div>
         <div class="nav-type-4 nav-type">
           <button class="nav-type-btn4 nav-type-btn">
-          <h2>其他</h2>
+          <h2 class="nav-type-text">其他</h2>
         </button>
         </div>  
       </div>
       <div class="nav-inner-right">
         <div class="nav-feedback-outer">
           <button class="feedback-btn nav-type-btn">
-            <i class="bi bi-headset"></i>
+            <h2 class="nav-type-text">關於我們</h2>
           </button>
         </div>
         <div class="nav-setting">
           <button class="setting-btn nav-type-btn">
-            <i class="bi bi-gear"></i>
+            <h2 class="nav-type-text">私隱條款</h2>
           </button>
         </div>
         <div class="nav-list">
@@ -890,31 +890,45 @@ def write_file(file_path, content, title, source, model):
         <div class="nav-type-1 nav-type list-type">
           <button class="list-type-btn">
           <p>K-POP</p>
-        </button>
-  
+          </button>
         </div>
+
         <div class="nav-type-2 nav-type list-type">
           <button class="list-type-btn">
           <p>J-POP</p>
-        </button>
-  
+          </button>
         </div>
+
         <div class="nav-type-3 nav-type list-type">
           <button class="list-type-btn">
           <p>影視</p>
-        </button>
-          
+          </button>
         </div>
+
         <div class="nav-type-4 nav-type list-type">
           <button class="list-type-btn">
           <p>其他</p>
-        </button>
+          </button>
+        </div>
+
+        <div class="nav-type-5 nav-type list-type">
+          <button class="list-type-btn">
+          <p>關於我們</p>
+          </button>
+        </div>
+
+        <div class="nav-type-6 nav-type list-type">
+          <button class="list-type-btn">
+          <p>私隱條款</p>
+          </button>
+
         </div>  
 
       </div>
       
     </div>
   </nav>
+
 
   <main>
     <div class="news-main-outer">
@@ -948,14 +962,37 @@ def write_file(file_path, content, title, source, model):
                 if processed_line:  # Only write non-empty lines
                     file.write(processed_line)
                 
-        file.write('\n<div class ="news-vid-outer">\n<div class="related-vid-text-outer title-bar ">\n')
+        file.write('\n</div><div class ="news-vid-outer">\n<div class="related-vid-text-outer title-bar ">\n')
         file.write('<p class="related-vid-text">相關影片：</p>\n</div>\n')
         embed_code = get_first_youtube_embed(title, model)
         if embed_code:
             file.write(embed_code + '\n\n')
-        file.write('\n<p class="news-text-inner">資料來源： ' + source + '</p>\n</div>\n</div>\n</main>\n\n')
+        file.write('\n<p class="news-text-inner">資料來源： ' + source + '</p>\n</div>\n')
 
         footer = r'''
+
+ <div class ="related-news-outer title-bar">
+        <p class="related-news-text">相關新聞：</p>
+      </div>
+      
+      <div class ="related-news-box">
+        <p class ="related-news">
+          <i class="bi bi-dot"></i>
+          K-pop 偶像「假唱門」再起！你知道他們的現場表演有多少是假唱嗎？
+        </p>
+        <p class ="related-news">
+          <i class="bi bi-dot"></i>
+          K-pop 偶像「假唱門」再起！你知道他們的現場表演有多少是假唱嗎？
+        </p>
+        <p class ="related-news">
+          <i class="bi bi-dot"></i>
+          K-pop 偶像「假唱門」再起！你知道他們的現場表演有多少是假唱嗎？
+        </p>
+      </div>
+
+    </div>
+
+    </main>
  <footer class="footer">
     <div class="footer-outer">
 
