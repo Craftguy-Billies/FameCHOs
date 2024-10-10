@@ -689,21 +689,18 @@ def add_rss_item(template_path, title, link, category):
     channel.append(pretty_item)
     tree.write(template_path, encoding='utf-8', xml_declaration=True)
 
-def get_bottom_items(feed_url, max_items=3):
-    # Parse the RSS feed
-    feed = feedparser.parse(feed_url)
+def get_bottom_items(file_path, max_items=3):
+    tree = ElementTree.parse(file_path)
+    root = tree.getroot()
     
-    # Get the entries (items) in the feed
-    items = feed.entries
+    items = root.findall('.//item')
     
-    # Get the bottom 2-4 items (or fewer if there are fewer than 4 items)
     bottom_items = items[-4:-1] if len(items) >= 4 else items
     
-    # Create a dictionary with {title: url} format
-    result = {item.title: item.link for item in bottom_items}
+    result = {item.find('title').text: item.find('link').text for item in bottom_items}
     
-    # Return the result as a dictionary of title and link
     return result
+
 
 def append_to_sitemap(loc, priority):
     # File path to the sitemap.xml
@@ -1005,7 +1002,7 @@ def write_file(file_path, content, title, source, category, model):
       <div class ="related-news-box">
         '''
 
-        rss_file_path = './' + category.lower()
+        rss_file_path = './' + category.lower() + '.xml'
         the_json = get_bottom_items(rss_file_path)
         r_news = ""
         if the_json:
