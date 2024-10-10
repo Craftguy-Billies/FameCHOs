@@ -773,7 +773,7 @@ def get_current_hk_time():
     return current_time.isoformat()
 
 def write_file(file_path, content, title, source, category, model):
-    url = "https://www.famechos.me/news/" + title + '/'
+    url = "https://www.famechos.me/news/" + title + '.html'
     with open(file_path, 'w', encoding='utf-8') as file:
         # Dynamic data for the schema
         schema_data = {
