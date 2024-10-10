@@ -697,7 +697,7 @@ def get_bottom_items(feed_url, max_items=3):
     items = feed.entries
     
     # Get the bottom-most 'max_items' (or less if fewer items exist)
-    bottom_items = items[-max_items:] if len(items) >= max_items else items
+    bottom_items = items[-4:-1] if len(items) >= max_items else items
     
     # Create a dictionary with {title: url} format
     result = {item.title: item.link for item in bottom_items}
