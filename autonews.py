@@ -1012,6 +1012,7 @@ def write_file(file_path, content, title, source, category, model):
         the_json = get_bottom_items(rss_file_path)
         r_news = ""
         if the_json:
+            print("oui")
             for title, url in the_json.items():
                 r_news += '''
 	<p class ="related-news">
@@ -1020,7 +1021,7 @@ def write_file(file_path, content, title, source, category, model):
         </p>
                 '''
             
-
+        print("rss THAT HTML: " + str(r_news))
         last = r'''
       </div>
 
