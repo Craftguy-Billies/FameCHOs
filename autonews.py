@@ -1166,26 +1166,25 @@ def main():
         news = fetch_news(rss_urls)
         print(news)
         file_path = "news.txt"
+        try:
+            with open(file_path, 'r') as file:
+                existing_links = file.readlines()
+            existing_links = [line.strip() for line in existing_links]
+        except FileNotFoundError:
+            with open(file_path, 'w') as file:
+                pass
+            existing_links = []
+        
+        random.shuffle(news)
+
         for new in news:
-            try:
-                with open(file_path, 'r') as file:
-                    existing_links = file.readlines()
-                existing_links = [line.strip() for line in existing_links]
-            except FileNotFoundError:
-                with open(file_path, 'w') as file:
-                    pass
-                existing_links = []
-
-            random.shuffle(news)
-
-            for new in news:
-                if new['link'] not in existing_links:
-                    parse_full_text(new['link'], new['title'], new['source'], new['category'], model, lines)
-                    with open(file_path, 'a') as file:
-                        file.write(new['link'] + '\n')
-                else:
-                    print('News already used: ' + str(new['title']))
-                    print("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+            if new['link'] not in existing_links:
+                parse_full_text(new['link'], new['title'], new['source'], new['category'], model, lines)
+                with open(file_path, 'a') as file:
+                    file.write(new['link'] + '\n')
+            else:
+                print('News already used: ' + str(new['title']))
+                print("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
 
     except ValueError as e:
         print(f"Error: {e}")
