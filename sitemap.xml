@@ -144,4 +144,10 @@
     <ns0:changefreq>weekly</ns0:changefreq>
     <ns0:priority>0.90</ns0:priority>
   </ns0:url>
+<ns0:url>
+    <ns0:loc>https://www.famechos.me/news/東京美食天堂 Azabudai Hills：米芝蓮星級餐廳、特色小吃、純素友好餐廳全都有！/</ns0:loc>
+    <ns0:lastmod>2024-10-10T16:45:28+08:00</ns0:lastmod>
+    <ns0:changefreq>weekly</ns0:changefreq>
+    <ns0:priority>0.90</ns0:priority>
+  </ns0:url>
 </ns0:urlset>
