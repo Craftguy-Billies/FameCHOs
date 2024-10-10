@@ -145,7 +145,7 @@ def fetch_news(rss_urls):
     now = datetime.now()
     two_weeks_ago = now - timedelta(weeks=2)
 
-    for url, source in rss_urls:
+    for url, source, category in rss_urls:
         feed = feedparser.parse(url)
 
         for entry in feed.entries:
@@ -163,7 +163,8 @@ def fetch_news(rss_urls):
                     'title': entry.title,
                     'link': entry.link,
                     'summary': entry.summary,
-                    'source' : source
+                    'source' : source,
+                    'category': category
                 }
                 
                 # Fetch the article content
@@ -193,7 +194,7 @@ def count_newlines_exceeds_limit(text: str, limit: int = 5) -> bool:
 
 def search(query, max_results = 7):
     encoded_query = requests.utils.quote(query)
-    url = f"https://www.google.com/search?q={encoded_query}"
+    url = f"https://www.google.com/search?q={encoded_query}&gl=hk"
     
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
@@ -281,7 +282,8 @@ def websearch(word, description, model, max_retries=3):
     A query structure MUST include the original word in that language, and at least one chinese supporting description (e.g. 地名、人名、遊戲、店名等)。just ensure they are relevant to search the correct translate.
     不要把無關的字眼放進去，這會影響搜尋結果的準確性！
     也不要整個搜尋都是中文，這樣是搜尋不到正確翻譯的！
-    Make sure the search query is not too long. (at most 10 chinese characters are maximum)
+    Make sure the search query is not too long. (at most 5 chinese characters are maximum)
+    AGAIN: at most 5 chinese characters are maximum
     AGAIN: make sure your chinese words in query DOES MAKE SENSE.
     Return the JSON with a single key 'query' with no premable or explanation. 
     
@@ -659,7 +661,7 @@ def process_line(line, model, last_was_h2):
     # Otherwise, wrap with <p> for plain text and reset the <h2> flag
     return '<p>' + stripped_line + '</p>\n', False
 
-def add_rss_item(template_path, title, link):
+def add_rss_item(template_path, title, link, category):
     tree = parse(template_path)
     root = tree.getroot()
     channel = root.find('channel')
@@ -675,6 +677,8 @@ def add_rss_item(template_path, title, link):
     item_link.text = link
     item_description = SubElement(item, 'description')
     item_description.text = title
+    item_category = SubElement(item, 'category')
+    item_category.text = category
 
     item_pub_date = SubElement(item, 'pubDate')
     item_pub_date.text = datetime.now(hk_timezone).strftime('%a, %d %b %Y %H:%M:%S %z')
@@ -750,7 +754,7 @@ def get_current_hk_time():
     current_time = datetime.now(tz_hk)
     return current_time.isoformat()
 
-def write_file(file_path, content, title, source, model):
+def write_file(file_path, content, title, source, category, model):
     url = "https://www.famechos.me/news/" + title + '/'
     with open(file_path, 'w', encoding='utf-8') as file:
         # Dynamic data for the schema
@@ -941,12 +945,19 @@ def write_file(file_path, content, title, source, model):
 
       <div class="news-content-outer">
 
-        <div class="news-info-outer">
-          <p class="news-content-type">K-POP</p>
-          <p class="news-date">25/9/2099</p>
+        <div class="news-info-outer">'''
+
+        hk_timezone = pytz.timezone('Asia/Hong_Kong')
+        hk_time = datetime.now(hk_timezone)
+        current_date = hk_time.strftime('%d/%m/%Y')
+
+        catt = f'''
+          <p class="news-content-type">{category}</p>
+          <p class="news-date">{current_date}</p>
         </div>
 	'''
         file.write(then)
+        file.write(catt)
         # Split content into lines
         lines = content.splitlines()
 
@@ -1057,10 +1068,11 @@ def write_file(file_path, content, title, source, model):
 '''
         file.write(footer)
     append_to_sitemap(url, "0.90")
-    add_rss_item('rss.xml', title, url)
+    add_rss_item(f'{category.lower()}.xml', title, url, category)
+    add_rss_item('rss.xml', title, url, category)
     commit_changes()
 
-def parse_full_text(url, title, source, model, lines = 22):
+def parse_full_text(url, title, source, category, model, lines = 22):
     full_article = ""
     downloaded = trafilatura.fetch_url(url)
     website_text = trafilatura.extract(downloaded)
@@ -1088,7 +1100,7 @@ def parse_full_text(url, title, source, model, lines = 22):
         title = titler(full_article, model)
 
         file_path = clean_title(title, 'html', r"news")
-        write_file(file_path, full_article, title, source, model)
+        write_file(file_path, full_article, title, source, category, model)
     
 def commit_changes():
     try:
@@ -1118,8 +1130,8 @@ def commit_changes():
         print(f"Error occurred during git push: {e}")
 
 rss_urls = [
-    ['https://www.koreaherald.com/common/rss_xml.php?ct=105', 'Korea Herald'],
-    ['https://tokyocheapo.com/feed/', 'Tokyo Cheapo']
+    ['https://www.koreaherald.com/common/rss_xml.php?ct=105', 'Korea Herald', 'K-Pop'],
+    ['https://tokyocheapo.com/feed/', 'Tokyo Cheapo', 'Others']
 ]
 
 def main():
@@ -1138,9 +1150,11 @@ def main():
                     pass
                 existing_links = []
 
+            random.shuffle(news)
+
             for new in news:
                 if new['link'] not in existing_links:
-                    parse_full_text(new['link'], new['title'], new['source'], model, lines)
+                    parse_full_text(new['link'], new['title'], new['source'], new['category'], model, lines)
                     with open(file_path, 'a') as file:
                         file.write(new['link'] + '\n')
                 else:
