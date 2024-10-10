@@ -689,6 +689,24 @@ def add_rss_item(template_path, title, link, category):
     channel.append(pretty_item)
     tree.write(template_path, encoding='utf-8', xml_declaration=True)
 
+def get_bottom_items(feed_url, max_items=3):
+    # Parse the RSS feed
+    feed = feedparser.parse(feed_url)
+    
+    # Get the entries (items) in the feed
+    items = feed.entries
+    
+    # Get the bottom-most 'max_items' (or less if fewer items exist)
+    bottom_items = items[-max_items:] if len(items) >= max_items else items
+    
+    # Create a dictionary with {title: url} format
+    result = {item.title: item.link for item in bottom_items}
+    
+    # Convert the result to JSON format
+    result_json = json.dumps(result, indent=4)
+
+    return result_json
+
 def append_to_sitemap(loc, priority):
     # File path to the sitemap.xml
     file_path = 'sitemap.xml'
@@ -987,6 +1005,8 @@ def write_file(file_path, content, title, source, category, model):
       </div>
       
       <div class ="related-news-box">
+        '''
+        
         <p class ="related-news">
           <i class="bi bi-dot"></i>
           K-pop 偶像「假唱門」再起！你知道他們的現場表演有多少是假唱嗎？
@@ -999,6 +1019,21 @@ def write_file(file_path, content, title, source, category, model):
           <i class="bi bi-dot"></i>
           K-pop 偶像「假唱門」再起！你知道他們的現場表演有多少是假唱嗎？
         </p>
+
+        rss_file_path = './' + category.lower()
+        the_json = get_bottom_items(rss_file_path)
+        r_news = ""
+        if the_json:
+            for title, url in the_json.items():
+                r_news += '''
+	<p class ="related-news">
+          <i class="bi bi-dot"></i>
+          <a href="{url}">{title}</a>
+        </p>
+                '''
+            
+
+        last = r'''
       </div>
 
     </div>
@@ -1067,6 +1102,8 @@ def write_file(file_path, content, title, source, category, model):
 </html>
 '''
         file.write(footer)
+        file.write(r_news)
+        file.write(last)
     append_to_sitemap(url, "0.90")
     add_rss_item(f'{category.lower()}.xml', title, url, category)
     add_rss_item('rss.xml', title, url, category)
