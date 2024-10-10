@@ -704,8 +704,9 @@ def get_bottom_items(feed_url, max_items=3):
     
     # Convert the result to JSON format
     result_json = json.dumps(result, indent=4)
+    result_dict = json.loads(result_json)
 
-    return result_json
+    return result_dict
 
 def append_to_sitemap(loc, priority):
     # File path to the sitemap.xml
