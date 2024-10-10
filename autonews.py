@@ -1014,7 +1014,7 @@ def write_file(file_path, content, title, source, category, model):
         if the_json:
             print("oui")
             for title, url in the_json.items():
-                r_news += '''
+                r_news += f'''
 	<p class ="related-news">
           <i class="bi bi-dot"></i>
           <a href="{url}">{title}</a>
