@@ -689,8 +689,8 @@ def add_rss_item(template_path, title, link, category):
     channel.append(pretty_item)
     tree.write(template_path, encoding='utf-8', xml_declaration=True)
 
-def get_bottom_items(file_path, max_items=3):
-    tree = ElementTree.parse(file_path)
+def get_bottom_items(rss_file_path):
+    tree = ElementTree.parse(rss_file_path)
     root = tree.getroot()
     
     items = root.findall('.//item')
@@ -1002,7 +1002,7 @@ def write_file(file_path, content, title, source, category, model):
       <div class ="related-news-box">
         '''
 
-        rss_file_path = './' + category.lower() + '.xml'
+        rss_file_path = category.lower() + '.xml'
         the_json = get_bottom_items(rss_file_path)
         r_news = ""
         if the_json:
