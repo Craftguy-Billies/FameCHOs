@@ -971,6 +971,11 @@ def write_file(file_path, content, title, source, category, model):
         # Remove the first line (pop)
         if lines:
             des = lines.pop(0)
+        def remove_html_tags(text):
+            soup = BeautifulSoup(text, "html.parser")
+            return soup.get_text()
+
+        des = remove_html_tags(des)
         # Processing the lines
         last_was_h2 = False  # To track if the last processed line was an <h2>
 
