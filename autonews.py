@@ -690,8 +690,7 @@ def add_rss_item(template_path, title, link, category):
     tree.write(template_path, encoding='utf-8', xml_declaration=True)
 
 def get_bottom_items(rss_file_path):
-    tree = ElementTree().parse(rss_file_path)
-    root = tree.getroot()
+    root = parse(rss_file_path)
     
     items = root.findall('.//item')
     
