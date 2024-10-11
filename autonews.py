@@ -979,13 +979,14 @@ def write_file(file_path, content, title, source, category, model):
                 processed_line, last_was_h2 = process_line(line, model, last_was_h2)
                 if processed_line:  # Only write non-empty lines
                     file.write(processed_line)
-                
+			
+        file.write('\n<p>資料來源：' + source + '</p>')
         file.write('\n</div><div class ="news-vid-outer">\n<div class="related-vid-text-outer title-bar ">\n')
         file.write('<p class="related-vid-text">相關影片：</p>\n</div>\n')
         embed_code = get_first_youtube_embed(title, model)
         if embed_code:
             file.write(embed_code + '\n\n')
-        file.write('\n<p class="news-text-inner">資料來源： ' + source + '</p>\n</div>\n')
+        file.write('\n<p class="news-text-inner">資料來源： YouTube</p>\n</div>\n')
 
         footer = r'''
 
