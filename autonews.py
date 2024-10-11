@@ -1194,6 +1194,7 @@ def main():
                 parse_full_text(new['link'], new['title'], new['source'], new['category'], model, lines)
                 with open(file_path, 'a') as file:
                     file.write(new['link'] + '\n')
+                existing_links.append(new['link'])
                 unique_news_count += 1
                 if unique_news_count == 5:
                     break
