@@ -971,6 +971,7 @@ def write_file(file_path, content, title, source, category, model):
         # Remove the first line (pop)
         if lines:
             des = lines.pop(0)
+            des += '\n' + '\n'.join(lines[:4])
         def remove_html_tags(text):
             soup = BeautifulSoup(text, "html.parser")
             return soup.get_text()
