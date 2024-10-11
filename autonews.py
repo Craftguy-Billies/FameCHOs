@@ -968,11 +968,6 @@ def write_file(file_path, content, title, source, category, model):
         # Split content into lines
         lines = content.splitlines()
 
-        # Remove the first line (pop)
-        if lines:
-            des = lines.pop(0)
-            des += ' ' + ' '.join(lines[:4])
-
         def truncate_text(text, limit=80):
             text = remove_html_tags(text)
 
@@ -990,7 +985,7 @@ def write_file(file_path, content, title, source, category, model):
 
         if lines:
             des = lines.pop(0)
-            des += ' ' + ' '.join(lines[:4])
+            des += ' ' + '。'.join(lines[:4])
 
         des = truncate_text(des)
 
