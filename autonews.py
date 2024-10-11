@@ -1166,11 +1166,15 @@ def main():
         
         random.shuffle(news)
 
+        unique_news_count = 0
         for new in news:
             if new['link'] not in existing_links:
                 parse_full_text(new['link'], new['title'], new['source'], new['category'], model, lines)
                 with open(file_path, 'a') as file:
                     file.write(new['link'] + '\n')
+                unique_news_count += 1
+                if unique_news_count == 5:
+                    break
             else:
                 print('News already used: ' + str(new['title']))
                 print("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
