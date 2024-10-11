@@ -56,3 +56,26 @@ jobs:
             commit_message: Changed files
             branch: ${{ github.ref }}
             force: true
+
+      # Setup FTP deployment
+      - name: Setup FTP deployment
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        env:
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        with:
+          server: ftpupload.net
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./
+          server-dir: /htdocs/
+          exclude: |
+            .git*
+            **/.git*
+            **/.github*
+            autonews.py
+            新聞筆.py
+            compressor.py
+            /index.html
+            news.txt
+          continue-on-error: true
