@@ -661,7 +661,7 @@ def process_line(line, model, last_was_h2):
     # Otherwise, wrap with <p> for plain text and reset the <h2> flag
     return '<p>' + stripped_line + '</p>\n', False
 
-def add_rss_item(template_path, title, link, category):
+def add_rss_item(template_path, title, link, category, description):
     tree = parse(template_path)
     root = tree.getroot()
     channel = root.find('channel')
@@ -676,7 +676,7 @@ def add_rss_item(template_path, title, link, category):
     item_link = SubElement(item, 'link')
     item_link.text = link
     item_description = SubElement(item, 'description')
-    item_description.text = title
+    item_description.text = description
     item_category = SubElement(item, 'category')
     item_category.text = category
 
@@ -691,15 +691,10 @@ def add_rss_item(template_path, title, link, category):
 
 def get_bottom_items(rss_file_path):
     root = parse(rss_file_path)
-    
-    items = root.findall('.//item')
-    
-    bottom_items = items[-4:-1] if len(items) >= 4 else items
-    
-    result = {item.find('title').text: item.find('link').text for item in bottom_items}
-    
+    items = root.findall('.//item')  
+    bottom_items = items[-4:-1] if len(items) >= 4 else items   
+    result = {item.find('title').text: item.find('link').text for item in bottom_items}    
     return result
-
 
 def append_to_sitemap(loc, priority):
     # File path to the sitemap.xml
@@ -975,7 +970,7 @@ def write_file(file_path, content, title, source, category, model):
 
         # Remove the first line (pop)
         if lines:
-            lines.pop(0)
+            des = lines.pop(0)
         # Processing the lines
         last_was_h2 = False  # To track if the last processed line was an <h2>
 
@@ -1087,8 +1082,8 @@ def write_file(file_path, content, title, source, category, model):
         file.write(r_news)
         file.write(last)
     append_to_sitemap(url, "0.90")
-    add_rss_item(f'{category.lower()}.xml', title, url, category)
-    add_rss_item('rss.xml', title, url, category)
+    add_rss_item(f'{category.lower()}.xml', title, url, category, des)
+    add_rss_item('rss.xml', title, url, category, des)
     commit_changes()
 
 def parse_full_text(url, title, source, category, model, lines = 22):
