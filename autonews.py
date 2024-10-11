@@ -971,13 +971,29 @@ def write_file(file_path, content, title, source, category, model):
         # Remove the first line (pop)
         if lines:
             des = lines.pop(0)
-            des += '\n' + '\n'.join(lines[:4])
+            des += ' ' + ' '.join(lines[:4])
+
+        def truncate_text(text, limit=80):
+            text = remove_html_tags(text)
+
+            pattern = re.compile(r'[\u4e00-\u9fff]|\w+')
+            matches = pattern.findall(text)
+
+            if len(matches) > limit:
+                return ''.join(matches[:limit]) + '...'
+
+            return text
+		
         def remove_html_tags(text):
             soup = BeautifulSoup(text, "html.parser")
             return soup.get_text()
 
-        des = remove_html_tags(des)
-        # Processing the lines
+        if lines:
+            des = lines.pop(0)
+            des += ' ' + ' '.join(lines[:4])
+
+        des = truncate_text(des)
+
         last_was_h2 = False  # To track if the last processed line was an <h2>
 
         for line in lines:
