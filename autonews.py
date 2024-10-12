@@ -848,7 +848,7 @@ def write_file(file_path, content, title, source, category, model):
     <div class="nav-outerbox">
       <div class="nav-inner-left">
         <div class="nav-name-logo">
-          <a href="https://www.famechos.me/"><img class="famechos-logo" src="img/famechos_logo.png"></a>
+          <a href="https://www.famechos.me/"><img class="famechos-logo" src="../img/famechos_logo.png"></a>
           
         </div>
         <div class="nav-separate">
