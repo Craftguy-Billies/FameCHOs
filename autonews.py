@@ -848,46 +848,46 @@ def write_file(file_path, content, title, source, category, model):
     <div class="nav-outerbox">
       <div class="nav-inner-left">
         <div class="nav-name-logo">
-          <img class="famechos-logo" src="../img/famechos_logo.png">
+          <a href="https://www.famechos.me/"><img class="famechos-logo" src="img/famechos_logo.png"></a>
           
         </div>
         <div class="nav-separate">
           <p>|</p>
         </div>
-        <div class="nav-type-1 nav-type">
+        <div class="nav-type-1 nav-type"><a href="https://www.famechos.me/k-pop.html">
           <button class="nav-type-btn1 nav-type-btn">
           <h2 class="nav-type-text">K-POP</h2>
-        </button>
+        </button></a>
   
         </div>
-        <div class="nav-type-2 nav-type">
+        <div class="nav-type-2 nav-type"><a href="https://www.famechos.me/j-pop.html">
           <button class="nav-type-btn2 nav-type-btn">
           <h2 class="nav-type-text">J-POP</h2>
-        </button>
+        </button></a>
   
         </div>
-        <div class="nav-type-3 nav-type">
+        <div class="nav-type-3 nav-type"><a href="https://www.famechos.me/drama.html">
           <button class="nav-type-btn3 nav-type-btn">
           <h2 class="nav-type-text">影視</h2>
-        </button>
+        </button></a>
           
         </div>
-        <div class="nav-type-4 nav-type">
+        <div class="nav-type-4 nav-type"><a href="https://www.famechos.me/others.html">
           <button class="nav-type-btn4 nav-type-btn">
           <h2 class="nav-type-text">其他</h2>
-        </button>
+        </button></a>
         </div>  
       </div>
       <div class="nav-inner-right">
-        <div class="nav-feedback-outer">
+        <div class="nav-feedback-outer"><a href="https://www.famechos.me/about_us.html">
           <button class="feedback-btn nav-type-btn">
             <h2 class="nav-type-text">關於我們</h2>
-          </button>
+          </button></a>
         </div>
-        <div class="nav-setting">
+        <div class="nav-setting"><a href="https://www.famechos.me/privacy_policy.html">
           <button class="setting-btn nav-type-btn">
             <h2 class="nav-type-text">私隱條款</h2>
-          </button>
+          </button></a>
         </div>
         <div class="nav-list">
           <button id="list-btn" class="list-btn nav-type-btn">
@@ -898,40 +898,40 @@ def write_file(file_path, content, title, source, category, model):
       </div>
 
       <div id="list" class="nav-list-outer">
-        <div class="nav-type-1 nav-type list-type">
+        <div class="nav-type-1 nav-type list-type"><a href="https://www.famechos.me/k-pop.html">
           <button class="list-type-btn">
           <p>K-POP</p>
-          </button>
+          </button></a>
         </div>
 
-        <div class="nav-type-2 nav-type list-type">
+        <div class="nav-type-2 nav-type list-type"><a href="https://www.famechos.me/j-pop.html">
           <button class="list-type-btn">
           <p>J-POP</p>
-          </button>
+          </button></a>
         </div>
 
-        <div class="nav-type-3 nav-type list-type">
+        <div class="nav-type-3 nav-type list-type"><a href="https://www.famechos.me/drama.html">
           <button class="list-type-btn">
           <p>影視</p>
-          </button>
+          </button></a>
         </div>
 
-        <div class="nav-type-4 nav-type list-type">
+        <div class="nav-type-4 nav-type list-type"><a href="https://www.famechos.me/others.html">
           <button class="list-type-btn">
           <p>其他</p>
-          </button>
+          </button></a>
         </div>
 
-        <div class="nav-type-5 nav-type list-type">
+        <div class="nav-type-5 nav-type list-type"><a href="https://www.famechos.me/about_us.html">
           <button class="list-type-btn">
           <p>關於我們</p>
-          </button>
+          </button></a>
         </div>
 
-        <div class="nav-type-6 nav-type list-type">
+        <div class="nav-type-6 nav-type list-type"><a href="https://www.famechos.me/privacy_policy.html">
           <button class="list-type-btn">
           <p>私隱條款</p>
-          </button>
+          </button></a>
 
         </div>  
 
@@ -1042,7 +1042,7 @@ def write_file(file_path, content, title, source, category, model):
 
       <div class="footer-up-outer">
         <div class="footer-right-name-box">
-          <img class="famechos-logo-footer" src="../img/famechos_logo.png">
+          <a href="https://www.famechos.me/"><img class="famechos-logo-footer" src="img/famechos_logo.png"></a>
         </div>
         <div class="footer-right-text-box">
           <p class="footer-right-text">每日為你提供最新、最全面的日韓資訊。</p>
@@ -1065,16 +1065,16 @@ def write_file(file_path, content, title, source, category, model):
 
       <div class="footer-down-outer">
         <div class="kpop-footer-box footer-box">
-          <p class="footer-text">K-POP</p>
+          <a href="https://www.famechos.me/k-pop.html"><p class="footer-text">K-POP</p></a>
         </div>
         <div class="jpop-footer-box footer-box">
-          <p class="footer-text">J-POP</p>
+          <a href="https://www.famechos.me/j-pop.html"><p class="footer-text">J-POP</p></a>
         </div>
         <div class="drama-footer-box footer-box">
-          <p class="footer-text">影視</p>
+          <a href="https://www.famechos.me/drama.html"><p class="footer-text">影視</p></a>
         </div>
         <div class="other-footer-box footer-box">
-          <p class="footer-text">其他</p>
+          <a href="https://www.famechos.me/others.html"><p class="footer-text">其他</p></a>
         </div>
 
 
