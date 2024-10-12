@@ -970,14 +970,16 @@ def write_file(file_path, content, title, source, category, model):
 
         def truncate_text(text, limit=80):
             text = remove_html_tags(text)
-
+            sentences = re.split(r'[.!?！？。]', text)
+            sentences = [s.strip() for s in sentences if s.strip()]
+            joined_text = '。'.join(sentences) + '。'  # Add a final '。'
             pattern = re.compile(r'[\u4e00-\u9fff]|\w+')
-            matches = pattern.findall(text)
+            matches = pattern.findall(joined_text)
 
             if len(matches) > limit:
                 return ''.join(matches[:limit]) + '...'
 
-            return text
+            return joined_text
 		
         def remove_html_tags(text):
             soup = BeautifulSoup(text, "html.parser")
@@ -985,7 +987,7 @@ def write_file(file_path, content, title, source, category, model):
 
         if lines:
             des = lines.pop(0)
-            des += ' ' + '。'.join(lines[:4])
+            des += '\n' + '\n'.join(lines[:4])
 
         des = truncate_text(des)
 
