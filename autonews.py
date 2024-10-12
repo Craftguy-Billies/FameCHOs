@@ -1042,7 +1042,7 @@ def write_file(file_path, content, title, source, category, model):
 
       <div class="footer-up-outer">
         <div class="footer-right-name-box">
-          <a href="https://www.famechos.me/"><img class="famechos-logo-footer" src="img/famechos_logo.png"></a>
+          <a href="https://www.famechos.me/"><img class="famechos-logo-footer" src="../img/famechos_logo.png"></a>
         </div>
         <div class="footer-right-text-box">
           <p class="footer-right-text">每日為你提供最新、最全面的日韓資訊。</p>
