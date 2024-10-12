@@ -968,18 +968,30 @@ def write_file(file_path, content, title, source, category, model):
         # Split content into lines
         lines = content.splitlines()
 
-        def truncate_text(text, limit=80):
-            text = remove_html_tags(text)
-            sentences = re.split(r'[.!?！？。]', text)
-            sentences = [s.strip() for s in sentences if s.strip()]
-            joined_text = '。'.join(sentences) + '。'  # Add a final '。'
-            pattern = re.compile(r'[\u4e00-\u9fff]|\w+')
-            matches = pattern.findall(joined_text)
+        def count_chinese_and_english(text):
+            lines = text.splitlines()
+            results = []
+            for line in lines:
+                chinese_chars = re.findall(r'[\u4e00-\u9fff]', line)
+                english_words = re.findall(r'\b\w+\b', line)
 
-            if len(matches) > limit:
-                return ''.join(matches[:limit]) + '...'
+                total_count = len(chinese_chars) + len(english_words)
+                results.append((line, total_count))
 
-            return joined_text
+            total_words = 0
+            final_sentences = []
+
+            for sentence, count in results:
+                if total_words + count <= 80:
+                    final_sentences.append(sentence)
+                    total_words += count
+                else:
+                    break
+
+            output = '。'.join(final_sentences)
+            output += '...'
+
+            return output
 		
         def remove_html_tags(text):
             soup = BeautifulSoup(text, "html.parser")
@@ -989,7 +1001,7 @@ def write_file(file_path, content, title, source, category, model):
             des = lines.pop(0)
             des += '\n' + '\n'.join(lines[:4])
 
-        des = truncate_text(des)
+        des = count_chinese_and_english(des)
 
         last_was_h2 = False  # To track if the last processed line was an <h2>
 
