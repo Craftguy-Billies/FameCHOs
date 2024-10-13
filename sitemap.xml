@@ -260,4 +260,10 @@
     <ns0:changefreq>weekly</ns0:changefreq>
     <ns0:priority>0.90</ns0:priority>
   </ns0:url>
+<ns0:url>
+    <ns0:loc>https://www.famechos.me/news/釜山國際電影節觀眾人數破紀錄！14.5萬人爭睹全球影壇精英.html</ns0:loc>
+    <ns0:lastmod>2024-10-13T23:21:26+08:00</ns0:lastmod>
+    <ns0:changefreq>weekly</ns0:changefreq>
+    <ns0:priority>0.90</ns0:priority>
+  </ns0:url>
 </ns0:urlset>
