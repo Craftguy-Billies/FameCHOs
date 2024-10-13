@@ -1001,6 +1001,7 @@ def write_file(file_path, content, title, source, category, model):
             des = lines.pop(0)
             des += '\n' + '\n'.join(lines[:4])
 
+        des = remove_html_tags(des)
         des = count_chinese_and_english(des)
 
         last_was_h2 = False  # To track if the last processed line was an <h2>
