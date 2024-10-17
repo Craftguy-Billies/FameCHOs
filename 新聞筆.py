@@ -193,6 +193,51 @@ def count_newlines_exceeds_limit(text: str, limit: int = 5) -> bool:
     return newline_count > limit
 
 def search(query, max_results = 5):
+    encoded_query = requests.utils.quote(query)
+    url = f"https://www.google.com/search?q={encoded_query}&gl=hk"
+
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    }
+
+    # Send the request
+    response = requests.get(url, headers=headers)
+    response.encoding = 'utf-8'
+
+    soup = BeautifulSoup(response.text, 'html.parser')
+    results = []
+
+    for g in soup.find_all('div', class_='tF2Cxc')[:max_results]:
+        title = ''
+        snippet = ''
+        link = ''
+
+        # Extract the title
+        if g.find('h3'):
+            title = g.find('h3').text
+       
+        # Extract the snippet
+        if g.find('span', class_='aCOpRe'):
+            snippet = g.find('span', class_='aCOpRe').text
+        elif g.find('div', class_='IsZvec'):
+            snippet = g.find('div', class_='IsZvec').text
+        elif g.find('div', class_='VwiC3b'):
+            snippet = g.find('div', class_='VwiC3b').text
+        elif g.find('div', class_='s3v9rd'):
+            snippet = g.find('div', class_='s3v9rd').text
+
+        # Extract the URL
+        if g.find('a'):
+            link = g.find('a')['href']
+
+        # Append the result as a dictionary
+        results.append({
+            'title': title,
+            'snippet': snippet,
+            'link': link
+        })
+
+    return results
 def organize(word, description, results, model, max_retries=3):
     prompt = f"""
     The word to be translated: {word}
