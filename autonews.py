@@ -1185,7 +1185,7 @@ rss_urls = [
 
 def main():
     try:
-        model = "meta/llama-3.1-405b-instruct"
+        model = "nvidia/llama-3.1-nemotron-70b-instruct"
         news = fetch_news(rss_urls)
         print(news)
         file_path = "./news.txt"
