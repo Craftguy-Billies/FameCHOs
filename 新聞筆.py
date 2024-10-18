@@ -447,7 +447,7 @@ def clean_title(title, extension, directory=None):
 def consideration_test(segment, dictionary, model):
     full_article = ""
     prompt = f"""
-    對於下面的文章，給我改寫並翻譯成日常用語繁體中文版本。
+    改寫並翻譯成日常用語繁體中文版本。
     刪除原文的所有圖片說明
     改寫必須合理，需要文句通順。人性化，不可以太浮誇和誇張
     語氣：專業、資訊性、具說服力
@@ -466,6 +466,7 @@ def consideration_test(segment, dictionary, model):
 
     如果該行文字是小標題，用<h2>來標記。
     只回覆我中文的html，不需其它任何字。
+    不要回覆我任何其它字，我只需要處理好的中文的html structure回覆。
     """
 
     print(prompt)
@@ -492,7 +493,6 @@ def recheck(article, model, max_retries=3, retry_delay=5):
 
     for process in processes:
         prompt = f"""
-        現在我有一篇文章。當中有一些部分需要你刪除和改寫。
         文章：{process}
 
         刪除：
@@ -500,7 +500,7 @@ def recheck(article, model, max_retries=3, retry_delay=5):
         - 格式的段落，比如整個<p> 只有一個 "---"，整個刪掉。
         - 圖片來源，記者報道等無關文章主旨的句子，整個刪掉。
         - 不相干的東西，如果與前文和文章主旨完全不相干，刪掉。
-- 刪除「值得注意的是」，「另外」，「最後」，「總括來說」等連接詞。
+        - 刪除「值得注意的是」，「另外」，「最後」，「總括來說」等連接詞。
 
         改寫：
         - 身份：我是一個香港新聞記者，專業，客觀
@@ -509,6 +509,7 @@ def recheck(article, model, max_retries=3, retry_delay=5):
         - 改寫必須合理，需要文句通順。
         - 如果內容許可，增加<ul> <ol> <table>等元素來協助描述。整理段落的內容來寫。
 
+        只回覆我中文的html，不需其它任何字。
         不要回覆我任何其它字，我只需要處理好的中文的html structure回覆。
         """
 
@@ -556,7 +557,7 @@ def titler(website_text, model, max_retries=3, delay=2):
             {website_text}
 
             1. I want a news article title that is clickbait enough, in moderate length and humanized, natural tone without overexaggeration.    
-   2. the news title should include the highlight theme of the news, instead of a short phrase.
+            2. the news title should include the highlight theme of the news, instead of a short phrase.
             3. return me a single JSON object with a single key 'title' without preamble and explanations.
             4. output in traditional chinese.
             AGAIN: NO preamble and explanation needed.
