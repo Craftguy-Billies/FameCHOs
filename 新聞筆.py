@@ -1199,7 +1199,8 @@ rss_urls = [
     ['https://www.koreaherald.com/common/rss_xml.php?ct=105', 'Korea Herald', 'K-Pop'],
     ['https://tokyocheapo.com/feed/', 'Tokyo Cheapo', 'Others'],
     ['https://www.koreatimes.co.kr/www/rss/entertainment.xml', 'TheKoreaTimes', 'K-Pop'],
-    ['https://en.yna.co.kr/RSS/culture.xml', 'Yonhap News Agency', 'K-Pop']
+    ['https://en.yna.co.kr/RSS/culture.xml', 'Yonhap News Agency', 'K-Pop'],
+    ['https://j-generation.com/feed/', 'J-GENERATION', 'J-Pop']
 ]
 
 def main():
