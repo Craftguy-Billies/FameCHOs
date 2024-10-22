@@ -32,7 +32,7 @@ model = "meta/llama-3.1-405b-instruct"
 
 client = OpenAI(
   base_url = "https://integrate.api.nvidia.com/v1",
-  api_key = "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"
+  api_key = "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"
 )
 
 def extract_list_content(input_string):
