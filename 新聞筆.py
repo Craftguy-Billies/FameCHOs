@@ -245,7 +245,7 @@ def organize(word, description, results, model, max_retries=3):
     Web Search Context: {results}
 
     Summarize the search result.
-    As long as the search result is NOT 100 PERCENT SURE IT IS CORRECT (eg, do not contain the translations with brackets in Chinese), return me the original word.
+    As long as the search result is NOT 100 PERCENT SURE IT IS CORRECT (eg, do not contain the translations with brackets in Chinese), return me the original word in english.
     Otherwise, only return the MUST correct Chinese translation of that noun i needed (eg translation from Wikipedia).
     return me a JSON object that stores the original word and search result word in key-value pairs.
     REMEMBER: If there isn't a Chinese name found, return me the original name, do not phonetically translate or translate with the original word's english meaning.
@@ -453,11 +453,12 @@ def consideration_test(segment, dictionary, model):
     語氣：專業、資訊性、具說服力
     身份：一個新聞作者想要帶資訊給讀者
     刪除所有作者自己的身份描述。（作者的家人名稱、工作地點、懷孕狀況等全部刪除），並改爲符合身份的描述。
-    要求：必須把原文內容全部翻譯，不能自行創作，要詳細。翻譯時必須先了解整句話的意思，不要按字詞意思直接翻譯。
-    要求：改寫一切網站上的內容，包括文章作者的名字，變成一篇我作爲一個香港人的角度了解整個主體之後所寫的文章。
+    要求：把原文內容翻譯成繁體中文，不能自行創作，要詳細。翻譯時必須先了解整句話的意思，不要按字詞意思直接翻譯。
+    要求：改寫一切網站上的內容，包括文章作者的名字，變成一篇新聞作者想要帶資訊給讀者的文章。
     要求：不要使用「值得注意的是」，「另外」，「最後」，「總括來說」等連接詞。
+    要求：公司名稱、藝人藝名、團體名稱，如果是英文名稱是廣為人知的，請不要翻譯（保留英文名稱），如要翻譯，請括號標註英文名稱。
 
-    有一些名詞我已經透過網上搜尋得到正確翻譯，請先熟悉一下這些翻譯再給我一篇正確無誤的翻譯，請括號標註原文名稱。用括號標示本來（未翻譯）的名詞。如果是沒有翻譯對照的字，使用原文語言。
+    有一些名詞我已經透過網上搜尋得到正確翻譯，請先熟悉一下這些翻譯再給我一篇正確無誤的翻譯，請括號標註原文名稱（英文）。用括號標示本來（未翻譯）的名詞。如果是沒有翻譯對照的字，使用原文語言。
     名詞：{dictionary}
     如果是人的說話，把它改爲間接引用。去掉 “”。
 
@@ -558,8 +559,8 @@ def titler(website_text, model, max_retries=3, delay=2):
 
             1. I want a news article title that is clickbait enough, in moderate length and humanized, natural tone without overexaggeration.    
             2. the news title should include the highlight theme of the news, instead of a short phrase.
-            3. return me a single JSON object with a single key 'title' without preamble and explanations.
-            4. output in traditional chinese.
+            3. return me a single JSON object with a single key 'title' without a preamble and explanations.
+            4. output in traditional Chinese.
             AGAIN: NO preamble and explanation needed.
             """
 
@@ -598,7 +599,7 @@ def rewrite_h2(content, model):
     prompt = f"""
     for this h2 title, rewrite it. you can write with another writing style, or simply just change the sentence structure, as long as the overall meaning remains the same.
     {content}
-    return me the <h2> with tag wrapped. no premable and explanation.
+    return me the <h2> with tag wrapped. no preamble and explanation.
     """
 
     completion = client.chat.completions.create(
@@ -622,8 +623,8 @@ def metadataer(title, model):
     now i need two HTML tags, <meta name="description" content=""> and <meta name="keywords" content="">
     i need you to help me fill in the content part, using NLP techniques, SEO optimized naturally with the title content.
     i only want you to return me the two HTML meta tags, properly formatted as HTML structure, and return me without premable and explanations.
-    output the description content and keywords content in traditional chinese.
-    AGAIN: NO premable and explanations.
+    Output the description content and keyword content in traditional Chinese.
+    AGAIN: NO preamble and explanations.
     """
 
     completion = client.chat.completions.create(
