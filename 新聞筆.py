@@ -1200,7 +1200,7 @@ rss_urls = [
     ['https://tokyocheapo.com/feed/', 'Tokyo Cheapo', 'Others'],
     ['https://www.koreatimes.co.kr/www/rss/entertainment.xml', 'TheKoreaTimes', 'K-Pop'],
     ['https://en.yna.co.kr/RSS/culture.xml', 'Yonhap News Agency', 'K-Pop'],
-    ['https://j-generation.com/feed/', 'J-GENERATION', 'J-Pop']
+    ['https://j-generation.com/feed/', 'J-GENERATION', 'J-Pop'],
     ['https://phoenixtalkspopculturejapan.wordpress.com/2024/09/08/the-half-way-mark-with-bakuage-sentai-boomboonger/', 'Phoenix Talks Pop Culture Japan', 'Drama']
 ]
 
@@ -1229,7 +1229,7 @@ def main():
                     file.write(new['link'] + '\n')
                 existing_links.append(new['link'])
                 unique_news_count += 1
-                if unique_news_count == 5:
+                if unique_news_count == 1:
                     break
             else:
                 print('News already used: ' + str(new['title']))
