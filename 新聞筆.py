@@ -1017,12 +1017,18 @@ def write_file(file_path, content, title, source, category, model):
         des = remove_html_tags(des)
         des = count_chinese_and_english(des)
 
-        last_was_h2 = False  # To track if the last processed line was an <h2>
+        def should_append_header(processed_line, last_was_h2):
+            """Determine if the current header should be appended."""
+            is_current_h2 = '<h2>' in processed_line and '</h2>' in processed_line
+            return processed_line and not (is_current_h2 and last_was_h2)
 
+        last_was_h2 = False  # To track if the last processed line was an <h2>
+ 
         for line in lines:
             if line.strip():  # Ignore empty lines
                 processed_line, last_was_h2 = process_line(line, model, last_was_h2)
-                if processed_line and '<h1>' not in processed_line:  # Only write non-empty lines
+
+                if should_append_header(processed_line, last_was_h2):
                     file.write(processed_line)
 
         file.write('\n<p>資料來源：' + source + '</p>')
