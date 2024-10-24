@@ -849,6 +849,10 @@ def write_file(file_path, content, title, source, category, model):
         <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
         <meta name="apple-mobile-web-app-title" content="Avoir"/>
         <meta name="apple-touch-fullscreen" content="yes"/>
+
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3046601377771213"
+     crossorigin="anonymous"></script>
+     
         '''
 
         style = r"<style> * {box-sizing: border-box;margin: 0;padding: 0;font-family: 'Noto Sans TC', sans-serif;scroll-behavior: smooth;}</style>"
