@@ -1205,7 +1205,7 @@ rss_urls = [
     ['https://www.koreatimes.co.kr/www/rss/entertainment.xml', 'TheKoreaTimes', 'K-Pop'],
     ['https://en.yna.co.kr/RSS/culture.xml', 'Yonhap News Agency', 'Drama'],
     ['https://j-generation.com/feed/', 'J-GENERATION', 'J-Pop'],
-    ['https://phoenixtalkspopculturejapan.wordpress.com/2024/09/08/the-half-way-mark-with-bakuage-sentai-boomboonger/', 'Phoenix Talks Pop Culture Japan', 'Drama']
+    ['https://phoenixtalkspopculturejapan.wordpress.com/category/dramas/feed/', 'Phoenix Talks Pop Culture Japan', 'Drama']
 ]
 
 def main():
