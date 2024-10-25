@@ -186,6 +186,9 @@ def fetch_news(rss_urls):
 def split_article_into_segments(article, lines_per_segment=13):
     lines = article.split('\n')
     segments = [lines[i:i + lines_per_segment] for i in range(0, len(lines), lines_per_segment)]
+
+    if len(segments[-1]) < 3:
+        segments.pop()
     return segments
 
 def count_newlines_exceeds_limit(text: str, limit: int = 5) -> bool:
@@ -501,6 +504,7 @@ def recheck(article, model, max_retries=3, retry_delay=5):
         - 格式的段落，比如整個<p> 只有一個 "---"，整個刪掉。
         - 圖片來源，記者報道等無關文章主旨的句子，整個刪掉。
         - 不相干的東西，如果與前文和文章主旨完全不相干，刪掉。
+        - 如果有部分內容是不相關的新聞，刪除該部分的內容。
         - 刪除「值得注意的是」，「另外」，「最後」，「總括來說」等連接詞。
 
         改寫：
