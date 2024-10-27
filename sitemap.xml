@@ -110,4 +110,10 @@
     <ns0:changefreq>weekly</ns0:changefreq>
     <ns0:priority>0.90</ns0:priority>
   </ns0:url>
+<ns0:url>
+    <ns0:loc>https://www.famechos.me/news/K-POP大事：ATEEZ新專輯、BTS RM獲獎、(G)I-DLE成員離隊傳聞、Twice跨界合作.html</ns0:loc>
+    <ns0:lastmod>2024-10-27T14:41:40+08:00</ns0:lastmod>
+    <ns0:changefreq>weekly</ns0:changefreq>
+    <ns0:priority>0.90</ns0:priority>
+  </ns0:url>
 </ns0:urlset>
