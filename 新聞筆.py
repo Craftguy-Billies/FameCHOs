@@ -498,6 +498,49 @@ def consideration_test(title, segment, dictionary, model):
     full_article = recheck(title, full_article, model)
     return full_article
 
+def engtit(website_text, model, max_retries=3, retry_delay=5):
+    full_article = ""
+    first_20_lines = "\n".join(website_text.splitlines()[:20])
+    prompt = f"""
+    the article: {first_20_lines}
+
+    refine the title of this article to me in chinese ONLY. no premable and explanations needed.
+    """
+
+    retries = 0
+    success = False
+
+    while retries < max_retries and not success:
+        try:
+            print(prompt)
+            completion = client.chat.completions.create(
+                model=model,
+                messages=[{"role": "user", "content": prompt.strip()}],
+                temperature=0.2,
+                top_p=0.7,
+                max_tokens=8192,
+                stream=True
+            )
+
+            for chunk in completion:
+                if chunk.choices[0].delta.content is not None:
+                    content = chunk.choices[0].delta.content.encode('utf-8', errors='ignore').decode('utf-8')
+                    print(content, end="")
+                    full_article += content
+
+            success = True
+
+        except Exception as e:
+            print(f"Error: {e}")
+            retries += 1
+            if retries < max_retries:
+                print(f"Retrying in {retry_delay} seconds...")
+                time.sleep(retry_delay)
+            else:
+                print("Max retries reached. Moving to next segment.")
+
+    return full_article
+
 def recheck(title, article, model, max_retries=3, retry_delay=5):
     full_article = ""
     processes = split_article_into_segments(article, lines_per_segment=17)
@@ -1186,13 +1229,12 @@ def parse_full_text(url, title, source, category, model, lines = 22):
         # Process each segment
         sample = process_segments(segments, model)
 
-        
-
-        title = titler(full_article, model)
+        title = engtit(website_text, model)
 
         for segment in segments:
             full_article += consideration_test(title, segment, sample, model)
             full_article += "\n"
+        title = titler(full_article, model)
 
         file_path = clean_title(title, 'html', r"news")
         write_file(file_path, full_article, title, source, category, model)
