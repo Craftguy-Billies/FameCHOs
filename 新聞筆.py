@@ -452,7 +452,7 @@ def clean_title(title, extension, directory=None):
     # If no directory is provided, just return the file name
     return file_name
 
-def consideration_test(segment, dictionary, model):
+def consideration_test(title, segment, dictionary, model):
     full_article = ""
     prompt = f"""
     改寫並翻譯成日常用語繁體中文版本。
@@ -466,6 +466,7 @@ def consideration_test(segment, dictionary, model):
     要求：不要使用「值得注意的是」，「另外」，「最後」，「總括來說」等連接詞。
     要求：公司名稱、藝人藝名、團體名稱，如果是英文名稱是廣為人知的，請不要翻譯（保留英文名稱），如要翻譯，請括號標註英文名稱。
     要求：翻譯完請重新檢查文章是否通順，避免中英夾雜。
+    刪除不相關的資訊。這篇文章的標題是:{title}
 
     有一些名詞我已經透過網上搜尋得到正確翻譯，請先熟悉一下這些翻譯再給我一篇正確無誤的翻譯，請括號標註原文名稱（英文）。用括號標示本來（未翻譯）的名詞。如果是沒有翻譯對照的字，使用原文語言。
     名詞：{dictionary}
@@ -494,10 +495,10 @@ def consideration_test(segment, dictionary, model):
             if "no" not in chunk.choices[0].delta.content.lower():
                 print(chunk.choices[0].delta.content, end="")
                 full_article += chunk.choices[0].delta.content
-    full_article = recheck(full_article, model)
+    full_article = recheck(title, full_article, model)
     return full_article
 
-def recheck(article, model, max_retries=3, retry_delay=5):
+def recheck(title, article, model, max_retries=3, retry_delay=5):
     full_article = ""
     processes = split_article_into_segments(article, lines_per_segment=17)
 
@@ -510,7 +511,7 @@ def recheck(article, model, max_retries=3, retry_delay=5):
         - 格式的段落，比如整個<p> 只有一個 "---"，整個刪掉。
         - 圖片來源，記者報道等無關文章主旨的句子，整個刪掉。
         - 不相干的東西，如果與前文和文章主旨完全不相干，刪掉。
-        - 如果有部分內容是不相關的新聞，刪除該部分的內容。
+        - 如果有部分內容是不相關的新聞，刪除該部分的內容。這篇新聞的標題是: {title}
         - 刪除「值得注意的是」，「另外」，「最後」，「總括來說」等連接詞。
 
         改寫：
@@ -1185,11 +1186,13 @@ def parse_full_text(url, title, source, category, model, lines = 22):
         # Process each segment
         sample = process_segments(segments, model)
 
-        for segment in segments:
-            full_article += consideration_test(segment, sample, model)
-            full_article += "\n"
+        
 
         title = titler(full_article, model)
+
+        for segment in segments:
+            full_article += consideration_test(title, segment, sample, model)
+            full_article += "\n"
 
         file_path = clean_title(title, 'html', r"news")
         write_file(file_path, full_article, title, source, category, model)
