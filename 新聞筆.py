@@ -258,8 +258,9 @@ def organize(word, description, results, model, max_retries=3):
     REMEMBER: If there isn't a Chinese name found, return me the original name, do not phonetically translate or translate with the original word's english meaning.
     Do not leave the key-value pair blank no matter what.
     if there is more than one translation, only return me one.
-    REMEMBER: the JSON returned has only ONE key-value pair. no need for other keys to label.
-    Return the JSON with ONE key-value pair with no preamble or explanation.
+    REMEMBER: the JSON returned has only ONE key-value pair. the JSON object has 1 key-value item ONLY.
+    REMEMBER: DO NOT translate the lyrics or official terms that are bracketed.
+    Return the JSON with ONE key-value pair with no preamble or explanation. 
     """
 
     retries = 0
@@ -299,10 +300,10 @@ def websearch(word, description, model, max_retries=3):
     Also, don't search entirely in Chinese, as this will not find the correct translation!
    
     Make sure the search query is not too long. (at most 5 chinese characters are maximum)
-    AGAIN: at most 5 chinese characters are maximum
-    AGAIN: make sure your chinese words in the query DOES MAKE SENSE.
+    AGAIN: at most 6 chinese characters are maximum
+    AGAIN: make sure your Chinese words in the query DOES MAKE SENSE.
     REMEMBER: prioritize the use of the translation of Wikipedia!! (inside brackets) If the search does not have Wikipedia, return the original word.
-    Return the JSON with a single key 'query' with no preamble or explanation.
+    Return the JSON with a single key 'query' with no preamble or explanation. REMEMBER: the JSON returned has only ONE key-value pair with a single key 'query' with no preamble or explanation
    
     Word to transform into a query: {word}
     The description of this word: {description}
@@ -464,6 +465,7 @@ def consideration_test(segment, dictionary, model):
     要求：改寫一切網站上的內容，包括文章作者的名字，變成一篇新聞作者想要帶資訊給讀者的文章。
     要求：不要使用「值得注意的是」，「另外」，「最後」，「總括來說」等連接詞。
     要求：公司名稱、藝人藝名、團體名稱，如果是英文名稱是廣為人知的，請不要翻譯（保留英文名稱），如要翻譯，請括號標註英文名稱。
+    要求：翻譯完請重新檢查文章是否通順，避免中英夾雜。
 
     有一些名詞我已經透過網上搜尋得到正確翻譯，請先熟悉一下這些翻譯再給我一篇正確無誤的翻譯，請括號標註原文名稱（英文）。用括號標示本來（未翻譯）的名詞。如果是沒有翻譯對照的字，使用原文語言。
     名詞：{dictionary}
@@ -1037,6 +1039,13 @@ def write_file(file_path, content, title, source, category, model):
             return processed_line and not (is_current_h2 and last_was_h2)
 
         last_was_h2 = False  # To track if the last processed line was an <h2>
+
+        # Regular expression to match Chinese characters
+        chinese_char_regex = re.compile(r'[\u4e00-\u9fff]')
+
+        def count_chinese_characters(text):
+            """Count the number of Chinese characters in the given text."""
+            return len(chinese_char_regex.findall(text))
  
         for line in lines:
             if line.strip():  # Ignore empty lines
@@ -1044,6 +1053,9 @@ def write_file(file_path, content, title, source, category, model):
 
                 if should_append_header(processed_line, last_was_h2):
                     file.write(processed_line)
+
+        if chinese_char_count < 100:
+            return
 
         file.write('\n<p>資料來源：' + source + '</p>')
         file.write('\n</div><div class ="news-vid-outer">\n<div class="related-vid-text-outer title-bar ">\n')
