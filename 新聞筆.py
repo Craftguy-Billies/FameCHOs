@@ -199,7 +199,7 @@ def count_newlines_exceeds_limit(text: str, limit: int = 5) -> bool:
     newline_count = text.count('\n')
     return newline_count > limit
 
-def search(query, max_results = 5):
+def search(query, max_results = 8):
     encoded_query = requests.utils.quote(query)
     url = f"https://www.google.com/search?q={encoded_query}&gl=hk"
 
