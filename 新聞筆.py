@@ -1100,6 +1100,8 @@ def write_file(file_path, content, title, source, category, model):
                 if should_append_header(processed_line, last_was_h2):
                     file.write(processed_line)
 
+        chinese_char_count = count_chinese_characters(lines)
+
         if chinese_char_count < 100:
             return
 
