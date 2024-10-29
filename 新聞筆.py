@@ -258,9 +258,9 @@ def organize(word, description, results, model, max_retries=3):
     REMEMBER: If there isn't a Chinese name found, return me the original name, do not phonetically translate or translate with the original word's english meaning.
     Do not leave the key-value pair blank no matter what.
     if there is more than one translation, only return me one.
-    REMEMBER: the JSON returned has only ONE key-value pair. no need for other keys to label.
+    REMEMBER: the JSON returned has only ONE key-value pair. the JSON object has 1 key-value item ONLY.
     REMEMBER: DO NOT translate the lyrics or official terms that are bracketed.
-    Return the JSON with ONE key-value pair with no preamble or explanation.
+    Return the JSON with ONE key-value pair with no preamble or explanation. 
     """
 
     retries = 0
