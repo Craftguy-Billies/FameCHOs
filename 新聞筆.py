@@ -1039,6 +1039,13 @@ def write_file(file_path, content, title, source, category, model):
             return processed_line and not (is_current_h2 and last_was_h2)
 
         last_was_h2 = False  # To track if the last processed line was an <h2>
+
+        # Regular expression to match Chinese characters
+        chinese_char_regex = re.compile(r'[\u4e00-\u9fff]')
+
+        def count_chinese_characters(text):
+            """Count the number of Chinese characters in the given text."""
+            return len(chinese_char_regex.findall(text))
  
         for line in lines:
             if line.strip():  # Ignore empty lines
@@ -1046,6 +1053,9 @@ def write_file(file_path, content, title, source, category, model):
 
                 if should_append_header(processed_line, last_was_h2):
                     file.write(processed_line)
+
+        if chinese_char_count < 100:
+            return
 
         file.write('\n<p>資料來源：' + source + '</p>')
         file.write('\n</div><div class ="news-vid-outer">\n<div class="related-vid-text-outer title-bar ">\n')
