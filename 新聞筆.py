@@ -303,7 +303,7 @@ def websearch(word, description, model, max_retries=3):
     AGAIN: at most 6 chinese characters are maximum
     AGAIN: make sure your Chinese words in the query DOES MAKE SENSE.
     REMEMBER: prioritize the use of the translation of Wikipedia!! (inside brackets) If the search does not have Wikipedia, return the original word.
-    Return the JSON with a single key 'query' with no preamble or explanation.
+    Return the JSON with a single key 'query' with no preamble or explanation. REMEMBER: the JSON returned has only ONE key-value pair with a single key 'query' with no preamble or explanation
    
     Word to transform into a query: {word}
     The description of this word: {description}
