@@ -261,6 +261,7 @@ def organize(word, description, results, model, max_retries=3):
     REMEMBER: the JSON returned has only ONE key-value pair. the JSON object has 1 key-value item ONLY.
     REMEMBER: DO NOT translate the lyrics or official terms that are bracketed.
     Return the JSON with ONE key-value pair with no preamble or explanation. 
+    YOU MUST ORGANIZE ME AN ANSWER. DO NOT RETURN NON JSON REPLIES.
     """
 
     retries = 0
@@ -304,7 +305,8 @@ def websearch(word, description, model, max_retries=3):
     AGAIN: make sure your Chinese words in the query DOES MAKE SENSE.
     REMEMBER: prioritize the use of the translation of Wikipedia!! (inside brackets) If the search does not have Wikipedia, return the original word.
     Return the JSON with a single key 'query' with no preamble or explanation. REMEMBER: the JSON returned has only ONE key-value pair with a single key 'query' with no preamble or explanation
-   
+
+    AGAIN: at most 6 chinese characters.
     Word to transform into a query: {word}
     The description of this word: {description}
     """
