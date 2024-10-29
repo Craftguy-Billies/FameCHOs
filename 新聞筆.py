@@ -72,7 +72,7 @@ def prettify_element(elem):
 def get_first_youtube_embed(query, model, max_retries = 3):
     prompt = f"""
     For this news article title: {query}
-    Generate me a short but concise youtube search query, such that optimally I can search of the exact issue in youtube results.
+    Generate me a short but concise youtube search query,(for example summarize the title into a main topic or short sentence, details can be ommited) such that optimally I can search of the exact issue in youtube results.
     The query can be in chinese or english. but make sure it is in moderate length that can get optimal search results.
     Return me a JSON object with single key "query", without premable and explanation.
     Again, only return me ONE JSON OBJECT with single key QUERY without premable and explanation.
@@ -93,6 +93,7 @@ def get_first_youtube_embed(query, model, max_retries = 3):
             refined_response += chunk.choices[0].delta.content
 
     modified_string = extract_json_content(refined_response)
+    print(modified_string)
     if isinstance(modified_string, dict):
         query = modified_string['query']
     else:
