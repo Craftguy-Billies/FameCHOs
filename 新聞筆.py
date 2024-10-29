@@ -252,11 +252,11 @@ def organize(word, description, results, model, max_retries=3):
     Web Search Context: {results}
 
     Summarize the search result.
-    As long as the search result is NOT 100 PERCENT SURE IT IS CORRECT (eg, do not contain the translations with brackets in Chinese), return me the original word in english.
+    As long as the search result is NOT 100 PERCENT SURE IT IS CORRECT (eg, do not contain the translations with brackets in Chinese), return me the original word as key-value pair.
     Otherwise, only return the MUST correct Chinese translation of that noun i needed (eg translation from Wikipedia).
     return me a JSON object that stores the original word and search result word in key-value pairs.
     REMEMBER: If there isn't a Chinese name found, return me the original name, do not phonetically translate or translate with the original word's english meaning.
-    Do not leave the key-value pair blank no matter what.
+    Do not leave the key-value pair blank in any cases. return same word as key-value pair if no correct translation match.
     if there is more than one translation, only return me one.
     REMEMBER: the JSON returned has only ONE key-value pair. the JSON object has 1 key-value item ONLY.
     REMEMBER: DO NOT translate the lyrics or official terms that are bracketed.
@@ -462,6 +462,7 @@ def consideration_test(title, segment, dictionary, model):
     身份：一個新聞作者想要帶資訊給讀者
     刪除所有作者自己的身份描述。（作者的家人名稱、工作地點、懷孕狀況等全部刪除），並改爲符合身份的描述。
     要求：把原文內容翻譯成繁體中文，不能自行創作，要詳細。翻譯時必須先了解整句話的意思，不要按字詞意思直接翻譯。
+    要求：如果翻譯不是必須，可以不用翻譯某些字詞。
     要求：改寫一切網站上的內容，包括文章作者的名字，變成一篇新聞作者想要帶資訊給讀者的文章。
     要求：不要使用「值得注意的是」，「另外」，「最後」，「總括來說」等連接詞。
     要求：公司名稱、藝人藝名、團體名稱，如果是英文名稱是廣為人知的，請不要翻譯（保留英文名稱），如要翻譯，請括號標註英文名稱。
@@ -475,7 +476,7 @@ def consideration_test(title, segment, dictionary, model):
     現在處理這段文字：
     {segment}
 
-    如果該行文字是小標題，用<h2>來標記。
+    如果該行文字是小標題，用<h2>來標記。如果是不相關的內容，刪除不相關的資訊。這篇文章的標題是:{title}
     只回覆我中文的html，不需其它任何字。
     不要回覆我任何其它字，我只需要處理好的中文的html structure回覆。
     """
@@ -561,6 +562,7 @@ def recheck(title, article, model, max_retries=3, retry_delay=5):
         - 身份：我是一個香港新聞記者，專業，客觀
         - 不需要強調身份，但所有不符合這個設定的句子需要改寫成符合我身份的描述。原文作者的家人名稱、工作地點、懷孕狀況等全部刪除。
         - 全部改寫原文內容的句式（paraphrase），但保留原文的意思，以免誤導讀者。如果是內容有括號，括號內容需要保留。
+        - 不需進行任何翻譯。
         - 改寫必須合理，需要文句通順。
         - 如果內容許可，增加<ul> <ol> <table>等元素來協助描述。整理段落的內容來寫。
 
