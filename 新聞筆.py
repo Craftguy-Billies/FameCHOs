@@ -151,11 +151,14 @@ def fetch_news(rss_urls):
         for entry in feed.entries:
             # Check if the entry has a publication date
             if 'published_parsed' in entry:
-                # Convert the published date to a datetime object
-                pub_date = datetime(*entry.published_parsed[:6])
-                # Only consider articles published within the last two weeks
-                if pub_date < two_weeks_ago or pub_date > now:
-                    continue
+                if *entry.published_parsed:
+                    # Convert the published date to a datetime object
+                    pub_date = datetime(*entry.published_parsed[:6])
+                    # Only consider articles published within the last two weeks
+                    if pub_date < two_weeks_ago or pub_date > now:
+                        continue
+                else:
+                  continue
 
             # Check for duplicates based on title
             if entry.title not in seen_titles:
@@ -1209,7 +1212,8 @@ rss_urls = [
     ['https://www.koreatimes.co.kr/www/rss/entertainment.xml', 'TheKoreaTimes', 'K-Pop'],
     ['https://en.yna.co.kr/RSS/culture.xml', 'Yonhap News Agency', 'Drama'],
     ['https://j-generation.com/feed/', 'J-GENERATION', 'J-Pop'],
-    ['https://phoenixtalkspopculturejapan.wordpress.com/category/dramas/feed/', 'Phoenix Talks Pop Culture Japan', 'Drama']
+    ['https://phoenixtalkspopculturejapan.wordpress.com/category/dramas/feed/', 'Phoenix Talks Pop Culture Japan', 'Drama'],
+    ['https://jpopblog.com/feed/', 'Jpopblog.com', 'J-Pop']
 ]
 
 def main():
