@@ -152,7 +152,7 @@ def fetch_news(rss_urls):
         for entry in feed.entries:
             # Check if the entry has a publication date
             if 'published_parsed' in entry:
-                if *entry.published_parsed:
+                if entry.published_parsed:
                     # Convert the published date to a datetime object
                     pub_date = datetime(*entry.published_parsed[:6])
                     # Only consider articles published within the last two weeks
