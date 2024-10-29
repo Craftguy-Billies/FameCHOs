@@ -1094,15 +1094,17 @@ def write_file(file_path, content, title, source, category, model):
         def count_chinese_characters(text):
             """Count the number of Chinese characters in the given text."""
             return len(chinese_char_regex.findall(text))
- 
+        h = ""
         for line in lines:
             if line.strip():  # Ignore empty lines
                 processed_line, last_was_h2 = process_line(line, model, last_was_h2)
 
                 if should_append_header(processed_line, last_was_h2):
+                    h += processed_line
+                    h += '\n'
                     file.write(processed_line)
 
-        chinese_char_count = count_chinese_characters(lines)
+        chinese_char_count = count_chinese_characters(h)
 
         if chinese_char_count < 100:
             return
