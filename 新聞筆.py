@@ -1213,7 +1213,9 @@ rss_urls = [
     ['https://en.yna.co.kr/RSS/culture.xml', 'Yonhap News Agency', 'Drama'],
     ['https://j-generation.com/feed/', 'J-GENERATION', 'J-Pop'],
     ['https://phoenixtalkspopculturejapan.wordpress.com/category/dramas/feed/', 'Phoenix Talks Pop Culture Japan', 'Drama'],
-    ['https://jpopblog.com/feed/', 'Jpopblog.com', 'J-Pop']
+    ['https://jpopblog.com/feed/', 'Jpopblog.com', 'J-Pop'],
+    ['https://thesoulofseoul.net/feed/', 'The Soul of Seoul', 'Others'],
+    ['https://10mag.com/feed/', '10mag', 'Others']
 ]
 
 def main():
