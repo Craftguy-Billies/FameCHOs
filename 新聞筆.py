@@ -857,8 +857,8 @@ def write_file(file_path, content, title, source, category, model):
         <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
         <meta name="apple-mobile-web-app-title" content="Famechos"/>
         <meta name="apple-touch-fullscreen" content="yes"/>
-        <link rel="icon" type="image/x-icon" href="https://www.famechos.me/icons/favicon.ico">
-                        <link rel="shortcut icon" type="image/x-icon" href="https://www.famechos.me/icons/favicon.ico">
+        <link rel="icon" type="image/x-icon" href="https://www.famechos.me/img/famechos-icon.jpeg">
+        <link rel="shortcut icon" type="image/x-icon" href="https://www.famechos.me/img/famechos-icon.jpeg">
 
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3046601377771213"
      crossorigin="anonymous"></script>
