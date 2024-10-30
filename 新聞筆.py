@@ -620,7 +620,7 @@ def titler(website_text, model, max_retries=3, delay=2):
             2. the news title should include the highlight theme of the news, instead of a short phrase.
             3. return me a single JSON object with a single key 'title' without a preamble and explanations.
             4. output in traditional Chinese.
-            AGAIN: single JSON object with a single key 'title', NO preamble and explanation needed.
+            AGAIN: output a single JSON object with a single key 'title', NO preamble and explanation needed.
             """
 
             completion = client.chat.completions.create(
