@@ -768,6 +768,81 @@ def get_bottom_items(rss_file_path):
     result = {item.find('title').text: item.find('link').text for item in bottom_items}    
     return result
 
+def append_to_news_sitemap(loc, title):
+    publication_name = "FamEchos"
+    language = "zh_TW"
+    file_path = 'sitemap.xml'
+
+    # Parse the existing sitemap.xml file
+    try:
+        tree = parse(file_path)
+        root = tree.getroot()
+    except FileNotFoundError:
+        print(f"Error: {file_path} not found.")
+        return
+
+    # Declare namespaces
+    sitemap_ns = "http://www.sitemaps.org/schemas/sitemap/0.9"
+    news_ns = "http://www.google.com/schemas/sitemap-news/0.9"
+
+    # Create a new <url> element in the sitemap namespace
+    new_url = Element(f"{{{sitemap_ns}}}url")
+
+    # Add <loc> element
+    loc_element = SubElement(new_url, f"{{{sitemap_ns}}}loc")
+    loc_element.text = loc
+
+    # Add <news:news> element
+    news_element = SubElement(new_url, f"{{{news_ns}}}news")
+
+    # Add <news:publication> element
+    publication_element = SubElement(news_element, f"{{{news_ns}}}publication")
+
+    # Add <news:name> element
+    name_element = SubElement(publication_element, f"{{{news_ns}}}name")
+    name_element.text = publication_name
+
+    # Add <news:language> element
+    language_element = SubElement(publication_element, f"{{{news_ns}}}language")
+    language_element.text = language
+
+    # Add <news:publication_date> element with the current time in Hong Kong timezone
+    hk_timezone = pytz.timezone('Asia/Hong_Kong')
+    current_time = datetime.now(hk_timezone)
+    publication_date_element = SubElement(news_element, f"{{{news_ns}}}publication_date")
+    publication_date_element.text = current_time.strftime('%Y-%m-%dT%H:%M:%S%z')
+    publication_date_element.text = publication_date_element.text[:-2] + ':' + publication_date_element.text[-2:]
+
+    # Add <news:title> element
+    title_element = SubElement(news_element, f"{{{news_ns}}}title")
+    title_element.text = title
+
+    # Append the new <url> element to the root <urlset> element
+    root.append(new_url)
+
+    # Internal prettify function
+    def prettify_xml_tree(element, level=0):
+        """Prettifies the XML tree in place by adding indentation and newlines."""
+        indent = "\n" + level * "  "
+        if len(element):
+            if not element.text or not element.text.strip():
+                element.text = indent + "  "
+            for elem in element:
+                prettify_xml_tree(elem, level + 1)
+            if not elem.tail or not elem.tail.strip():
+                elem.tail = indent
+        else:
+            if not element.text or not element.text.strip():
+                element.text = ""
+            if level and (not element.tail or not element.tail.strip()):
+                element.tail = indent
+
+    prettify_xml_tree(root)  # Prettify the XML structure
+
+    # Write the updated and prettified XML back to the file
+    tree = ElementTree(root)
+    tree.write(file_path, encoding='UTF-8', xml_declaration=True)
+
 def append_to_sitemap(loc, priority):
     # File path to the sitemap.xml
     file_path = 'sitemap.xml'
@@ -835,13 +910,14 @@ def get_current_hk_time():
 
 def write_file(file_path, content, title, source, category, model):
     url = "https://www.famechos.me/news/" + title + '.html'
+    jj = title
     with open(file_path, 'w', encoding='utf-8') as file:
         # Dynamic data for the schema
         schema_data = {
             "@context": "https://schema.org",
             "@graph": [
                 {
-                    "@type": "Article",
+                    "@type": "NewsArticle",
                     "headline": title,
                     "description": title,
                     "url": url,
@@ -1213,6 +1289,7 @@ def write_file(file_path, content, title, source, category, model):
         file.write(r_news)
         file.write(last)
     append_to_sitemap(url, "0.90")
+    append_to_news_sitemap(url, jj)
     add_rss_item(f'{category.lower()}.xml', title, url, category, des)
     add_rss_item('rss.xml', title, url, category, des)
     commit_changes()
