@@ -773,6 +773,12 @@ def append_to_news_sitemap(loc, title):
     language = "zh_TW"
     file_path = 'news_sitemap.xml'
 
+    # Register namespaces globally
+    sitemap_ns = "http://www.sitemaps.org/schemas/sitemap/0.9"
+    news_ns = "http://www.google.com/schemas/sitemap-news/0.9"
+    ElementTree.register_namespace('', sitemap_ns)  # Default namespace for <url> and <loc>
+    ElementTree.register_namespace('news', news_ns)  # Namespace for <news:news> and children
+
     # Parse the existing sitemap.xml file
     try:
         tree = parse(file_path)
@@ -781,15 +787,11 @@ def append_to_news_sitemap(loc, title):
         print(f"Error: {file_path} not found.")
         return
 
-    # Declare namespaces
-    sitemap_ns = "http://www.sitemaps.org/schemas/sitemap/0.9"
-    news_ns = "http://www.google.com/schemas/sitemap-news/0.9"
-
-    # Create a new <url> element in the sitemap namespace
-    new_url = Element(f"{{{sitemap_ns}}}url")
+    # Create a new <url> element
+    new_url = Element("url")
 
     # Add <loc> element
-    loc_element = SubElement(new_url, f"{{{sitemap_ns}}}loc")
+    loc_element = SubElement(new_url, "loc")
     loc_element.text = loc
 
     # Add <news:news> element
@@ -810,7 +812,9 @@ def append_to_news_sitemap(loc, title):
     hk_timezone = pytz.timezone('Asia/Hong_Kong')
     current_time = datetime.now(hk_timezone)
     publication_date_element = SubElement(news_element, f"{{{news_ns}}}publication_date")
+    # Format the time correctly with timezone offset
     publication_date_element.text = current_time.strftime('%Y-%m-%dT%H:%M:%S%z')
+    # Add a colon in the timezone offset for ISO 8601 compliance
     publication_date_element.text = publication_date_element.text[:-2] + ':' + publication_date_element.text[-2:]
 
     # Add <news:title> element
