@@ -31,6 +31,13 @@ jobs:
       run: |
         python cleanup_sitemap.py
 
+    - uses: stefanzweifel/git-auto-commit-action@v5
+      id: auto-commit-action
+      with:
+        commit_message: Changed files
+        branch: ${{ github.ref }}
+        force: true
+
     # Commit and push changes if there are modifications
     - name: Commit and push changes
       run: |
