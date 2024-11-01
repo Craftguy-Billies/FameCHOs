@@ -771,7 +771,7 @@ def get_bottom_items(rss_file_path):
 def append_to_news_sitemap(loc, title):
     publication_name = "FamEchos"
     language = "zh_TW"
-    file_path = 'sitemap.xml'
+    file_path = 'news_sitemap.xml'
 
     # Parse the existing sitemap.xml file
     try:
