@@ -1,4 +1,4 @@
-name: Reset News Sitemap
+name: Update News Sitemap
 
 # Run every 2 days at midnight
 on:
@@ -6,7 +6,7 @@ on:
     - cron: "0 0 */2 * *"  # Adjust as needed (runs every 2 days at midnight UTC)
 
 jobs:
-  reset_sitemap:
+  update_sitemap:
     runs-on: ubuntu-latest
 
     steps:
@@ -14,14 +14,16 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
-    # Create or overwrite news_sitemap.xml with initial content
-    - name: Initialize news_sitemap.xml
+    # Install Python (needed for XML parsing and date handling)
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    # Run a Python script to process the news_sitemap.xml
+    - name: Clean up old news entries
       run: |
-        echo '<?xml version="1.0" encoding="UTF-8"?>' > news_sitemap.xml
-        echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"' >> news_sitemap.xml
-        echo '        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">' >> news_sitemap.xml
-        echo '' >> news_sitemap.xml
-        echo '</urlset>' >> news_sitemap.xml
+        python cleanup_sitemap.py
 
     # Commit and push changes if there are modifications
     - name: Commit and push changes
@@ -29,8 +31,7 @@ jobs:
         git config --local user.name "github-actions[bot]"
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git add news_sitemap.xml
-        git commit -m "Initialize news_sitemap.xml"
+        git diff --quiet || git commit -m "Remove old news entries"
         git push
       env:
-        # Ensures GitHub token is used for pushing changes
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
