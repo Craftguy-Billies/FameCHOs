@@ -1353,6 +1353,7 @@ def commit_changes():
         print(f"Error occurred during git push: {e}")
 
 rss_urls = [
+    ['https://jrocknews.com/feed', 'J Rock News', 'J-Pop'],
     ['https://www.koreaherald.com/common/rss_xml.php?ct=105', 'Korea Herald', 'K-Pop'],
     ['https://tokyocheapo.com/feed/', 'Tokyo Cheapo', 'Others'],
     ['https://www.koreatimes.co.kr/www/rss/entertainment.xml', 'TheKoreaTimes', 'K-Pop'],
