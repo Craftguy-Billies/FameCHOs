@@ -773,11 +773,9 @@ def append_to_news_sitemap(loc, title):
     language = "zh_TW"
     file_path = 'news_sitemap.xml'
 
-    # Register namespaces globally
+    # Define the namespaces
     sitemap_ns = "http://www.sitemaps.org/schemas/sitemap/0.9"
     news_ns = "http://www.google.com/schemas/sitemap-news/0.9"
-    ElementTree.register_namespace('', sitemap_ns)  # Default namespace for <url> and <loc>
-    ElementTree.register_namespace('news', news_ns)  # Namespace for <news:news> and children
 
     # Parse the existing sitemap.xml file
     try:
@@ -787,24 +785,22 @@ def append_to_news_sitemap(loc, title):
         print(f"Error: {file_path} not found.")
         return
 
-    # Create a new <url> element
-    new_url = Element("url")
+    # Create a new <url> element with the sitemap namespace
+    new_url = Element(f"{{{sitemap_ns}}}url")
 
     # Add <loc> element
-    loc_element = SubElement(new_url, "loc")
+    loc_element = SubElement(new_url, f"{{{sitemap_ns}}}loc")
     loc_element.text = loc
 
-    # Add <news:news> element
+    # Add <news:news> element with the news namespace
     news_element = SubElement(new_url, f"{{{news_ns}}}news")
 
     # Add <news:publication> element
     publication_element = SubElement(news_element, f"{{{news_ns}}}publication")
 
-    # Add <news:name> element
+    # Add <news:name> and <news:language> elements
     name_element = SubElement(publication_element, f"{{{news_ns}}}name")
     name_element.text = publication_name
-
-    # Add <news:language> element
     language_element = SubElement(publication_element, f"{{{news_ns}}}language")
     language_element.text = language
 
@@ -812,7 +808,6 @@ def append_to_news_sitemap(loc, title):
     hk_timezone = pytz.timezone('Asia/Hong_Kong')
     current_time = datetime.now(hk_timezone)
     publication_date_element = SubElement(news_element, f"{{{news_ns}}}publication_date")
-    # Format the time correctly with timezone offset
     publication_date_element.text = current_time.strftime('%Y-%m-%dT%H:%M:%S%z')
     # Add a colon in the timezone offset for ISO 8601 compliance
     publication_date_element.text = publication_date_element.text[:-2] + ':' + publication_date_element.text[-2:]
@@ -841,7 +836,8 @@ def append_to_news_sitemap(loc, title):
             if level and (not element.tail or not element.tail.strip()):
                 element.tail = indent
 
-    prettify_xml_tree(root)  # Prettify the XML structure
+    # Prettify the XML structure
+    prettify_xml_tree(root)
 
     # Write the updated and prettified XML back to the file
     tree = ElementTree(root)
