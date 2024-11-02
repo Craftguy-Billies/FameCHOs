@@ -781,6 +781,11 @@ def append_to_news_sitemap(loc, title):
     try:
         tree = parse(file_path)
         root = tree.getroot()
+
+        # Ensure namespaces are declared in the root element if not already present
+        if not root.tag.startswith(f"{{{sitemap_ns}}}"):
+            raise ValueError("Root element does not have the correct sitemap namespace.")
+        
     except FileNotFoundError:
         print(f"Error: {file_path} not found.")
         return
@@ -842,6 +847,7 @@ def append_to_news_sitemap(loc, title):
     # Write the updated and prettified XML back to the file
     tree = ElementTree(root)
     tree.write(file_path, encoding='UTF-8', xml_declaration=True)
+
 
 def append_to_sitemap(loc, priority):
     # File path to the sitemap.xml
