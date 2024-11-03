@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version='1.0' encoding='UTF-8'?>
 <ns0:urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9">
   <ns0:url>
     <ns0:loc>https://www.famechos.me/news/韓國藝壇大滿貫！申久、姜富子等大咖獲獎，李文世崔秀宗感言暖心.html</ns0:loc>
@@ -199,6 +199,16 @@
         <ns1:language>zh_TW</ns1:language>
       </ns1:publication><ns1:publication_date>2024-11-03T02:54:34+08:00</ns1:publication_date>
       <ns1:title>防彈少年團Jin首張個人專輯《Happy》發行在即！快閃活動、粉絲見面會等你來</ns1:title>
+    </ns1:news>
+  </ns0:url>
+<ns0:url>
+    <ns0:loc>https://www.famechos.me/news/HYBE 爆炸性內部報告作者曝光！知名評論家Kang Myeong-seok撰寫文件惹爭議.html</ns0:loc>
+    <ns1:news>
+      <ns1:publication>
+        <ns1:name>FamEchos</ns1:name>
+        <ns1:language>zh_TW</ns1:language>
+      </ns1:publication><ns1:publication_date>2024-11-03T21:32:02+08:00</ns1:publication_date>
+      <ns1:title>HYBE 爆炸性內部報告作者曝光！知名評論家Kang Myeong-seok撰寫文件惹爭議</ns1:title>
     </ns1:news>
   </ns0:url>
 </ns0:urlset>
