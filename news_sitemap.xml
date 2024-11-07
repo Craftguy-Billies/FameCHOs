@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-    xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
-</urlset>
+<?xml version='1.0' encoding='UTF-8'?>
+<ns0:urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url>
+    <loc>https://www.famechos.me/news/VIVIZ新專輯《VOYAGE》發行！成員們傾注心血打造拉丁流行風格主打歌，盼望再次引起轟動.html</loc>
+    <ns1:news>
+      <ns1:publication>
+        <ns1:name>FamEchos</ns1:name>
+        <ns1:language>zh_TW</ns1:language>
+      </ns1:publication><ns1:publication_date>2024-11-07T23:18:45+08:00</ns1:publication_date>
+      <ns1:title>VIVIZ新專輯《VOYAGE》發行！成員們傾注心血打造拉丁流行風格主打歌，盼望再次引起轟動</ns1:title>
+    </ns1:news>
+  </url>
+</ns0:urlset>
