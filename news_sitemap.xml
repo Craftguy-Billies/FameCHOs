@@ -61,4 +61,14 @@
       <news:title>BLACKPINK羅莎首度坦承：網路負評如何影響她的心理健康</news:title>
     </news:news>
   </url>
+<url>
+    <loc>https://www.famechos.me/news/家庭崩壞的黑暗真相：《Doubt》揭露父女之間的信任裂痕.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2024-11-08T06:21:03+08:00</news:publication_date>
+      <news:title>家庭崩壞的黑暗真相：《Doubt》揭露父女之間的信任裂痕</news:title>
+    </news:news>
+  </url>
 </urlset>
