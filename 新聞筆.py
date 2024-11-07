@@ -847,10 +847,16 @@ def append_to_news_sitemap(loc, title):
     # Prettify the XML structure
     prettify_xml_tree(root)
 
-    # Write the updated and prettified XML back to the file
-    tree.write(file_path, encoding='UTF-8', xml_declaration=True)
+    # Convert the XML tree to a string
+    xml_str = tostring(root, encoding='unicode')
 
+    # Manual string replace to fix the namespace prefix issue
+    xml_str = xml_str.replace('ns0:', '').replace('ns1:', 'news:')
 
+    # Write the updated and formatted XML back to the file
+    with open(file_path, 'w', encoding='UTF-8') as file:
+        file.write('<?xml version="1.0" encoding="UTF-8"?>\n')
+        file.write(xml_str)
 
 def append_to_sitemap(loc, priority):
     # File path to the sitemap.xml
