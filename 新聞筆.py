@@ -783,18 +783,24 @@ def append_to_news_sitemap(loc, title):
         root = tree.getroot()
 
         # Ensure namespaces are declared in the root element if not already present
-        if not root.tag.startswith(f"{{{sitemap_ns}}}"):
+        if not root.tag == f"{{{sitemap_ns}}}urlset":
             raise ValueError("Root element does not have the correct sitemap namespace.")
         
+        # Check if the namespaces are declared
+        if sitemap_ns not in root.attrib or news_ns not in root.attrib:
+            root.attrib[f"xmlns"] = sitemap_ns
+            root.attrib[f"xmlns:news"] = news_ns
+
     except FileNotFoundError:
-        print(f"Error: {file_path} not found.")
-        return
+        # If file not found, create a new root element with the correct namespaces
+        root = Element("urlset", xmlns=sitemap_ns, **{"xmlns:news": news_ns})
+        tree = ElementTree(root)
 
     # Create a new <url> element with the sitemap namespace
-    new_url = Element(f"{{{sitemap_ns}}}url")
+    new_url = SubElement(root, "url")
 
     # Add <loc> element
-    loc_element = SubElement(new_url, f"{{{sitemap_ns}}}loc")
+    loc_element = SubElement(new_url, "loc")
     loc_element.text = loc
 
     # Add <news:news> element with the news namespace
@@ -821,9 +827,6 @@ def append_to_news_sitemap(loc, title):
     title_element = SubElement(news_element, f"{{{news_ns}}}title")
     title_element.text = title
 
-    # Append the new <url> element to the root <urlset> element
-    root.append(new_url)
-
     # Internal prettify function
     def prettify_xml_tree(element, level=0):
         """Prettifies the XML tree in place by adding indentation and newlines."""
@@ -845,8 +848,8 @@ def append_to_news_sitemap(loc, title):
     prettify_xml_tree(root)
 
     # Write the updated and prettified XML back to the file
-    tree = ElementTree(root)
     tree.write(file_path, encoding='UTF-8', xml_declaration=True)
+
 
 
 def append_to_sitemap(loc, priority):
