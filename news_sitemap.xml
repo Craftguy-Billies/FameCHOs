@@ -151,4 +151,14 @@
       <news:title>東京11月瘋狂活動！聖誕點燈、藝術週、滑雪體驗、起司節等你來</news:title>
     </news:news>
   </url>
+<url>
+    <loc>https://www.famechos.me/news/K-Pop強勢回歸：NCT127宣布世界巡演、BTS鄭國破億、TXT銷量破百萬.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2024-11-08T16:20:30+08:00</news:publication_date>
+      <news:title>K-Pop強勢回歸：NCT127宣布世界巡演、BTS鄭國破億、TXT銷量破百萬</news:title>
+    </news:news>
+  </url>
 </urlset>
