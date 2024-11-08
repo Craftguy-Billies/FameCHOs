@@ -101,4 +101,14 @@
       <news:title>K-pop 界大事！Red Velvet Irene 首張個人專輯即將發行、BTS Jimin 展覽赴美日、GOT7 Jay B 宣布個人回歸</news:title>
     </news:news>
   </url>
+<url>
+    <loc>https://www.famechos.me/news/生命的價值不在長短！Netflix韓劇《浮游先生》帶你找尋人生意義.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2024-11-08T11:34:47+08:00</news:publication_date>
+      <news:title>生命的價值不在長短！Netflix韓劇《浮游先生》帶你找尋人生意義</news:title>
+    </news:news>
+  </url>
 </urlset>
