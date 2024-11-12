@@ -1250,16 +1250,16 @@ def write_file(file_path, content, title, source, category, model):
           <p class="footer-right-text">每日為你提供最新、最全面的日韓資訊。</p>
         </div>
         <div class="footer-button-box">
-          <a href="https://www.instagram.com/famechos/"><button class="facebook-btn footer-btn">
+          <a href="https://www.instagram.com/famechos/" target="_blank"><button class="facebook-btn footer-btn">
             <i class="bi bi-facebook footer-logo"></i>
           </button></a>
-          <a href="https://www.instagram.com/famechos/"><button class="ig-btn footer-btn">
+          <a href="https://www.instagram.com/famechos/" target="_blank"><button class="ig-btn footer-btn">
             <i class="bi bi-instagram footer-logo"></i>
           </button></a>
-          <a href="https://x.com/famechos_me"><button class="x-btn footer-btn">
+          <a href="https://x.com/famechos_me" target="_blank"><button class="x-btn footer-btn">
             <i class="bi bi-twitter-x footer-logo"></i>
           </button></a>
-          <a href="https://www.youtube.com/channel/UC6H4nvEk-IgsQCUvoUmWZMQ"><button class="x-btn footer-btn">
+          <a href="https://www.youtube.com/channel/UC6H4nvEk-IgsQCUvoUmWZMQ" target="_blank"><button class="x-btn footer-btn">
             <i class="bi bi-youtube footer-logo"></i>
           </button></a>
         </div>
