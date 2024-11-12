@@ -1260,7 +1260,7 @@ def write_file(file_path, content, title, source, category, model):
             <i class="bi bi-twitter-x footer-logo"></i>
           </button></a>
           <a href="https://www.youtube.com/channel/UC6H4nvEk-IgsQCUvoUmWZMQ"><button class="x-btn footer-btn">
-            <i class="bi bi-envelope-fill footer-logo"></i>
+            <i class="bi bi-youtube footer-logo"></i>
           </button></a>
         </div>
       </div>
