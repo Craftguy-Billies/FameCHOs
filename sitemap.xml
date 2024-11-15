@@ -1214,4 +1214,10 @@
     <ns0:changefreq>weekly</ns0:changefreq>
     <ns0:priority>0.90</ns0:priority>
   </ns0:url>
+<ns0:url>
+    <ns0:loc>https://www.famechos.me/news/韓國電影業掀起翻拍熱潮：外國電影改編作品大獲成功.html</ns0:loc>
+    <ns0:lastmod>2024-11-15T23:18:19+08:00</ns0:lastmod>
+    <ns0:changefreq>weekly</ns0:changefreq>
+    <ns0:priority>0.90</ns0:priority>
+  </ns0:url>
 </ns0:urlset>
