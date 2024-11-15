@@ -178,7 +178,7 @@ def fetch_news(rss_urls):
                     if website_text:
                         word_count = len(website_text.split())
                         # Filter out articles that are too short or too long
-                        if word_count <= 300 or word_count >= 1300:
+                        if word_count <= 500 or word_count >= 1500:
                             continue
                
                 # Add the news item to the list
