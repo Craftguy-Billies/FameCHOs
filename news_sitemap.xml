@@ -210,4 +210,14 @@
       <news:title>泰妍新專輯《致自己的一封信》：自我探索、情感解放，傳遞溫暖與希望</news:title>
     </news:news>
   </url>
+<url>
+    <loc>https://www.famechos.me/news/韓國首部AI編劇電視劇即將上映：內容創作生態大變革.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2024-11-19T01:21:16+08:00</news:publication_date>
+      <news:title>韓國首部AI編劇電視劇即將上映：內容創作生態大變革</news:title>
+    </news:news>
+  </url>
 </urlset>
