@@ -83,3 +83,7 @@ jobs:
             /index.html
             news.txt
           continue-on-error: true
+
+      - name: Ping PubSubHubbub Hub
+        run: |
+          curl -d "hub.mode=publish&hub.url=https://www.famechos.me/rss.xml" https://pubsubhubbub.appspot.com/
