@@ -1,16 +1,16 @@
 <?xml version='1.0' encoding='utf-8'?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss xmlns:ns0="http://www.w3.org/2005/Atom" version="2.0">
 <script />
 <channel>
   <title>Famechos</title>
   <link>https://www.famechos.me/</link>
   <description>Famechos - News Article</description>
-  <lastBuildDate>Tue, 19 Nov 2024 01:21:16 +0800</lastBuildDate>
+  <lastBuildDate>Tue, 19 Nov 2024 15:17:51 +0800</lastBuildDate>
 
-  <!-- PubSubHubbub hub declaration -->
-  <atom:link rel="hub" href="https://pubsubhubbub.appspot.com/" />
-  <!-- Self-link to the RSS feed -->
-  <atom:link rel="self" href="https://www.famechos.me/rss.xml" type="application/rss+xml" />
+  
+  <ns0:link rel="hub" href="https://pubsubhubbub.appspot.com/" />
+  
+  <ns0:link rel="self" href="https://www.famechos.me/rss.xml" type="application/rss+xml" />
 
   <item>
   <title>李承允的音樂反抗：用「逆聖」向世界宣戰</title>
@@ -1308,5 +1308,11 @@
   <description>韓國首部AI編劇電視劇即將上映，AI技術改變內容創作生態。...</description>
   <category>K-Pop</category>
   <pubDate>Tue, 19 Nov 2024 01:21:16 +0800</pubDate>
+</item><item>
+  <title>耶魯大學學生瘋K-POP：探索韓流文化影響的新視角</title>
+  <link>https://www.famechos.me/news/耶魯大學學生瘋K-POP：探索韓流文化影響的新視角.html</link>
+  <description>耶魯大學的K-POP課程：學生們如何探索韓流的文化影響。...</description>
+  <category>K-Pop</category>
+  <pubDate>Tue, 19 Nov 2024 15:17:51 +0800</pubDate>
 </item></channel>
 </rss>
