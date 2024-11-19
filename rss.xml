@@ -1,11 +1,16 @@
 <?xml version='1.0' encoding='utf-8'?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <script />
 <channel>
   <title>Famechos</title>
   <link>https://www.famechos.me/</link>
   <description>Famechos - News Article</description>
   <lastBuildDate>Tue, 19 Nov 2024 01:21:16 +0800</lastBuildDate>
+
+  <!-- PubSubHubbub hub declaration -->
+  <atom:link rel="hub" href="https://pubsubhubbub.appspot.com/" />
+  <!-- Self-link to the RSS feed -->
+  <atom:link rel="self" href="https://www.famechos.me/rss.xml" type="application/rss+xml" />
 
   <item>
   <title>李承允的音樂反抗：用「逆聖」向世界宣戰</title>
