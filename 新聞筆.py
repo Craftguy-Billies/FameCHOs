@@ -1259,7 +1259,7 @@ def write_file(file_path, content, title, source, category, model):
           <a href="https://x.com/famechos_me" target="_blank"><button class="x-btn footer-btn">
             <i class="bi bi-twitter-x footer-logo"></i>
           </button></a>
-          <a href="https://www.youtube.com/channel/UC6H4nvEk-IgsQCUvoUmWZMQ" target="_blank"><button class="x-btn footer-btn">
+          <a href="https://www.youtube.com/channel/UCXVM3ugNrROkiaSkC2A8uuQ" target="_blank"><button class="x-btn footer-btn">
             <i class="bi bi-youtube footer-logo"></i>
           </button></a>
         </div>
