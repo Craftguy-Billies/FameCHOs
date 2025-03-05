@@ -1,53 +1,53 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
-  <url>
-    <loc>https://www.famechos.me/news/韓國觀眾瘋日本電影！浪漫、戲劇、懸疑多種類型強勢登陸韓國院線.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-03-05T04:17:32+08:00</news:publication_date>
-      <news:title>韓國觀眾瘋日本電影！浪漫、戲劇、懸疑多種類型強勢登陸韓國院線</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/首爾聖水區的秘密花園：親手打造護膚品的魔幻體驗.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-03-05T05:16:37+08:00</news:publication_date>
-      <news:title>首爾聖水區的秘密花園：親手打造護膚品的魔幻體驗</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/藝術界的未來已經來臨？皮埃爾·雨格的自我演化世界震撼首爾.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-03-05T06:15:54+08:00</news:publication_date>
-      <news:title>藝術界的未來已經來臨？皮埃爾·雨格的自我演化世界震撼首爾</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/高雅拉五年後復出！談拍攝辛酸史、皇室地位的侷限與女性自主的渴望.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-03-05T07:28:03+08:00</news:publication_date>
-      <news:title>高雅拉五年後復出！談拍攝辛酸史、皇室地位的侷限與女性自主的渴望</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/直播驚悚片《Streaming》：姜河那飾演自戀YouTuber追蹤連環殺手.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-03-05T09:06:45+08:00</news:publication_date>
-      <news:title>直播驚悚片《Streaming》：姜河那飾演自戀YouTuber追蹤連環殺手</news:title>
-    </news:news>
-  </url>
-</urlset>
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9">
+  <ns0:url>
+    <ns0:loc>https://www.famechos.me/news/韓國觀眾瘋日本電影！浪漫、戲劇、懸疑多種類型強勢登陸韓國院線.html</ns0:loc>
+    <ns1:news>
+      <ns1:publication>
+        <ns1:name>FamEchos</ns1:name>
+        <ns1:language>zh_TW</ns1:language>
+      </ns1:publication><ns1:publication_date>2025-03-05T04:17:32+08:00</ns1:publication_date>
+      <ns1:title>韓國觀眾瘋日本電影！浪漫、戲劇、懸疑多種類型強勢登陸韓國院線</ns1:title>
+    </ns1:news>
+  </ns0:url>
+<ns0:url>
+    <ns0:loc>https://www.famechos.me/news/首爾聖水區的秘密花園：親手打造護膚品的魔幻體驗.html</ns0:loc>
+    <ns1:news>
+      <ns1:publication>
+        <ns1:name>FamEchos</ns1:name>
+        <ns1:language>zh_TW</ns1:language>
+      </ns1:publication><ns1:publication_date>2025-03-05T05:16:37+08:00</ns1:publication_date>
+      <ns1:title>首爾聖水區的秘密花園：親手打造護膚品的魔幻體驗</ns1:title>
+    </ns1:news>
+  </ns0:url>
+<ns0:url>
+    <ns0:loc>https://www.famechos.me/news/藝術界的未來已經來臨？皮埃爾·雨格的自我演化世界震撼首爾.html</ns0:loc>
+    <ns1:news>
+      <ns1:publication>
+        <ns1:name>FamEchos</ns1:name>
+        <ns1:language>zh_TW</ns1:language>
+      </ns1:publication><ns1:publication_date>2025-03-05T06:15:54+08:00</ns1:publication_date>
+      <ns1:title>藝術界的未來已經來臨？皮埃爾·雨格的自我演化世界震撼首爾</ns1:title>
+    </ns1:news>
+  </ns0:url>
+<ns0:url>
+    <ns0:loc>https://www.famechos.me/news/高雅拉五年後復出！談拍攝辛酸史、皇室地位的侷限與女性自主的渴望.html</ns0:loc>
+    <ns1:news>
+      <ns1:publication>
+        <ns1:name>FamEchos</ns1:name>
+        <ns1:language>zh_TW</ns1:language>
+      </ns1:publication><ns1:publication_date>2025-03-05T07:28:03+08:00</ns1:publication_date>
+      <ns1:title>高雅拉五年後復出！談拍攝辛酸史、皇室地位的侷限與女性自主的渴望</ns1:title>
+    </ns1:news>
+  </ns0:url>
+<ns0:url>
+    <ns0:loc>https://www.famechos.me/news/直播驚悚片《Streaming》：姜河那飾演自戀YouTuber追蹤連環殺手.html</ns0:loc>
+    <ns1:news>
+      <ns1:publication>
+        <ns1:name>FamEchos</ns1:name>
+        <ns1:language>zh_TW</ns1:language>
+      </ns1:publication><ns1:publication_date>2025-03-05T09:06:45+08:00</ns1:publication_date>
+      <ns1:title>直播驚悚片《Streaming》：姜河那飾演自戀YouTuber追蹤連環殺手</ns1:title>
+    </ns1:news>
+  </ns0:url>
+</ns0:urlset>
