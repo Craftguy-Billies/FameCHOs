@@ -410,4 +410,14 @@
       <news:title>揭露韓國教育瘋狂：大峙妈妈的極度痴迷與孩子的未來</news:title>
     </news:news>
   </url>
+<url>
+    <loc>https://www.famechos.me/news/直面死亡：三個生命故事，重新定義生命的真谛.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-03-08T07:13:06+08:00</news:publication_date>
+      <news:title>直面死亡：三個生命故事，重新定義生命的真谛</news:title>
+    </news:news>
+  </url>
 </urlset>
