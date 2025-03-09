@@ -1,43 +1,53 @@
-<?xml version='1.0' encoding='utf-8'?>
-<ns0:urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9">
-  <ns0:url>
-    <ns0:loc>https://www.famechos.me/news/傳奇對決！李昌鎬與曹薰铉的圍棋世紀之戰登上大銀幕.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-03-07T14:21:21+08:00</ns1:publication_date>
-      <ns1:title>傳奇對決！李昌鎬與曹薰铉的圍棋世紀之戰登上大銀幕</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/NewJeans與ADOR合約糾紛升級：成員親述被HYBE「拋棄與歧視」的傷痛.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-03-07T21:28:34+08:00</ns1:publication_date>
-      <ns1:title>NewJeans與ADOR合約糾紛升級：成員親述被HYBE「拋棄與歧視」的傷痛</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/揭露韓國教育瘋狂：大峙妈妈的極度痴迷與孩子的未來.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-03-07T22:16:49+08:00</ns1:publication_date>
-      <ns1:title>揭露韓國教育瘋狂：大峙妈妈的極度痴迷與孩子的未來</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/直面死亡：三個生命故事，重新定義生命的真谛.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-03-08T07:13:06+08:00</ns1:publication_date>
-      <ns1:title>直面死亡：三個生命故事，重新定義生命的真谛</ns1:title>
-    </ns1:news>
-  </ns0:url>
-</ns0:urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url>
+    <loc>https://www.famechos.me/news/傳奇對決！李昌鎬與曹薰铉的圍棋世紀之戰登上大銀幕.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-03-07T14:21:21+08:00</news:publication_date>
+      <news:title>傳奇對決！李昌鎬與曹薰铉的圍棋世紀之戰登上大銀幕</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/NewJeans與ADOR合約糾紛升級：成員親述被HYBE「拋棄與歧視」的傷痛.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-03-07T21:28:34+08:00</news:publication_date>
+      <news:title>NewJeans與ADOR合約糾紛升級：成員親述被HYBE「拋棄與歧視」的傷痛</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/揭露韓國教育瘋狂：大峙妈妈的極度痴迷與孩子的未來.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-03-07T22:16:49+08:00</news:publication_date>
+      <news:title>揭露韓國教育瘋狂：大峙妈妈的極度痴迷與孩子的未來</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/直面死亡：三個生命故事，重新定義生命的真谛.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-03-08T07:13:06+08:00</news:publication_date>
+      <news:title>直面死亡：三個生命故事，重新定義生命的真谛</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/東京3月瘋狂活動！櫻花節、薩爾薩舞街頭節、平和島古董展等你來.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-03-09T20:20:55+08:00</news:publication_date>
+      <news:title>東京3月瘋狂活動！櫻花節、薩爾薩舞街頭節、平和島古董展等你來</news:title>
+    </news:news>
+  </url>
+</urlset>
