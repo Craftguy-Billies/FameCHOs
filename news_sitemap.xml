@@ -200,4 +200,14 @@
       <news:title>首爾美食新體驗：Bossam讓你一次品嚐韓國豐富的豬肉盛宴！</news:title>
     </news:news>
   </url>
+<url>
+    <loc>https://www.famechos.me/news/韓國淘金歲月：美國企業在韓國礦場的故事.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-03-18T16:22:23+08:00</news:publication_date>
+      <news:title>韓國淘金歲月：美國企業在韓國礦場的故事</news:title>
+    </news:news>
+  </url>
 </urlset>
