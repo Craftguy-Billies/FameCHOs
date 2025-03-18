@@ -170,4 +170,14 @@
       <news:title>韓國女團STAYC大變身！新專輯《S》打破清新形象，展現黑暗性感風格</news:title>
     </news:news>
   </url>
+<url>
+    <loc>https://www.famechos.me/news/沖繩的秘密天堂：探索日本最美麗的海島、文化和美食.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-03-18T11:30:17+08:00</news:publication_date>
+      <news:title>沖繩的秘密天堂：探索日本最美麗的海島、文化和美食</news:title>
+    </news:news>
+  </url>
 </urlset>
