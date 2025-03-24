@@ -170,4 +170,14 @@
       <news:title>你還在輸入韓文嗎？掌握韓語打字技巧，讓你在KakaoTalk和韓國博客上如魚得水！</news:title>
     </news:news>
   </url>
+<url>
+    <loc>https://www.famechos.me/news/從廢墟中崛起：韓國現代建築的驚人轉變.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-03-24T15:23:56+08:00</news:publication_date>
+      <news:title>從廢墟中崛起：韓國現代建築的驚人轉變</news:title>
+    </news:news>
+  </url>
 </urlset>
