@@ -190,4 +190,14 @@
       <news:title>韓國駕駛大揭密：了解當地駕駛文化，安全上路</news:title>
     </news:news>
   </url>
+<url>
+    <loc>https://www.famechos.me/news/朴寶劍揭露《當人生給你橘子時》角色蛻變之路：成長、挑戰與幸福.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-03-24T17:23:35+08:00</news:publication_date>
+      <news:title>朴寶劍揭露《當人生給你橘子時》角色蛻變之路：成長、挑戰與幸福</news:title>
+    </news:news>
+  </url>
 </urlset>
