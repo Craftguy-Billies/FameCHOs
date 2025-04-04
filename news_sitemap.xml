@@ -150,4 +150,14 @@
       <news:title>首爾驚艷！洛瑞牛排餐廳帶你重返美國經典牛排時代</news:title>
     </news:news>
   </url>
+<url>
+    <loc>https://www.famechos.me/news/韓國網漫席捲全球：十大必看作品帶你進入新世界.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-04-04T16:22:39+08:00</news:publication_date>
+      <news:title>韓國網漫席捲全球：十大必看作品帶你進入新世界</news:title>
+    </news:news>
+  </url>
 </urlset>
