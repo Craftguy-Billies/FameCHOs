@@ -1,3 +1,13 @@
-<?xml version='1.0' encoding='utf-8'?>
-<ns0:urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9">
-  </ns0:urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url>
+    <loc>https://www.famechos.me/news/東京春花盛宴：紫藤、杜鹃、 Nemophila 等多個慶祝活動即將登場.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-04-07T13:17:54+08:00</news:publication_date>
+      <news:title>東京春花盛宴：紫藤、杜鹃、 Nemophila 等多個慶祝活動即將登場</news:title>
+    </news:news>
+  </url>
+</urlset>
