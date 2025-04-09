@@ -1,23 +1,33 @@
-<?xml version='1.0' encoding='utf-8'?>
-<ns0:urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9">
-  <ns0:url>
-    <ns0:loc>https://www.famechos.me/news/東京春花盛宴：紫藤、杜鹃、 Nemophila 等多個慶祝活動即將登場.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-04-07T13:17:54+08:00</ns1:publication_date>
-      <ns1:title>東京春花盛宴：紫藤、杜鹃、 Nemophila 等多個慶祝活動即將登場</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/韓國山火肆虐！30處文化遺產遭殃，數百年歷史的亭子化為灰燼.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-04-09T00:21:31+08:00</ns1:publication_date>
-      <ns1:title>韓國山火肆虐！30處文化遺產遭殃，數百年歷史的亭子化為灰燼</ns1:title>
-    </ns1:news>
-  </ns0:url>
-</ns0:urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url>
+    <loc>https://www.famechos.me/news/東京春花盛宴：紫藤、杜鹃、 Nemophila 等多個慶祝活動即將登場.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-04-07T13:17:54+08:00</news:publication_date>
+      <news:title>東京春花盛宴：紫藤、杜鹃、 Nemophila 等多個慶祝活動即將登場</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/韓國山火肆虐！30處文化遺產遭殃，數百年歷史的亭子化為灰燼.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-04-09T00:21:31+08:00</news:publication_date>
+      <news:title>韓國山火肆虐！30處文化遺產遭殃，數百年歷史的亭子化為灰燼</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/朴海秀大解放！談《业》中反派角色：複雜性格讓我感到自由.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-04-09T16:33:09+08:00</news:publication_date>
+      <news:title>朴海秀大解放！談《业》中反派角色：複雜性格讓我感到自由</news:title>
+    </news:news>
+  </url>
+</urlset>
