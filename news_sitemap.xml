@@ -1,53 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
-  <url>
-    <loc>https://www.famechos.me/news/聯合國認可！濟州四三事件和戰後重建檔案正式列入世界記憶名錄.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-04-11T11:27:13+08:00</news:publication_date>
-      <news:title>聯合國認可！濟州四三事件和戰後重建檔案正式列入世界記憶名錄</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/假面騎士Gavv前28集大解析：角色、劇情、打鬥編排全面升級.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-04-12T21:22:33+08:00</news:publication_date>
-      <news:title>假面騎士Gavv前28集大解析：角色、劇情、打鬥編排全面升級</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/葡萄酒愛好者注意！2025年新西兰葡萄酒節首爾、釜山盛大舉行，帶你體驗奢華的美酒之旅.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-04-14T13:25:37+08:00</news:publication_date>
-      <news:title>葡萄酒愛好者注意！2025年新西兰葡萄酒節首爾、釜山盛大舉行，帶你體驗奢華的美酒之旅</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/日本搖滾樂團coldrain簽約世紀媒體唱片公司，推出新單曲《INCOMPLETE》並宣布歐洲巡演日期.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-04-14T19:15:36+08:00</news:publication_date>
-      <news:title>日本搖滾樂團coldrain簽約世紀媒體唱片公司，推出新單曲《INCOMPLETE》並宣布歐洲巡演日期</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/日本電影大師成瀨巳喜男的光輝回歸：30部經典作品重映紐約.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-04-15T01:16:19+08:00</news:publication_date>
-      <news:title>日本電影大師成瀨巳喜男的光輝回歸：30部經典作品重映紐約</news:title>
-    </news:news>
-  </url>
-</urlset>
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9">
+  <ns0:url>
+    <ns0:loc>https://www.famechos.me/news/葡萄酒愛好者注意！2025年新西兰葡萄酒節首爾、釜山盛大舉行，帶你體驗奢華的美酒之旅.html</ns0:loc>
+    <ns1:news>
+      <ns1:publication>
+        <ns1:name>FamEchos</ns1:name>
+        <ns1:language>zh_TW</ns1:language>
+      </ns1:publication><ns1:publication_date>2025-04-14T13:25:37+08:00</ns1:publication_date>
+      <ns1:title>葡萄酒愛好者注意！2025年新西兰葡萄酒節首爾、釜山盛大舉行，帶你體驗奢華的美酒之旅</ns1:title>
+    </ns1:news>
+  </ns0:url>
+<ns0:url>
+    <ns0:loc>https://www.famechos.me/news/日本搖滾樂團coldrain簽約世紀媒體唱片公司，推出新單曲《INCOMPLETE》並宣布歐洲巡演日期.html</ns0:loc>
+    <ns1:news>
+      <ns1:publication>
+        <ns1:name>FamEchos</ns1:name>
+        <ns1:language>zh_TW</ns1:language>
+      </ns1:publication><ns1:publication_date>2025-04-14T19:15:36+08:00</ns1:publication_date>
+      <ns1:title>日本搖滾樂團coldrain簽約世紀媒體唱片公司，推出新單曲《INCOMPLETE》並宣布歐洲巡演日期</ns1:title>
+    </ns1:news>
+  </ns0:url>
+<ns0:url>
+    <ns0:loc>https://www.famechos.me/news/日本電影大師成瀨巳喜男的光輝回歸：30部經典作品重映紐約.html</ns0:loc>
+    <ns1:news>
+      <ns1:publication>
+        <ns1:name>FamEchos</ns1:name>
+        <ns1:language>zh_TW</ns1:language>
+      </ns1:publication><ns1:publication_date>2025-04-15T01:16:19+08:00</ns1:publication_date>
+      <ns1:title>日本電影大師成瀨巳喜男的光輝回歸：30部經典作品重映紐約</ns1:title>
+    </ns1:news>
+  </ns0:url>
+</ns0:urlset>
