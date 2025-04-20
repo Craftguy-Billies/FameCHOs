@@ -1,23 +1,33 @@
-<?xml version='1.0' encoding='utf-8'?>
-<ns0:urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9">
-  <ns0:url>
-    <ns0:loc>https://www.famechos.me/news/紀念Reita：回顧the GazettE貝斯手的幽默與魅力，讓我們一起懷念這位視覺系樂團的傳奇人物.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-04-17T13:19:18+08:00</ns1:publication_date>
-      <ns1:title>紀念Reita：回顧the GazettE貝斯手的幽默與魅力，讓我們一起懷念這位視覺系樂團的傳奇人物</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/東京周邊春季一日遊必訪！櫻花、芝櫻、紫藤等7大賞花熱點.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-04-19T05:22:33+08:00</ns1:publication_date>
-      <ns1:title>東京周邊春季一日遊必訪！櫻花、芝櫻、紫藤等7大賞花熱點</ns1:title>
-    </ns1:news>
-  </ns0:url>
-</ns0:urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url>
+    <loc>https://www.famechos.me/news/紀念Reita：回顧the GazettE貝斯手的幽默與魅力，讓我們一起懷念這位視覺系樂團的傳奇人物.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-04-17T13:19:18+08:00</news:publication_date>
+      <news:title>紀念Reita：回顧the GazettE貝斯手的幽默與魅力，讓我們一起懷念這位視覺系樂團的傳奇人物</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/東京周邊春季一日遊必訪！櫻花、芝櫻、紫藤等7大賞花熱點.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-04-19T05:22:33+08:00</news:publication_date>
+      <news:title>東京周邊春季一日遊必訪！櫻花、芝櫻、紫藤等7大賞花熱點</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/東京黃金週瘋狂來襲！美食、相撲、啤酒節等你來.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-04-20T21:27:43+08:00</news:publication_date>
+      <news:title>東京黃金週瘋狂來襲！美食、相撲、啤酒節等你來</news:title>
+    </news:news>
+  </url>
+</urlset>
