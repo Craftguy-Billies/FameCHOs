@@ -1,63 +1,53 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
-  <url>
-    <loc>https://www.famechos.me/news/東京黃金週瘋狂來襲！美食、相撲、啤酒節等你來.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-04-20T21:27:43+08:00</news:publication_date>
-      <news:title>東京黃金週瘋狂來襲！美食、相撲、啤酒節等你來</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/日本手機號碼申請指南：海外人士快速取得日本手機號碼的秘訣.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-04-21T21:38:00+08:00</news:publication_date>
-      <news:title>日本手機號碼申請指南：海外人士快速取得日本手機號碼的秘訣</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/韓國民眾痛哭！教宗方濟各逝世，留下對和平與仁慈的深刻印記.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-04-22T01:26:22+08:00</news:publication_date>
-      <news:title>韓國民眾痛哭！教宗方濟各逝世，留下對和平與仁慈的深刻印記</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/二十歲的青春能量！韓國新興團體TWS最新專輯《Try With Us》探索年輕人的興奮與不確定性.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-04-22T02:24:48+08:00</news:publication_date>
-      <news:title>二十歲的青春能量！韓國新興團體TWS最新專輯《Try With Us》探索年輕人的興奮與不確定性</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/韓國民眾痛哭！教宗方濟各逝世，留下無窮的仁慈與和平信息.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-04-22T03:43:45+08:00</news:publication_date>
-      <news:title>韓國民眾痛哭！教宗方濟各逝世，留下無窮的仁慈與和平信息</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/新西兰葡萄酒節首爾&amp;釜山強勢回歸！品嚐25家酒莊精品葡萄酒，沉浸韓國最具吸引力的葡萄酒市場.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-04-22T17:18:32+08:00</news:publication_date>
-      <news:title>新西兰葡萄酒節首爾&amp;釜山強勢回歸！品嚐25家酒莊精品葡萄酒，沉浸韓國最具吸引力的葡萄酒市場</news:title>
-    </news:news>
-  </url>
-</urlset>
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9">
+  <ns0:url>
+    <ns0:loc>https://www.famechos.me/news/日本手機號碼申請指南：海外人士快速取得日本手機號碼的秘訣.html</ns0:loc>
+    <ns1:news>
+      <ns1:publication>
+        <ns1:name>FamEchos</ns1:name>
+        <ns1:language>zh_TW</ns1:language>
+      </ns1:publication><ns1:publication_date>2025-04-21T21:38:00+08:00</ns1:publication_date>
+      <ns1:title>日本手機號碼申請指南：海外人士快速取得日本手機號碼的秘訣</ns1:title>
+    </ns1:news>
+  </ns0:url>
+<ns0:url>
+    <ns0:loc>https://www.famechos.me/news/韓國民眾痛哭！教宗方濟各逝世，留下對和平與仁慈的深刻印記.html</ns0:loc>
+    <ns1:news>
+      <ns1:publication>
+        <ns1:name>FamEchos</ns1:name>
+        <ns1:language>zh_TW</ns1:language>
+      </ns1:publication><ns1:publication_date>2025-04-22T01:26:22+08:00</ns1:publication_date>
+      <ns1:title>韓國民眾痛哭！教宗方濟各逝世，留下對和平與仁慈的深刻印記</ns1:title>
+    </ns1:news>
+  </ns0:url>
+<ns0:url>
+    <ns0:loc>https://www.famechos.me/news/二十歲的青春能量！韓國新興團體TWS最新專輯《Try With Us》探索年輕人的興奮與不確定性.html</ns0:loc>
+    <ns1:news>
+      <ns1:publication>
+        <ns1:name>FamEchos</ns1:name>
+        <ns1:language>zh_TW</ns1:language>
+      </ns1:publication><ns1:publication_date>2025-04-22T02:24:48+08:00</ns1:publication_date>
+      <ns1:title>二十歲的青春能量！韓國新興團體TWS最新專輯《Try With Us》探索年輕人的興奮與不確定性</ns1:title>
+    </ns1:news>
+  </ns0:url>
+<ns0:url>
+    <ns0:loc>https://www.famechos.me/news/韓國民眾痛哭！教宗方濟各逝世，留下無窮的仁慈與和平信息.html</ns0:loc>
+    <ns1:news>
+      <ns1:publication>
+        <ns1:name>FamEchos</ns1:name>
+        <ns1:language>zh_TW</ns1:language>
+      </ns1:publication><ns1:publication_date>2025-04-22T03:43:45+08:00</ns1:publication_date>
+      <ns1:title>韓國民眾痛哭！教宗方濟各逝世，留下無窮的仁慈與和平信息</ns1:title>
+    </ns1:news>
+  </ns0:url>
+<ns0:url>
+    <ns0:loc>https://www.famechos.me/news/新西兰葡萄酒節首爾&amp;釜山強勢回歸！品嚐25家酒莊精品葡萄酒，沉浸韓國最具吸引力的葡萄酒市場.html</ns0:loc>
+    <ns1:news>
+      <ns1:publication>
+        <ns1:name>FamEchos</ns1:name>
+        <ns1:language>zh_TW</ns1:language>
+      </ns1:publication><ns1:publication_date>2025-04-22T17:18:32+08:00</ns1:publication_date>
+      <ns1:title>新西兰葡萄酒節首爾&amp;釜山強勢回歸！品嚐25家酒莊精品葡萄酒，沉浸韓國最具吸引力的葡萄酒市場</ns1:title>
+    </ns1:news>
+  </ns0:url>
+</ns0:urlset>
