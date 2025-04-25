@@ -1,53 +1,63 @@
-<?xml version='1.0' encoding='utf-8'?>
-<ns0:urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9">
-  <ns0:url>
-    <ns0:loc>https://www.famechos.me/news/東京五月活動大全：黃金週、國際節慶、美食節慶等精彩活動等你來體驗！.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-04-24T03:32:20+08:00</ns1:publication_date>
-      <ns1:title>東京五月活動大全：黃金週、國際節慶、美食節慶等精彩活動等你來體驗！</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/沉沒的真相仍未浮現：韓國世越號沉没事件11年後仍留下許多疑問.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-04-24T06:22:20+08:00</ns1:publication_date>
-      <ns1:title>沉沒的真相仍未浮現：韓國世越號沉没事件11年後仍留下許多疑問</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/首爾隱藏版美食！5家必訪韓式辣雞湯餐廳，讓你品嚐到真正的韓國風味.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-04-24T13:20:16+08:00</ns1:publication_date>
-      <ns1:title>首爾隱藏版美食！5家必訪韓式辣雞湯餐廳，讓你品嚐到真正的韓國風味</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/首爾隱藏的美食寶藏：站著吃烤肉的真實韓國燒烤文化體驗.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-04-24T20:32:21+08:00</ns1:publication_date>
-      <ns1:title>首爾隱藏的美食寶藏：站著吃烤肉的真實韓國燒烤文化體驗</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/韓國旅遊必買！10大紀念品讓你帶回家的韓國味道.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-04-25T07:23:16+08:00</ns1:publication_date>
-      <ns1:title>韓國旅遊必買！10大紀念品讓你帶回家的韓國味道</ns1:title>
-    </ns1:news>
-  </ns0:url>
-</ns0:urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url>
+    <loc>https://www.famechos.me/news/東京五月活動大全：黃金週、國際節慶、美食節慶等精彩活動等你來體驗！.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-04-24T03:32:20+08:00</news:publication_date>
+      <news:title>東京五月活動大全：黃金週、國際節慶、美食節慶等精彩活動等你來體驗！</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/沉沒的真相仍未浮現：韓國世越號沉没事件11年後仍留下許多疑問.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-04-24T06:22:20+08:00</news:publication_date>
+      <news:title>沉沒的真相仍未浮現：韓國世越號沉没事件11年後仍留下許多疑問</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/首爾隱藏版美食！5家必訪韓式辣雞湯餐廳，讓你品嚐到真正的韓國風味.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-04-24T13:20:16+08:00</news:publication_date>
+      <news:title>首爾隱藏版美食！5家必訪韓式辣雞湯餐廳，讓你品嚐到真正的韓國風味</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/首爾隱藏的美食寶藏：站著吃烤肉的真實韓國燒烤文化體驗.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-04-24T20:32:21+08:00</news:publication_date>
+      <news:title>首爾隱藏的美食寶藏：站著吃烤肉的真實韓國燒烤文化體驗</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/韓國旅遊必買！10大紀念品讓你帶回家的韓國味道.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-04-25T07:23:16+08:00</news:publication_date>
+      <news:title>韓國旅遊必買！10大紀念品讓你帶回家的韓國味道</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/60歲女殺手的最後一擊：《刀斧老妪》挑戰老齡刻板印象.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-04-25T19:26:30+08:00</news:publication_date>
+      <news:title>60歲女殺手的最後一擊：《刀斧老妪》挑戰老齡刻板印象</news:title>
+    </news:news>
+  </url>
+</urlset>
