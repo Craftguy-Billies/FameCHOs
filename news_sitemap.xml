@@ -50,4 +50,14 @@
       <news:title>首爾美食大發現！5家必訪的美國風格燒烤餐廳，帶你品嚐異國風情</news:title>
     </news:news>
   </url>
+<url>
+    <loc>https://www.famechos.me/news/睽違9年！韓國K-pop偶像組合終於重返中國演唱會舞台.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-04-30T01:26:56+08:00</news:publication_date>
+      <news:title>睽違9年！韓國K-pop偶像組合終於重返中國演唱會舞台</news:title>
+    </news:news>
+  </url>
 </urlset>
