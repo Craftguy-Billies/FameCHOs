@@ -70,4 +70,14 @@
       <news:title>首爾夜生活的隱藏寶藏：萬善hof，韓國最道地的酒館體驗</news:title>
     </news:news>
   </url>
+<url>
+    <loc>https://www.famechos.me/news/尋找遺失的身分：韓國海外養子的心碎旅程與政府的沉默.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-05-01T02:23:23+08:00</news:publication_date>
+      <news:title>尋找遺失的身分：韓國海外養子的心碎旅程與政府的沉默</news:title>
+    </news:news>
+  </url>
 </urlset>
