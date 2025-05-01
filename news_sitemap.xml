@@ -1,83 +1,73 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
-  <url>
-    <loc>https://www.famechos.me/news/東京黃金週瘋狂登場！傳統節慶、巨型風箏、武士遊行...一網打盡2025年4月28日至5月4日東京熱門活動.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-04-29T04:22:53+08:00</news:publication_date>
-      <news:title>東京黃金週瘋狂登場！傳統節慶、巨型風箏、武士遊行...一網打盡2025年4月28日至5月4日東京熱門活動</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/隱藏在韓國海域的秘密天堂：紅島和黑山島的原始之美.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-04-29T13:22:38+08:00</news:publication_date>
-      <news:title>隱藏在韓國海域的秘密天堂：紅島和黑山島的原始之美</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/大阪世博會2025十大必看活動：從噴泉表演到恐龍王國，千萬別錯過！.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-04-29T19:01:52+08:00</news:publication_date>
-      <news:title>大阪世博會2025十大必看活動：從噴泉表演到恐龍王國，千萬別錯過！</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/空氣炸鍋遇上韓國零食！10款必試美食讓你大飽口福.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-04-29T20:33:07+08:00</news:publication_date>
-      <news:title>空氣炸鍋遇上韓國零食！10款必試美食讓你大飽口福</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/首爾美食大發現！5家必訪的美國風格燒烤餐廳，帶你品嚐異國風情.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-04-30T00:22:09+08:00</news:publication_date>
-      <news:title>首爾美食大發現！5家必訪的美國風格燒烤餐廳，帶你品嚐異國風情</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/睽違9年！韓國K-pop偶像組合終於重返中國演唱會舞台.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-04-30T01:26:56+08:00</news:publication_date>
-      <news:title>睽違9年！韓國K-pop偶像組合終於重返中國演唱會舞台</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/首爾夜生活的隱藏寶藏：萬善hof，韓國最道地的酒館體驗.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-04-30T03:14:09+08:00</news:publication_date>
-      <news:title>首爾夜生活的隱藏寶藏：萬善hof，韓國最道地的酒館體驗</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/尋找遺失的身分：韓國海外養子的心碎旅程與政府的沉默.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-05-01T02:23:23+08:00</news:publication_date>
-      <news:title>尋找遺失的身分：韓國海外養子的心碎旅程與政府的沉默</news:title>
-    </news:news>
-  </url>
-</urlset>
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9">
+  <ns0:url>
+    <ns0:loc>https://www.famechos.me/news/隱藏在韓國海域的秘密天堂：紅島和黑山島的原始之美.html</ns0:loc>
+    <ns1:news>
+      <ns1:publication>
+        <ns1:name>FamEchos</ns1:name>
+        <ns1:language>zh_TW</ns1:language>
+      </ns1:publication><ns1:publication_date>2025-04-29T13:22:38+08:00</ns1:publication_date>
+      <ns1:title>隱藏在韓國海域的秘密天堂：紅島和黑山島的原始之美</ns1:title>
+    </ns1:news>
+  </ns0:url>
+<ns0:url>
+    <ns0:loc>https://www.famechos.me/news/大阪世博會2025十大必看活動：從噴泉表演到恐龍王國，千萬別錯過！.html</ns0:loc>
+    <ns1:news>
+      <ns1:publication>
+        <ns1:name>FamEchos</ns1:name>
+        <ns1:language>zh_TW</ns1:language>
+      </ns1:publication><ns1:publication_date>2025-04-29T19:01:52+08:00</ns1:publication_date>
+      <ns1:title>大阪世博會2025十大必看活動：從噴泉表演到恐龍王國，千萬別錯過！</ns1:title>
+    </ns1:news>
+  </ns0:url>
+<ns0:url>
+    <ns0:loc>https://www.famechos.me/news/空氣炸鍋遇上韓國零食！10款必試美食讓你大飽口福.html</ns0:loc>
+    <ns1:news>
+      <ns1:publication>
+        <ns1:name>FamEchos</ns1:name>
+        <ns1:language>zh_TW</ns1:language>
+      </ns1:publication><ns1:publication_date>2025-04-29T20:33:07+08:00</ns1:publication_date>
+      <ns1:title>空氣炸鍋遇上韓國零食！10款必試美食讓你大飽口福</ns1:title>
+    </ns1:news>
+  </ns0:url>
+<ns0:url>
+    <ns0:loc>https://www.famechos.me/news/首爾美食大發現！5家必訪的美國風格燒烤餐廳，帶你品嚐異國風情.html</ns0:loc>
+    <ns1:news>
+      <ns1:publication>
+        <ns1:name>FamEchos</ns1:name>
+        <ns1:language>zh_TW</ns1:language>
+      </ns1:publication><ns1:publication_date>2025-04-30T00:22:09+08:00</ns1:publication_date>
+      <ns1:title>首爾美食大發現！5家必訪的美國風格燒烤餐廳，帶你品嚐異國風情</ns1:title>
+    </ns1:news>
+  </ns0:url>
+<ns0:url>
+    <ns0:loc>https://www.famechos.me/news/睽違9年！韓國K-pop偶像組合終於重返中國演唱會舞台.html</ns0:loc>
+    <ns1:news>
+      <ns1:publication>
+        <ns1:name>FamEchos</ns1:name>
+        <ns1:language>zh_TW</ns1:language>
+      </ns1:publication><ns1:publication_date>2025-04-30T01:26:56+08:00</ns1:publication_date>
+      <ns1:title>睽違9年！韓國K-pop偶像組合終於重返中國演唱會舞台</ns1:title>
+    </ns1:news>
+  </ns0:url>
+<ns0:url>
+    <ns0:loc>https://www.famechos.me/news/首爾夜生活的隱藏寶藏：萬善hof，韓國最道地的酒館體驗.html</ns0:loc>
+    <ns1:news>
+      <ns1:publication>
+        <ns1:name>FamEchos</ns1:name>
+        <ns1:language>zh_TW</ns1:language>
+      </ns1:publication><ns1:publication_date>2025-04-30T03:14:09+08:00</ns1:publication_date>
+      <ns1:title>首爾夜生活的隱藏寶藏：萬善hof，韓國最道地的酒館體驗</ns1:title>
+    </ns1:news>
+  </ns0:url>
+<ns0:url>
+    <ns0:loc>https://www.famechos.me/news/尋找遺失的身分：韓國海外養子的心碎旅程與政府的沉默.html</ns0:loc>
+    <ns1:news>
+      <ns1:publication>
+        <ns1:name>FamEchos</ns1:name>
+        <ns1:language>zh_TW</ns1:language>
+      </ns1:publication><ns1:publication_date>2025-05-01T02:23:23+08:00</ns1:publication_date>
+      <ns1:title>尋找遺失的身分：韓國海外養子的心碎旅程與政府的沉默</ns1:title>
+    </ns1:news>
+  </ns0:url>
+</ns0:urlset>
