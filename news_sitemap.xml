@@ -1,63 +1,73 @@
-<?xml version='1.0' encoding='utf-8'?>
-<ns0:urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9">
-  <ns0:url>
-    <ns0:loc>https://www.famechos.me/news/BTS帶動HYBE第一季度營收大增50%！.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-05-01T22:06:46+08:00</ns1:publication_date>
-      <ns1:title>BTS帶動HYBE第一季度營收大增50%！</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/大阪世博會梵蒂岡館湧現萬人悼念教宗方濟各：留言、獻花、降半旗.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-05-02T00:44:56+08:00</ns1:publication_date>
-      <ns1:title>大阪世博會梵蒂岡館湧現萬人悼念教宗方濟各：留言、獻花、降半旗</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/韓流盛事！首爾6月舉辦大型慶典，K-pop巨星齊聚一堂，千萬粉絲期待.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-05-02T03:14:05+08:00</ns1:publication_date>
-      <ns1:title>韓流盛事！首爾6月舉辦大型慶典，K-pop巨星齊聚一堂，千萬粉絲期待</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/中國解禁韓流？今年秋季海南島將舉辦4萬人K-pop大型音樂會.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-05-02T07:22:25+08:00</ns1:publication_date>
-      <ns1:title>中國解禁韓流？今年秋季海南島將舉辦4萬人K-pop大型音樂會</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/首爾國立現代美術館創紀錄！澳洲藝術家羅恩·穆克亞洲首展吸引十萬人潮.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-05-03T02:34:45+08:00</ns1:publication_date>
-      <ns1:title>首爾國立現代美術館創紀錄！澳洲藝術家羅恩·穆克亞洲首展吸引十萬人潮</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/K-POP霸主！十七、BLACKPINK成員Lisa和Rose入選2025年A100名單.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-05-03T05:21:57+08:00</ns1:publication_date>
-      <ns1:title>K-POP霸主！十七、BLACKPINK成員Lisa和Rose入選2025年A100名單</ns1:title>
-    </ns1:news>
-  </ns0:url>
-</ns0:urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url>
+    <loc>https://www.famechos.me/news/BTS帶動HYBE第一季度營收大增50%！.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-05-01T22:06:46+08:00</news:publication_date>
+      <news:title>BTS帶動HYBE第一季度營收大增50%！</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/大阪世博會梵蒂岡館湧現萬人悼念教宗方濟各：留言、獻花、降半旗.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-05-02T00:44:56+08:00</news:publication_date>
+      <news:title>大阪世博會梵蒂岡館湧現萬人悼念教宗方濟各：留言、獻花、降半旗</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/韓流盛事！首爾6月舉辦大型慶典，K-pop巨星齊聚一堂，千萬粉絲期待.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-05-02T03:14:05+08:00</news:publication_date>
+      <news:title>韓流盛事！首爾6月舉辦大型慶典，K-pop巨星齊聚一堂，千萬粉絲期待</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/中國解禁韓流？今年秋季海南島將舉辦4萬人K-pop大型音樂會.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-05-02T07:22:25+08:00</news:publication_date>
+      <news:title>中國解禁韓流？今年秋季海南島將舉辦4萬人K-pop大型音樂會</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/首爾國立現代美術館創紀錄！澳洲藝術家羅恩·穆克亞洲首展吸引十萬人潮.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-05-03T02:34:45+08:00</news:publication_date>
+      <news:title>首爾國立現代美術館創紀錄！澳洲藝術家羅恩·穆克亞洲首展吸引十萬人潮</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/K-POP霸主！十七、BLACKPINK成員Lisa和Rose入選2025年A100名單.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-05-03T05:21:57+08:00</news:publication_date>
+      <news:title>K-POP霸主！十七、BLACKPINK成員Lisa和Rose入選2025年A100名單</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/東京5月瘋狂活動週！泰國節、四川節、神田祭等你來.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-05-05T03:20:26+08:00</news:publication_date>
+      <news:title>東京5月瘋狂活動週！泰國節、四川節、神田祭等你來</news:title>
+    </news:news>
+  </url>
+</urlset>
