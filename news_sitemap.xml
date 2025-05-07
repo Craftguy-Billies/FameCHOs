@@ -50,4 +50,14 @@
       <news:title>發現首爾隱藏的美食寶藏：通仁市場自製韓式便當之旅</news:title>
     </news:news>
   </url>
+<url>
+    <loc>https://www.famechos.me/news/首爾隱藏的血腸天堂：順大街讓你體驗最道地的韓國街頭美食.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-05-08T06:16:12+08:00</news:publication_date>
+      <news:title>首爾隱藏的血腸天堂：順大街讓你體驗最道地的韓國街頭美食</news:title>
+    </news:news>
+  </url>
 </urlset>
