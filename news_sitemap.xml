@@ -1,23 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
-  <url>
-    <loc>https://www.famechos.me/news/東京5月瘋狂活動週！泰國節、四川節、神田祭等你來.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-05-05T03:20:26+08:00</news:publication_date>
-      <news:title>東京5月瘋狂活動週！泰國節、四川節、神田祭等你來</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/Netflix大贏家！《廚藝爭霸戰》與《哈爾濱》摘下百想藝術大賞最高榮譽.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-05-06T01:23:03+08:00</news:publication_date>
-      <news:title>Netflix大贏家！《廚藝爭霸戰》與《哈爾濱》摘下百想藝術大賞最高榮譽</news:title>
-    </news:news>
-  </url>
-</urlset>
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9">
+  <ns0:url>
+    <ns0:loc>https://www.famechos.me/news/Netflix大贏家！《廚藝爭霸戰》與《哈爾濱》摘下百想藝術大賞最高榮譽.html</ns0:loc>
+    <ns1:news>
+      <ns1:publication>
+        <ns1:name>FamEchos</ns1:name>
+        <ns1:language>zh_TW</ns1:language>
+      </ns1:publication><ns1:publication_date>2025-05-06T01:23:03+08:00</ns1:publication_date>
+      <ns1:title>Netflix大贏家！《廚藝爭霸戰》與《哈爾濱》摘下百想藝術大賞最高榮譽</ns1:title>
+    </ns1:news>
+  </ns0:url>
+</ns0:urlset>
