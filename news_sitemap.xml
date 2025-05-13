@@ -1,43 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
-  <url>
-    <loc>https://www.famechos.me/news/你知道韓國YouTube最紅的十大創作者是誰嗎？.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-05-10T09:10:08+08:00</news:publication_date>
-      <news:title>你知道韓國YouTube最紅的十大創作者是誰嗎？</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/超越K-POP！韓國女性音樂家打破框架，展現多元風格.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-05-10T18:33:19+08:00</news:publication_date>
-      <news:title>超越K-POP！韓國女性音樂家打破框架，展現多元風格</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/金秀賢再度出擊！控告YouTuber及已故女星家屬誹謗　爭取名譽清白.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-05-11T19:20:06+08:00</news:publication_date>
-      <news:title>金秀賢再度出擊！控告YouTuber及已故女星家屬誹謗　爭取名譽清白</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/韓國護膚神器大公開！HwaHae APP讓你找到最適合自己的美容產品.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-05-13T02:24:22+08:00</news:publication_date>
-      <news:title>韓國護膚神器大公開！HwaHae APP讓你找到最適合自己的美容產品</news:title>
-    </news:news>
-  </url>
-</urlset>
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9">
+  <ns0:url>
+    <ns0:loc>https://www.famechos.me/news/金秀賢再度出擊！控告YouTuber及已故女星家屬誹謗　爭取名譽清白.html</ns0:loc>
+    <ns1:news>
+      <ns1:publication>
+        <ns1:name>FamEchos</ns1:name>
+        <ns1:language>zh_TW</ns1:language>
+      </ns1:publication><ns1:publication_date>2025-05-11T19:20:06+08:00</ns1:publication_date>
+      <ns1:title>金秀賢再度出擊！控告YouTuber及已故女星家屬誹謗　爭取名譽清白</ns1:title>
+    </ns1:news>
+  </ns0:url>
+<ns0:url>
+    <ns0:loc>https://www.famechos.me/news/韓國護膚神器大公開！HwaHae APP讓你找到最適合自己的美容產品.html</ns0:loc>
+    <ns1:news>
+      <ns1:publication>
+        <ns1:name>FamEchos</ns1:name>
+        <ns1:language>zh_TW</ns1:language>
+      </ns1:publication><ns1:publication_date>2025-05-13T02:24:22+08:00</ns1:publication_date>
+      <ns1:title>韓國護膚神器大公開！HwaHae APP讓你找到最適合自己的美容產品</ns1:title>
+    </ns1:news>
+  </ns0:url>
+</ns0:urlset>
