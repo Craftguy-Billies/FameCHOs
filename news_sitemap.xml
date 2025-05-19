@@ -90,4 +90,14 @@
       <news:title>東京5月瘋狂活動！煙花、美食、啤酒、音樂、文化節慶...你準備好了嗎？</news:title>
     </news:news>
   </url>
+<url>
+    <loc>https://www.famechos.me/news/RIIZE回歸樂壇！新歌《Fly Up》重現《Get a Guitar》活力.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-05-19T13:17:20+08:00</news:publication_date>
+      <news:title>RIIZE回歸樂壇！新歌《Fly Up》重現《Get a Guitar》活力</news:title>
+    </news:news>
+  </url>
 </urlset>
