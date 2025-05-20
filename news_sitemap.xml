@@ -150,4 +150,14 @@
       <news:title>首爾健康餐廳大集合！5家必訪餐廳讓你享受健康美食</news:title>
     </news:news>
   </url>
+<url>
+    <loc>https://www.famechos.me/news/韓國同性戀者的艱難路：從污名化到爭取權益.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-05-20T16:25:38+08:00</news:publication_date>
+      <news:title>韓國同性戀者的艱難路：從污名化到爭取權益</news:title>
+    </news:news>
+  </url>
 </urlset>
