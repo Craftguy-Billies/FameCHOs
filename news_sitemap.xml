@@ -170,4 +170,14 @@
       <news:title>探索首爾五大公園：從動物園到美麗校園，體驗韓國城市中的自然與文化</news:title>
     </news:news>
   </url>
+<url>
+    <loc>https://www.famechos.me/news/體驗韓劇中的韓國：五大必試活動讓你化身為韓劇主角.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-05-21T14:25:30+08:00</news:publication_date>
+      <news:title>體驗韓劇中的韓國：五大必試活動讓你化身為韓劇主角</news:title>
+    </news:news>
+  </url>
 </urlset>
