@@ -1,73 +1,63 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
-  <url>
-    <loc>https://www.famechos.me/news/東京清真餐廳大搜查！7家穆斯林友好餐廳讓你安心享受美食.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-05-23T18:20:43+08:00</news:publication_date>
-      <news:title>東京清真餐廳大搜查！7家穆斯林友好餐廳讓你安心享受美食</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/韓國歷史上的今天：重大事件回顧與最新局勢發展.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-05-25T13:17:35+08:00</news:publication_date>
-      <news:title>韓國歷史上的今天：重大事件回顧與最新局勢發展</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/東京5月底至6月初活動盛事：煙花、萤火虫、電影首映和流行文化展覽等你來.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-05-25T23:42:35+08:00</news:publication_date>
-      <news:title>東京5月底至6月初活動盛事：煙花、萤火虫、電影首映和流行文化展覽等你來</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/首爾最國際化的地區：梨泰院七大必遊景點大公開！.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-05-26T19:16:05+08:00</news:publication_date>
-      <news:title>首爾最國際化的地區：梨泰院七大必遊景點大公開！</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/JYP娛樂新男團KickFlip即將發行新專輯《Kick Out, Flip!》，展現叛逆學生氣息.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-05-26T20:33:24+08:00</news:publication_date>
-      <news:title>JYP娛樂新男團KickFlip即將發行新專輯《Kick Out, Flip!》，展現叛逆學生氣息</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/韓國史前岩畫有望躋身世界遺產名錄！千年前的狩獵場景將重現.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-05-27T00:32:10+08:00</news:publication_date>
-      <news:title>韓國史前岩畫有望躋身世界遺產名錄！千年前的狩獵場景將重現</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/BLACKPINK 終於回歸！睽違兩年八個月的新歌即將發行.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-05-27T04:24:28+08:00</news:publication_date>
-      <news:title>BLACKPINK 終於回歸！睽違兩年八個月的新歌即將發行</news:title>
-    </news:news>
-  </url>
-</urlset>
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9">
+  <ns0:url>
+    <ns0:loc>https://www.famechos.me/news/韓國歷史上的今天：重大事件回顧與最新局勢發展.html</ns0:loc>
+    <ns1:news>
+      <ns1:publication>
+        <ns1:name>FamEchos</ns1:name>
+        <ns1:language>zh_TW</ns1:language>
+      </ns1:publication><ns1:publication_date>2025-05-25T13:17:35+08:00</ns1:publication_date>
+      <ns1:title>韓國歷史上的今天：重大事件回顧與最新局勢發展</ns1:title>
+    </ns1:news>
+  </ns0:url>
+<ns0:url>
+    <ns0:loc>https://www.famechos.me/news/東京5月底至6月初活動盛事：煙花、萤火虫、電影首映和流行文化展覽等你來.html</ns0:loc>
+    <ns1:news>
+      <ns1:publication>
+        <ns1:name>FamEchos</ns1:name>
+        <ns1:language>zh_TW</ns1:language>
+      </ns1:publication><ns1:publication_date>2025-05-25T23:42:35+08:00</ns1:publication_date>
+      <ns1:title>東京5月底至6月初活動盛事：煙花、萤火虫、電影首映和流行文化展覽等你來</ns1:title>
+    </ns1:news>
+  </ns0:url>
+<ns0:url>
+    <ns0:loc>https://www.famechos.me/news/首爾最國際化的地區：梨泰院七大必遊景點大公開！.html</ns0:loc>
+    <ns1:news>
+      <ns1:publication>
+        <ns1:name>FamEchos</ns1:name>
+        <ns1:language>zh_TW</ns1:language>
+      </ns1:publication><ns1:publication_date>2025-05-26T19:16:05+08:00</ns1:publication_date>
+      <ns1:title>首爾最國際化的地區：梨泰院七大必遊景點大公開！</ns1:title>
+    </ns1:news>
+  </ns0:url>
+<ns0:url>
+    <ns0:loc>https://www.famechos.me/news/JYP娛樂新男團KickFlip即將發行新專輯《Kick Out, Flip!》，展現叛逆學生氣息.html</ns0:loc>
+    <ns1:news>
+      <ns1:publication>
+        <ns1:name>FamEchos</ns1:name>
+        <ns1:language>zh_TW</ns1:language>
+      </ns1:publication><ns1:publication_date>2025-05-26T20:33:24+08:00</ns1:publication_date>
+      <ns1:title>JYP娛樂新男團KickFlip即將發行新專輯《Kick Out, Flip!》，展現叛逆學生氣息</ns1:title>
+    </ns1:news>
+  </ns0:url>
+<ns0:url>
+    <ns0:loc>https://www.famechos.me/news/韓國史前岩畫有望躋身世界遺產名錄！千年前的狩獵場景將重現.html</ns0:loc>
+    <ns1:news>
+      <ns1:publication>
+        <ns1:name>FamEchos</ns1:name>
+        <ns1:language>zh_TW</ns1:language>
+      </ns1:publication><ns1:publication_date>2025-05-27T00:32:10+08:00</ns1:publication_date>
+      <ns1:title>韓國史前岩畫有望躋身世界遺產名錄！千年前的狩獵場景將重現</ns1:title>
+    </ns1:news>
+  </ns0:url>
+<ns0:url>
+    <ns0:loc>https://www.famechos.me/news/BLACKPINK 終於回歸！睽違兩年八個月的新歌即將發行.html</ns0:loc>
+    <ns1:news>
+      <ns1:publication>
+        <ns1:name>FamEchos</ns1:name>
+        <ns1:language>zh_TW</ns1:language>
+      </ns1:publication><ns1:publication_date>2025-05-27T04:24:28+08:00</ns1:publication_date>
+      <ns1:title>BLACKPINK 終於回歸！睽違兩年八個月的新歌即將發行</ns1:title>
+    </ns1:news>
+  </ns0:url>
+</ns0:urlset>
