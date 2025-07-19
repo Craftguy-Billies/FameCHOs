@@ -1,63 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
-  <url>
-    <loc>https://www.famechos.me/news/濟州島隱藏的藝術寶藏：阿拉里奧博物館珍藏，讓你體驗最奇怪、最精彩的當代藝術.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-07-15T11:29:26+08:00</news:publication_date>
-      <news:title>濟州島隱藏的藝術寶藏：阿拉里奧博物館珍藏，讓你體驗最奇怪、最精彩的當代藝術</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/韓國最新潮流！我嘗試了「個人色彩分析」，發現自己最適合的顏色，購物再也不會犯錯！.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-07-15T17:28:18+08:00</news:publication_date>
-      <news:title>韓國最新潮流！我嘗試了「個人色彩分析」，發現自己最適合的顏色，購物再也不會犯錯！</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/溫流脫離SM娛樂後首次發行第二張個人專輯《Percent》，宣布開啟世界巡演之旅.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-07-15T18:20:01+08:00</news:publication_date>
-      <news:title>溫流脫離SM娛樂後首次發行第二張個人專輯《Percent》，宣布開啟世界巡演之旅</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/韓國首次舉辦！2026年釜山將迎來聯合國教科文組織世界遺產大會.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-07-16T01:17:07+08:00</news:publication_date>
-      <news:title>韓國首次舉辦！2026年釜山將迎來聯合國教科文組織世界遺產大會</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/MONSTA X十周年之際：緊密團隊合作是成功關鍵，成員們的心路歷程.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-07-16T17:24:13+08:00</news:publication_date>
-      <news:title>MONSTA X十周年之際：緊密團隊合作是成功關鍵，成員們的心路歷程</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/《全知讀者：先知》新作上映，粉絲大呼過癮，但新觀眾卻一頭霧水.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-07-18T13:24:59+08:00</news:publication_date>
-      <news:title>《全知讀者：先知》新作上映，粉絲大呼過癮，但新觀眾卻一頭霧水</news:title>
-    </news:news>
-  </url>
-</urlset>
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9">
+  <ns0:url>
+    <ns0:loc>https://www.famechos.me/news/《全知讀者：先知》新作上映，粉絲大呼過癮，但新觀眾卻一頭霧水.html</ns0:loc>
+    <ns1:news>
+      <ns1:publication>
+        <ns1:name>FamEchos</ns1:name>
+        <ns1:language>zh_TW</ns1:language>
+      </ns1:publication><ns1:publication_date>2025-07-18T13:24:59+08:00</ns1:publication_date>
+      <ns1:title>《全知讀者：先知》新作上映，粉絲大呼過癮，但新觀眾卻一頭霧水</ns1:title>
+    </ns1:news>
+  </ns0:url>
+</ns0:urlset>
