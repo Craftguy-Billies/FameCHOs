@@ -30,4 +30,14 @@
       <news:title>槍擊案頻發之際，Netflix新劇《扳機》發出警告：暴力不應該再發生</news:title>
     </news:news>
   </url>
+<url>
+    <loc>https://www.famechos.me/news/東京8月瘋狂節慶！盆踊、阿波踊、煙花節慶、夏日Comiket等你來.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-07-22T16:26:41+08:00</news:publication_date>
+      <news:title>東京8月瘋狂節慶！盆踊、阿波踊、煙花節慶、夏日Comiket等你來</news:title>
+    </news:news>
+  </url>
 </urlset>
