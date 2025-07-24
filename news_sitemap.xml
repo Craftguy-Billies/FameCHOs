@@ -1,63 +1,73 @@
-<?xml version='1.0' encoding='utf-8'?>
-<ns0:urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9">
-  <ns0:url>
-    <ns0:loc>https://www.famechos.me/news/TXT最新專輯《The Star Chapter: Together》強調團結精神：成長、拯救與團隊的共同努力.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-07-21T17:31:50+08:00</ns1:publication_date>
-      <ns1:title>TXT最新專輯《The Star Chapter: Together》強調團結精神：成長、拯救與團隊的共同努力</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/槍擊案頻發之際，Netflix新劇《扳機》發出警告：暴力不應該再發生.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-07-22T15:27:10+08:00</ns1:publication_date>
-      <ns1:title>槍擊案頻發之際，Netflix新劇《扳機》發出警告：暴力不應該再發生</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/東京8月瘋狂節慶！盆踊、阿波踊、煙花節慶、夏日Comiket等你來.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-07-22T16:26:41+08:00</ns1:publication_date>
-      <ns1:title>東京8月瘋狂節慶！盆踊、阿波踊、煙花節慶、夏日Comiket等你來</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/日本夏日祭典瘋狂來襲！煙花、舞蹈、美食，體驗日本傳統文化的最佳時機.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-07-22T18:26:55+08:00</ns1:publication_date>
-      <ns1:title>日本夏日祭典瘋狂來襲！煙花、舞蹈、美食，體驗日本傳統文化的最佳時機</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/脫北者變身K-pop偶像：1Verse男團成員揭露艱辛過往.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-07-22T19:17:02+08:00</ns1:publication_date>
-      <ns1:title>脫北者變身K-pop偶像：1Verse男團成員揭露艱辛過往</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/朴贊郁新作《別無選擇》再度震撼威尼斯影展！.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-07-22T21:37:20+08:00</ns1:publication_date>
-      <ns1:title>朴贊郁新作《別無選擇》再度震撼威尼斯影展！</ns1:title>
-    </ns1:news>
-  </ns0:url>
-</ns0:urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url>
+    <loc>https://www.famechos.me/news/TXT最新專輯《The Star Chapter: Together》強調團結精神：成長、拯救與團隊的共同努力.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-07-21T17:31:50+08:00</news:publication_date>
+      <news:title>TXT最新專輯《The Star Chapter: Together》強調團結精神：成長、拯救與團隊的共同努力</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/槍擊案頻發之際，Netflix新劇《扳機》發出警告：暴力不應該再發生.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-07-22T15:27:10+08:00</news:publication_date>
+      <news:title>槍擊案頻發之際，Netflix新劇《扳機》發出警告：暴力不應該再發生</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/東京8月瘋狂節慶！盆踊、阿波踊、煙花節慶、夏日Comiket等你來.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-07-22T16:26:41+08:00</news:publication_date>
+      <news:title>東京8月瘋狂節慶！盆踊、阿波踊、煙花節慶、夏日Comiket等你來</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/日本夏日祭典瘋狂來襲！煙花、舞蹈、美食，體驗日本傳統文化的最佳時機.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-07-22T18:26:55+08:00</news:publication_date>
+      <news:title>日本夏日祭典瘋狂來襲！煙花、舞蹈、美食，體驗日本傳統文化的最佳時機</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/脫北者變身K-pop偶像：1Verse男團成員揭露艱辛過往.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-07-22T19:17:02+08:00</news:publication_date>
+      <news:title>脫北者變身K-pop偶像：1Verse男團成員揭露艱辛過往</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/朴贊郁新作《別無選擇》再度震撼威尼斯影展！.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-07-22T21:37:20+08:00</news:publication_date>
+      <news:title>朴贊郁新作《別無選擇》再度震撼威尼斯影展！</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/被迫穿上日本國旗的韓國英雄：朝鮮日治時期馬拉松奧運冠軍展覽揭幕.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-07-24T14:26:18+08:00</news:publication_date>
+      <news:title>被迫穿上日本國旗的韓國英雄：朝鮮日治時期馬拉松奧運冠軍展覽揭幕</news:title>
+    </news:news>
+  </url>
+</urlset>
