@@ -1,43 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
-  <url>
-    <loc>https://www.famechos.me/news/殭屍爸爸的溫馨之旅：《我的女兒是殭屍》融合幽默、溫情、恐怖元素，帶你體驗不一樣的殭屍電影.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-07-25T11:28:26+08:00</news:publication_date>
-      <news:title>殭屍爸爸的溫馨之旅：《我的女兒是殭屍》融合幽默、溫情、恐怖元素，帶你體驗不一樣的殭屍電影</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/失憶後的愛情迷宮：《Kururi ~ 誰愛上了我？~》帶你探索記憶與愛的深層次問題.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-07-26T21:28:44+08:00</news:publication_date>
-      <news:title>失憶後的愛情迷宮：《Kururi ~ 誰愛上了我？~》帶你探索記憶與愛的深層次問題</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/東京盛夏狂歡：盂蘭盆舞、煙花表演、偶像見面會等你來體驗！.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-07-27T21:32:08+08:00</news:publication_date>
-      <news:title>東京盛夏狂歡：盂蘭盆舞、煙花表演、偶像見面會等你來體驗！</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/譯者變身小說家：安東赫的科幻處女作《邁向永恆》揭露創作理念.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-07-28T15:25:25+08:00</news:publication_date>
-      <news:title>譯者變身小說家：安東赫的科幻處女作《邁向永恆》揭露創作理念</news:title>
-    </news:news>
-  </url>
-</urlset>
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9">
+  <ns0:url>
+    <ns0:loc>https://www.famechos.me/news/東京盛夏狂歡：盂蘭盆舞、煙花表演、偶像見面會等你來體驗！.html</ns0:loc>
+    <ns1:news>
+      <ns1:publication>
+        <ns1:name>FamEchos</ns1:name>
+        <ns1:language>zh_TW</ns1:language>
+      </ns1:publication><ns1:publication_date>2025-07-27T21:32:08+08:00</ns1:publication_date>
+      <ns1:title>東京盛夏狂歡：盂蘭盆舞、煙花表演、偶像見面會等你來體驗！</ns1:title>
+    </ns1:news>
+  </ns0:url>
+<ns0:url>
+    <ns0:loc>https://www.famechos.me/news/譯者變身小說家：安東赫的科幻處女作《邁向永恆》揭露創作理念.html</ns0:loc>
+    <ns1:news>
+      <ns1:publication>
+        <ns1:name>FamEchos</ns1:name>
+        <ns1:language>zh_TW</ns1:language>
+      </ns1:publication><ns1:publication_date>2025-07-28T15:25:25+08:00</ns1:publication_date>
+      <ns1:title>譯者變身小說家：安東赫的科幻處女作《邁向永恆》揭露創作理念</ns1:title>
+    </ns1:news>
+  </ns0:url>
+</ns0:urlset>
