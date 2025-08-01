@@ -1,33 +1,43 @@
-<?xml version='1.0' encoding='utf-8'?>
-<ns0:urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9">
-  <ns0:url>
-    <ns0:loc>https://www.famechos.me/news/母女戀愛故事再現！柳濟元新作《再一次恋爱》探索中年夫婦與年輕一代的愛情.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-07-30T16:29:02+08:00</ns1:publication_date>
-      <ns1:title>母女戀愛故事再現！柳濟元新作《再一次恋爱》探索中年夫婦與年輕一代的愛情</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/韓國詩人金惠順再創歷史！《死亡自傳》成首部獲德國文學獎的詩集.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-07-31T11:39:54+08:00</ns1:publication_date>
-      <ns1:title>韓國詩人金惠順再創歷史！《死亡自傳》成首部獲德國文學獎的詩集</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/TZUSOO數位世界在首爾重現！韓國現代藝術博物館與LG攜手打造沉浸式藝術體驗.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-07-31T15:22:44+08:00</ns1:publication_date>
-      <ns1:title>TZUSOO數位世界在首爾重現！韓國現代藝術博物館與LG攜手打造沉浸式藝術體驗</ns1:title>
-    </ns1:news>
-  </ns0:url>
-</ns0:urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url>
+    <loc>https://www.famechos.me/news/母女戀愛故事再現！柳濟元新作《再一次恋爱》探索中年夫婦與年輕一代的愛情.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-07-30T16:29:02+08:00</news:publication_date>
+      <news:title>母女戀愛故事再現！柳濟元新作《再一次恋爱》探索中年夫婦與年輕一代的愛情</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/韓國詩人金惠順再創歷史！《死亡自傳》成首部獲德國文學獎的詩集.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-07-31T11:39:54+08:00</news:publication_date>
+      <news:title>韓國詩人金惠順再創歷史！《死亡自傳》成首部獲德國文學獎的詩集</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/TZUSOO數位世界在首爾重現！韓國現代藝術博物館與LG攜手打造沉浸式藝術體驗.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-07-31T15:22:44+08:00</news:publication_date>
+      <news:title>TZUSOO數位世界在首爾重現！韓國現代藝術博物館與LG攜手打造沉浸式藝術體驗</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/日本夏日海邊煙花節盛事來臨！10大必看煙花表演，讓你體驗動漫般的浪漫夏夜.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-08-01T11:57:14+08:00</news:publication_date>
+      <news:title>日本夏日海邊煙花節盛事來臨！10大必看煙花表演，讓你體驗動漫般的浪漫夏夜</news:title>
+    </news:news>
+  </url>
+</urlset>
