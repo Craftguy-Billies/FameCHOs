@@ -50,4 +50,14 @@
       <news:title>東京租Airbnb？別犯這些錯誤！地點、大小、交通便利性……專家教你如何避免旅遊災難</news:title>
     </news:news>
   </url>
+<url>
+    <loc>https://www.famechos.me/news/K-pop巨頭HYBE營收再創新高！第二季度收入507.5億韓元，全球巡演成最大動力.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-08-06T17:29:45+08:00</news:publication_date>
+      <news:title>K-pop巨頭HYBE營收再創新高！第二季度收入507.5億韓元，全球巡演成最大動力</news:title>
+    </news:news>
+  </url>
 </urlset>
