@@ -1,3 +1,13 @@
-<?xml version='1.0' encoding='utf-8'?>
-<ns0:urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9">
-  </ns0:urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url>
+    <loc>https://www.famechos.me/news/MAD JAMIE分享國際經歷：從瑞典到日本武道館，偶像龐克搖滾樂團的10年夢想之路.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-08-09T14:25:30+08:00</news:publication_date>
+      <news:title>MAD JAMIE分享國際經歷：從瑞典到日本武道館，偶像龐克搖滾樂團的10年夢想之路</news:title>
+    </news:news>
+  </url>
+</urlset>
