@@ -40,4 +40,14 @@
       <news:title>韓國聯合通訊社跨越語言障礙！推出越南語新聞服務，強化韓越合作</news:title>
     </news:news>
   </url>
+<url>
+    <loc>https://www.famechos.me/news/SHINee Key最新專輯《Hunter》：與自己的「另一個自我」對峙的黑暗故事.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-08-11T18:22:37+08:00</news:publication_date>
+      <news:title>SHINee Key最新專輯《Hunter》：與自己的「另一個自我」對峙的黑暗故事</news:title>
+    </news:news>
+  </url>
 </urlset>
