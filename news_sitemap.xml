@@ -1,23 +1,33 @@
-<?xml version='1.0' encoding='utf-8'?>
-<ns0:urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9">
-  <ns0:url>
-    <ns0:loc>https://www.famechos.me/news/MAD JAMIE分享國際經歷：從瑞典到日本武道館，偶像龐克搖滾樂團的10年夢想之路.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-08-09T14:25:30+08:00</ns1:publication_date>
-      <ns1:title>MAD JAMIE分享國際經歷：從瑞典到日本武道館，偶像龐克搖滾樂團的10年夢想之路</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/東京盛夏狂歡：煙花、音樂、舞蹈，8月11日至17日不可錯過的活動.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-08-10T19:21:23+08:00</ns1:publication_date>
-      <ns1:title>東京盛夏狂歡：煙花、音樂、舞蹈，8月11日至17日不可錯過的活動</ns1:title>
-    </ns1:news>
-  </ns0:url>
-</ns0:urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url>
+    <loc>https://www.famechos.me/news/MAD JAMIE分享國際經歷：從瑞典到日本武道館，偶像龐克搖滾樂團的10年夢想之路.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-08-09T14:25:30+08:00</news:publication_date>
+      <news:title>MAD JAMIE分享國際經歷：從瑞典到日本武道館，偶像龐克搖滾樂團的10年夢想之路</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/東京盛夏狂歡：煙花、音樂、舞蹈，8月11日至17日不可錯過的活動.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-08-10T19:21:23+08:00</news:publication_date>
+      <news:title>東京盛夏狂歡：煙花、音樂、舞蹈，8月11日至17日不可錯過的活動</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/韓越關係邁向新里程！韓聯社越南語新聞服務啟動，促進兩國人民相互了解.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-08-11T13:27:12+08:00</news:publication_date>
+      <news:title>韓越關係邁向新里程！韓聯社越南語新聞服務啟動，促進兩國人民相互了解</news:title>
+    </news:news>
+  </url>
+</urlset>
