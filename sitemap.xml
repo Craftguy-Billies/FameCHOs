@@ -4052,4 +4052,10 @@
     <ns0:changefreq>weekly</ns0:changefreq>
     <ns0:priority>0.90</ns0:priority>
   </ns0:url>
+<ns0:url>
+    <ns0:loc>https://www.famechos.me/news/東京九月活動大集合：相撲大會、遊戲展、煙花祭等你來.html</ns0:loc>
+    <ns0:lastmod>2025-08-14T11:21:44+08:00</ns0:lastmod>
+    <ns0:changefreq>weekly</ns0:changefreq>
+    <ns0:priority>0.90</ns0:priority>
+  </ns0:url>
 </ns0:urlset>
