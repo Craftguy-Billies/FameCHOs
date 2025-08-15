@@ -1,23 +1,33 @@
-<?xml version='1.0' encoding='utf-8'?>
-<ns0:urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9">
-  <ns0:url>
-    <ns0:loc>https://www.famechos.me/news/《Pretty Crazy》失焦？李尚根導演大膽嘗試混合類型，卻未能平衡觀眾期待.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-08-13T11:19:58+08:00</ns1:publication_date>
-      <ns1:title>《Pretty Crazy》失焦？李尚根導演大膽嘗試混合類型，卻未能平衡觀眾期待</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/東京九月活動大集合：相撲大會、遊戲展、煙花祭等你來.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-08-14T11:21:44+08:00</ns1:publication_date>
-      <ns1:title>東京九月活動大集合：相撲大會、遊戲展、煙花祭等你來</ns1:title>
-    </ns1:news>
-  </ns0:url>
-</ns0:urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url>
+    <loc>https://www.famechos.me/news/《Pretty Crazy》失焦？李尚根導演大膽嘗試混合類型，卻未能平衡觀眾期待.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-08-13T11:19:58+08:00</news:publication_date>
+      <news:title>《Pretty Crazy》失焦？李尚根導演大膽嘗試混合類型，卻未能平衡觀眾期待</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/東京九月活動大集合：相撲大會、遊戲展、煙花祭等你來.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-08-14T11:21:44+08:00</news:publication_date>
+      <news:title>東京九月活動大集合：相撲大會、遊戲展、煙花祭等你來</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/韓國聯合新聞社攜手非洲合作組織，共同打造文化交流新時代.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-08-15T18:20:07+08:00</news:publication_date>
+      <news:title>韓國聯合新聞社攜手非洲合作組織，共同打造文化交流新時代</news:title>
+    </news:news>
+  </url>
+</urlset>
