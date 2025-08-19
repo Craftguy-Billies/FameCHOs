@@ -1,63 +1,73 @@
-<?xml version='1.0' encoding='utf-8'?>
-<ns0:urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9">
-  <ns0:url>
-    <ns0:loc>https://www.famechos.me/news/東京夏日盛事！阿波舞、盂蘭盆舞、煙花節慶等8月18日至24日必去活動.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-08-17T20:31:53+08:00</ns1:publication_date>
-      <ns1:title>東京夏日盛事！阿波舞、盂蘭盆舞、煙花節慶等8月18日至24日必去活動</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/BLACKPINK終於回歸！11月份發行睽違三年新專輯.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-08-18T11:29:27+08:00</ns1:publication_date>
-      <ns1:title>BLACKPINK終於回歸！11月份發行睽違三年新專輯</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/BAND-MAID挑戰經典！最新單曲《What is justice?》顛覆《桃太郎》刻板印象.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-08-18T13:23:24+08:00</ns1:publication_date>
-      <ns1:title>BAND-MAID挑戰經典！最新單曲《What is justice?》顛覆《桃太郎》刻板印象</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/揭露80年代韓國電影業的女性友情：《Aema》導演李海英20年構思的心血結晶.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-08-18T16:25:52+08:00</ns1:publication_date>
-      <ns1:title>揭露80年代韓國電影業的女性友情：《Aema》導演李海英20年構思的心血結晶</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/BigHit新男團Cortis正式出道！五位成員合力打造獨特身份，融合迷幻搖滾與嘻哈風格.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-08-18T18:21:03+08:00</ns1:publication_date>
-      <ns1:title>BigHit新男團Cortis正式出道！五位成員合力打造獨特身份，融合迷幻搖滾與嘻哈風格</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/2025春季動畫最強主題曲出爐！這10首歌曲將會讓你耳朵懷孕.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-08-19T01:57:58+08:00</ns1:publication_date>
-      <ns1:title>2025春季動畫最強主題曲出爐！這10首歌曲將會讓你耳朵懷孕</ns1:title>
-    </ns1:news>
-  </ns0:url>
-</ns0:urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url>
+    <loc>https://www.famechos.me/news/東京夏日盛事！阿波舞、盂蘭盆舞、煙花節慶等8月18日至24日必去活動.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-08-17T20:31:53+08:00</news:publication_date>
+      <news:title>東京夏日盛事！阿波舞、盂蘭盆舞、煙花節慶等8月18日至24日必去活動</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/BLACKPINK終於回歸！11月份發行睽違三年新專輯.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-08-18T11:29:27+08:00</news:publication_date>
+      <news:title>BLACKPINK終於回歸！11月份發行睽違三年新專輯</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/BAND-MAID挑戰經典！最新單曲《What is justice?》顛覆《桃太郎》刻板印象.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-08-18T13:23:24+08:00</news:publication_date>
+      <news:title>BAND-MAID挑戰經典！最新單曲《What is justice?》顛覆《桃太郎》刻板印象</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/揭露80年代韓國電影業的女性友情：《Aema》導演李海英20年構思的心血結晶.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-08-18T16:25:52+08:00</news:publication_date>
+      <news:title>揭露80年代韓國電影業的女性友情：《Aema》導演李海英20年構思的心血結晶</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/BigHit新男團Cortis正式出道！五位成員合力打造獨特身份，融合迷幻搖滾與嘻哈風格.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-08-18T18:21:03+08:00</news:publication_date>
+      <news:title>BigHit新男團Cortis正式出道！五位成員合力打造獨特身份，融合迷幻搖滾與嘻哈風格</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/2025春季動畫最強主題曲出爐！這10首歌曲將會讓你耳朵懷孕.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-08-19T01:57:58+08:00</news:publication_date>
+      <news:title>2025春季動畫最強主題曲出爐！這10首歌曲將會讓你耳朵懷孕</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/首爾藝術饗宴來臨！Frieze和Kiaf兩大藝術博覽會下月登場，展出全球逾百家畫廊的作品.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-08-19T16:26:12+08:00</news:publication_date>
+      <news:title>首爾藝術饗宴來臨！Frieze和Kiaf兩大藝術博覽會下月登場，展出全球逾百家畫廊的作品</news:title>
+    </news:news>
+  </url>
+</urlset>
