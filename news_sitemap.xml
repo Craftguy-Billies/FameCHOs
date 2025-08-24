@@ -1,53 +1,63 @@
-<?xml version='1.0' encoding='utf-8'?>
-<ns0:urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9">
-  <ns0:url>
-    <ns0:loc>https://www.famechos.me/news/水滴大師金昌烈的療愈世界：首次回顧展在國立現代美術館展開.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-08-21T13:18:09+08:00</ns1:publication_date>
-      <ns1:title>水滴大師金昌烈的療愈世界：首次回顧展在國立現代美術館展開</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/李在明力挺K-Pop！承諾推動文化產業成韓國下一個成長引擎.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-08-21T15:20:53+08:00</ns1:publication_date>
-      <ns1:title>李在明力挺K-Pop！承諾推動文化產業成韓國下一個成長引擎</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/Stray Kids新專輯《Karma》：成員們的成長故事與感恩之情.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-08-22T15:16:53+08:00</ns1:publication_date>
-      <ns1:title>Stray Kids新專輯《Karma》：成員們的成長故事與感恩之情</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/揭露K-POP偶像的真實情感！《KPOP惡魔獵人》導演分享打造Netflix紀錄片的關鍵.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-08-22T18:18:41+08:00</ns1:publication_date>
-      <ns1:title>揭露K-POP偶像的真實情感！《KPOP惡魔獵人》導演分享打造Netflix紀錄片的關鍵</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/東京最酷的賽博朋克夜景！川崎夜間工廠巡遊體驗獨特未來主義氛圍.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-08-23T07:16:24+08:00</ns1:publication_date>
-      <ns1:title>東京最酷的賽博朋克夜景！川崎夜間工廠巡遊體驗獨特未來主義氛圍</ns1:title>
-    </ns1:news>
-  </ns0:url>
-</ns0:urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url>
+    <loc>https://www.famechos.me/news/水滴大師金昌烈的療愈世界：首次回顧展在國立現代美術館展開.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-08-21T13:18:09+08:00</news:publication_date>
+      <news:title>水滴大師金昌烈的療愈世界：首次回顧展在國立現代美術館展開</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/李在明力挺K-Pop！承諾推動文化產業成韓國下一個成長引擎.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-08-21T15:20:53+08:00</news:publication_date>
+      <news:title>李在明力挺K-Pop！承諾推動文化產業成韓國下一個成長引擎</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/Stray Kids新專輯《Karma》：成員們的成長故事與感恩之情.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-08-22T15:16:53+08:00</news:publication_date>
+      <news:title>Stray Kids新專輯《Karma》：成員們的成長故事與感恩之情</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/揭露K-POP偶像的真實情感！《KPOP惡魔獵人》導演分享打造Netflix紀錄片的關鍵.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-08-22T18:18:41+08:00</news:publication_date>
+      <news:title>揭露K-POP偶像的真實情感！《KPOP惡魔獵人》導演分享打造Netflix紀錄片的關鍵</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/東京最酷的賽博朋克夜景！川崎夜間工廠巡遊體驗獨特未來主義氛圍.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-08-23T07:16:24+08:00</news:publication_date>
+      <news:title>東京最酷的賽博朋克夜景！川崎夜間工廠巡遊體驗獨特未來主義氛圍</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/東京8月瘋狂活動週！舞蹈、動漫、煙花、相撲，多元魅力等你來體驗.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-08-24T19:15:12+08:00</news:publication_date>
+      <news:title>東京8月瘋狂活動週！舞蹈、動漫、煙花、相撲，多元魅力等你來體驗</news:title>
+    </news:news>
+  </url>
+</urlset>
