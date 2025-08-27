@@ -1,63 +1,53 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
-  <url>
-    <loc>https://www.famechos.me/news/東京8月瘋狂活動週！舞蹈、動漫、煙花、相撲，多元魅力等你來體驗.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-08-24T19:15:12+08:00</news:publication_date>
-      <news:title>東京8月瘋狂活動週！舞蹈、動漫、煙花、相撲，多元魅力等你來體驗</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/90年代青少年浪漫回歸！Netflix新片《解開愛情》教你如何擁抱真實自我.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-08-25T14:27:22+08:00</news:publication_date>
-      <news:title>90年代青少年浪漫回歸！Netflix新片《解開愛情》教你如何擁抱真實自我</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/東京最狂野的表演！新宿武士餐廳：機器人、雷射、劍術，體驗瘋狂的日本夜生活.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-08-25T15:20:46+08:00</news:publication_date>
-      <news:title>東京最狂野的表演！新宿武士餐廳：機器人、雷射、劍術，體驗瘋狂的日本夜生活</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/《KPop Demon Hunters》電影歌曲「Golden」重奪Billboard Hot 100榜首，韓裔藝人Ejae、Audrey Nuna和Rei Ami成就輝煌紀錄.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-08-26T09:16:10+08:00</news:publication_date>
-      <news:title>《KPop Demon Hunters》電影歌曲「Golden」重奪Billboard Hot 100榜首，韓裔藝人Ejae、Audrey Nuna和Rei Ami成就輝煌紀錄</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/免費學韓語不再是難事！10款手機應用程式讓你從零開始學會韓語.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-08-26T14:28:41+08:00</news:publication_date>
-      <news:title>免費學韓語不再是難事！10款手機應用程式讓你從零開始學會韓語</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/釜山國際電影節30周年紀念 首設競賽單元吸引全球影迷.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-08-26T16:33:48+08:00</news:publication_date>
-      <news:title>釜山國際電影節30周年紀念 首設競賽單元吸引全球影迷</news:title>
-    </news:news>
-  </url>
-</urlset>
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9">
+  <ns0:url>
+    <ns0:loc>https://www.famechos.me/news/90年代青少年浪漫回歸！Netflix新片《解開愛情》教你如何擁抱真實自我.html</ns0:loc>
+    <ns1:news>
+      <ns1:publication>
+        <ns1:name>FamEchos</ns1:name>
+        <ns1:language>zh_TW</ns1:language>
+      </ns1:publication><ns1:publication_date>2025-08-25T14:27:22+08:00</ns1:publication_date>
+      <ns1:title>90年代青少年浪漫回歸！Netflix新片《解開愛情》教你如何擁抱真實自我</ns1:title>
+    </ns1:news>
+  </ns0:url>
+<ns0:url>
+    <ns0:loc>https://www.famechos.me/news/東京最狂野的表演！新宿武士餐廳：機器人、雷射、劍術，體驗瘋狂的日本夜生活.html</ns0:loc>
+    <ns1:news>
+      <ns1:publication>
+        <ns1:name>FamEchos</ns1:name>
+        <ns1:language>zh_TW</ns1:language>
+      </ns1:publication><ns1:publication_date>2025-08-25T15:20:46+08:00</ns1:publication_date>
+      <ns1:title>東京最狂野的表演！新宿武士餐廳：機器人、雷射、劍術，體驗瘋狂的日本夜生活</ns1:title>
+    </ns1:news>
+  </ns0:url>
+<ns0:url>
+    <ns0:loc>https://www.famechos.me/news/《KPop Demon Hunters》電影歌曲「Golden」重奪Billboard Hot 100榜首，韓裔藝人Ejae、Audrey Nuna和Rei Ami成就輝煌紀錄.html</ns0:loc>
+    <ns1:news>
+      <ns1:publication>
+        <ns1:name>FamEchos</ns1:name>
+        <ns1:language>zh_TW</ns1:language>
+      </ns1:publication><ns1:publication_date>2025-08-26T09:16:10+08:00</ns1:publication_date>
+      <ns1:title>《KPop Demon Hunters》電影歌曲「Golden」重奪Billboard Hot 100榜首，韓裔藝人Ejae、Audrey Nuna和Rei Ami成就輝煌紀錄</ns1:title>
+    </ns1:news>
+  </ns0:url>
+<ns0:url>
+    <ns0:loc>https://www.famechos.me/news/免費學韓語不再是難事！10款手機應用程式讓你從零開始學會韓語.html</ns0:loc>
+    <ns1:news>
+      <ns1:publication>
+        <ns1:name>FamEchos</ns1:name>
+        <ns1:language>zh_TW</ns1:language>
+      </ns1:publication><ns1:publication_date>2025-08-26T14:28:41+08:00</ns1:publication_date>
+      <ns1:title>免費學韓語不再是難事！10款手機應用程式讓你從零開始學會韓語</ns1:title>
+    </ns1:news>
+  </ns0:url>
+<ns0:url>
+    <ns0:loc>https://www.famechos.me/news/釜山國際電影節30周年紀念 首設競賽單元吸引全球影迷.html</ns0:loc>
+    <ns1:news>
+      <ns1:publication>
+        <ns1:name>FamEchos</ns1:name>
+        <ns1:language>zh_TW</ns1:language>
+      </ns1:publication><ns1:publication_date>2025-08-26T16:33:48+08:00</ns1:publication_date>
+      <ns1:title>釜山國際電影節30周年紀念 首設競賽單元吸引全球影迷</ns1:title>
+    </ns1:news>
+  </ns0:url>
+</ns0:urlset>
