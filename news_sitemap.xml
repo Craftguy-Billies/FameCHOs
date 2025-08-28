@@ -80,4 +80,14 @@
       <news:title>比爾蓋茲：成功不只是財富，還是對社會的貢獻和影響</news:title>
     </news:news>
   </url>
+<url>
+    <loc>https://www.famechos.me/news/揭開隱藏世界：四位韓國藝術家透過聲音、傳統、信仰和AI創作展現多樣性.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-08-28T13:19:32+08:00</news:publication_date>
+      <news:title>揭開隱藏世界：四位韓國藝術家透過聲音、傳統、信仰和AI創作展現多樣性</news:title>
+    </news:news>
+  </url>
 </urlset>
