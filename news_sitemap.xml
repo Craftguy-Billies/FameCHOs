@@ -1,33 +1,3 @@
 <?xml version='1.0' encoding='utf-8'?>
-<ns0:urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9">
-  <ns0:url>
-    <ns0:loc>https://www.famechos.me/news/首爾藝術雙展開幕，豪華陣容吸睛！李崗、金秀子等藝術家作品熱銷，展覽初期銷售成績亮眼.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-09-04T10:56:02+08:00</ns1:publication_date>
-      <ns1:title>首爾藝術雙展開幕，豪華陣容吸睛！李崗、金秀子等藝術家作品熱銷，展覽初期銷售成績亮眼</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/韓國文化產業的暗黑真相：光鮮背後的危機與挑戰.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-09-04T14:24:52+08:00</ns1:publication_date>
-      <ns1:title>韓國文化產業的暗黑真相：光鮮背後的危機與挑戰</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/東京迎來新冰場！辰巳冰上競技場開業，夏日避暑新去處.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-09-04T16:20:39+08:00</ns1:publication_date>
-      <ns1:title>東京迎來新冰場！辰巳冰上競技場開業，夏日避暑新去處</ns1:title>
-    </ns1:news>
-  </ns0:url>
-</ns0:urlset>
+<ns0:urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9">
+  </ns0:urlset>
