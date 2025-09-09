@@ -1,73 +1,73 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
-  <url>
-    <loc>https://www.famechos.me/news/東京9月瘋狂慶典！墨西哥嘉年華、鶴岡八幡宮大祭等多項活動等你來.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-09-07T19:33:26+08:00</news:publication_date>
-      <news:title>東京9月瘋狂慶典！墨西哥嘉年華、鶴岡八幡宮大祭等多項活動等你來</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/大阪雙人金屬核樂團Dimrays即將登台東京！專訪揭露海外演出計畫與音樂理念.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-09-08T01:14:01+08:00</news:publication_date>
-      <news:title>大阪雙人金屬核樂團Dimrays即將登台東京！專訪揭露海外演出計畫與音樂理念</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/首爾藝術博覽會驚艷全球：7萬名訪客爭睹亞洲藝術新星.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-09-08T11:11:46+08:00</news:publication_date>
-      <news:title>首爾藝術博覽會驚艷全球：7萬名訪客爭睹亞洲藝術新星</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/BLACKPINK Rosé勇奪MTV音樂錄影帶大獎雙冠王！與Bruno Mars合作單曲《APT》奪年度歌曲獎.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-09-08T14:25:56+08:00</news:publication_date>
-      <news:title>BLACKPINK Rosé勇奪MTV音樂錄影帶大獎雙冠王！與Bruno Mars合作單曲《APT》奪年度歌曲獎</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/韓朝破冰！韓國擬與朝鮮重啟聯合考察高麗王朝古宮址.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-09-08T15:17:25+08:00</news:publication_date>
-      <news:title>韓朝破冰！韓國擬與朝鮮重啟聯合考察高麗王朝古宮址</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/KPop 鬼獵人逆襲！超越魷魚遊戲登頂Netflix觀看次數冠軍.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-09-08T20:39:26+08:00</news:publication_date>
-      <news:title>KPop 鬼獵人逆襲！超越魷魚遊戲登頂Netflix觀看次數冠軍</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.famechos.me/news/韓流歌曲再創紀錄！《Golden》蟬聯告示牌熱門榜榜首四周，超越BTS《Dynamite》.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FamEchos</news:name>
-        <news:language>zh_TW</news:language>
-      </news:publication><news:publication_date>2025-09-09T09:09:47+08:00</news:publication_date>
-      <news:title>韓流歌曲再創紀錄！《Golden》蟬聯告示牌熱門榜榜首四周，超越BTS《Dynamite》</news:title>
-    </news:news>
-  </url>
-</urlset>
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9">
+  <ns0:url>
+    <ns0:loc>https://www.famechos.me/news/東京9月瘋狂慶典！墨西哥嘉年華、鶴岡八幡宮大祭等多項活動等你來.html</ns0:loc>
+    <ns1:news>
+      <ns1:publication>
+        <ns1:name>FamEchos</ns1:name>
+        <ns1:language>zh_TW</ns1:language>
+      </ns1:publication><ns1:publication_date>2025-09-07T19:33:26+08:00</ns1:publication_date>
+      <ns1:title>東京9月瘋狂慶典！墨西哥嘉年華、鶴岡八幡宮大祭等多項活動等你來</ns1:title>
+    </ns1:news>
+  </ns0:url>
+<ns0:url>
+    <ns0:loc>https://www.famechos.me/news/大阪雙人金屬核樂團Dimrays即將登台東京！專訪揭露海外演出計畫與音樂理念.html</ns0:loc>
+    <ns1:news>
+      <ns1:publication>
+        <ns1:name>FamEchos</ns1:name>
+        <ns1:language>zh_TW</ns1:language>
+      </ns1:publication><ns1:publication_date>2025-09-08T01:14:01+08:00</ns1:publication_date>
+      <ns1:title>大阪雙人金屬核樂團Dimrays即將登台東京！專訪揭露海外演出計畫與音樂理念</ns1:title>
+    </ns1:news>
+  </ns0:url>
+<ns0:url>
+    <ns0:loc>https://www.famechos.me/news/首爾藝術博覽會驚艷全球：7萬名訪客爭睹亞洲藝術新星.html</ns0:loc>
+    <ns1:news>
+      <ns1:publication>
+        <ns1:name>FamEchos</ns1:name>
+        <ns1:language>zh_TW</ns1:language>
+      </ns1:publication><ns1:publication_date>2025-09-08T11:11:46+08:00</ns1:publication_date>
+      <ns1:title>首爾藝術博覽會驚艷全球：7萬名訪客爭睹亞洲藝術新星</ns1:title>
+    </ns1:news>
+  </ns0:url>
+<ns0:url>
+    <ns0:loc>https://www.famechos.me/news/BLACKPINK Rosé勇奪MTV音樂錄影帶大獎雙冠王！與Bruno Mars合作單曲《APT》奪年度歌曲獎.html</ns0:loc>
+    <ns1:news>
+      <ns1:publication>
+        <ns1:name>FamEchos</ns1:name>
+        <ns1:language>zh_TW</ns1:language>
+      </ns1:publication><ns1:publication_date>2025-09-08T14:25:56+08:00</ns1:publication_date>
+      <ns1:title>BLACKPINK Rosé勇奪MTV音樂錄影帶大獎雙冠王！與Bruno Mars合作單曲《APT》奪年度歌曲獎</ns1:title>
+    </ns1:news>
+  </ns0:url>
+<ns0:url>
+    <ns0:loc>https://www.famechos.me/news/韓朝破冰！韓國擬與朝鮮重啟聯合考察高麗王朝古宮址.html</ns0:loc>
+    <ns1:news>
+      <ns1:publication>
+        <ns1:name>FamEchos</ns1:name>
+        <ns1:language>zh_TW</ns1:language>
+      </ns1:publication><ns1:publication_date>2025-09-08T15:17:25+08:00</ns1:publication_date>
+      <ns1:title>韓朝破冰！韓國擬與朝鮮重啟聯合考察高麗王朝古宮址</ns1:title>
+    </ns1:news>
+  </ns0:url>
+<ns0:url>
+    <ns0:loc>https://www.famechos.me/news/KPop 鬼獵人逆襲！超越魷魚遊戲登頂Netflix觀看次數冠軍.html</ns0:loc>
+    <ns1:news>
+      <ns1:publication>
+        <ns1:name>FamEchos</ns1:name>
+        <ns1:language>zh_TW</ns1:language>
+      </ns1:publication><ns1:publication_date>2025-09-08T20:39:26+08:00</ns1:publication_date>
+      <ns1:title>KPop 鬼獵人逆襲！超越魷魚遊戲登頂Netflix觀看次數冠軍</ns1:title>
+    </ns1:news>
+  </ns0:url>
+<ns0:url>
+    <ns0:loc>https://www.famechos.me/news/韓流歌曲再創紀錄！《Golden》蟬聯告示牌熱門榜榜首四周，超越BTS《Dynamite》.html</ns0:loc>
+    <ns1:news>
+      <ns1:publication>
+        <ns1:name>FamEchos</ns1:name>
+        <ns1:language>zh_TW</ns1:language>
+      </ns1:publication><ns1:publication_date>2025-09-09T09:09:47+08:00</ns1:publication_date>
+      <ns1:title>韓流歌曲再創紀錄！《Golden》蟬聯告示牌熱門榜榜首四周，超越BTS《Dynamite》</ns1:title>
+    </ns1:news>
+  </ns0:url>
+</ns0:urlset>
