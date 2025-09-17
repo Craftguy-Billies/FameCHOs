@@ -120,4 +120,14 @@
       <news:title>朴贊郁新作揭露跨時代就業不安全感：你我都可能是下一個被淘汰的</news:title>
     </news:news>
   </url>
+<url>
+    <loc>https://www.famechos.me/news/釜山電影節30周年盛典登場：亞洲電影界的年度盛事.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-09-17T20:32:48+08:00</news:publication_date>
+      <news:title>釜山電影節30周年盛典登場：亞洲電影界的年度盛事</news:title>
+    </news:news>
+  </url>
 </urlset>
