@@ -110,4 +110,14 @@
       <news:title>Netflix新片《Good News》：改編自真實劫機事件的黑色喜劇</news:title>
     </news:news>
   </url>
+<url>
+    <loc>https://www.famechos.me/news/資本主義的殘酷真相：朴赞郁新作《没有别的选择》揭露現代社會的生存困境.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-09-19T16:27:11+08:00</news:publication_date>
+      <news:title>資本主義的殘酷真相：朴赞郁新作《没有别的选择》揭露現代社會的生存困境</news:title>
+    </news:news>
+  </url>
 </urlset>
