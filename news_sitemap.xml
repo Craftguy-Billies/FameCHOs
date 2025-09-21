@@ -1,33 +1,43 @@
-<?xml version='1.0' encoding='utf-8'?>
-<ns0:urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9">
-  <ns0:url>
-    <ns0:loc>https://www.famechos.me/news/Netflix新片《Good News》：改編自真實劫機事件的黑色喜劇.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-09-19T14:23:23+08:00</ns1:publication_date>
-      <ns1:title>Netflix新片《Good News》：改編自真實劫機事件的黑色喜劇</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/資本主義的殘酷真相：朴赞郁新作《没有别的选择》揭露現代社會的生存困境.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-09-19T16:27:11+08:00</ns1:publication_date>
-      <ns1:title>資本主義的殘酷真相：朴赞郁新作《没有别的选择》揭露現代社會的生存困境</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/堤川盛大開幕：韓國首個天然產品產業主題博覽會，打造未來產業新藍圖.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-09-20T15:15:34+08:00</ns1:publication_date>
-      <ns1:title>堤川盛大開幕：韓國首個天然產品產業主題博覽會，打造未來產業新藍圖</ns1:title>
-    </ns1:news>
-  </ns0:url>
-</ns0:urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url>
+    <loc>https://www.famechos.me/news/Netflix新片《Good News》：改編自真實劫機事件的黑色喜劇.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-09-19T14:23:23+08:00</news:publication_date>
+      <news:title>Netflix新片《Good News》：改編自真實劫機事件的黑色喜劇</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/資本主義的殘酷真相：朴赞郁新作《没有别的选择》揭露現代社會的生存困境.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-09-19T16:27:11+08:00</news:publication_date>
+      <news:title>資本主義的殘酷真相：朴赞郁新作《没有别的选择》揭露現代社會的生存困境</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/堤川盛大開幕：韓國首個天然產品產業主題博覽會，打造未來產業新藍圖.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-09-20T15:15:34+08:00</news:publication_date>
+      <news:title>堤川盛大開幕：韓國首個天然產品產業主題博覽會，打造未來產業新藍圖</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/ITZY續約JYP娛樂！五位女團成員再度攜手征服全球樂壇.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-09-21T17:21:10+08:00</news:publication_date>
+      <news:title>ITZY續約JYP娛樂！五位女團成員再度攜手征服全球樂壇</news:title>
+    </news:news>
+  </url>
+</urlset>
