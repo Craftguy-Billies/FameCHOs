@@ -1,93 +1,103 @@
-<?xml version='1.0' encoding='utf-8'?>
-<ns0:urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9">
-  <ns0:url>
-    <ns0:loc>https://www.famechos.me/news/雙重身份的女人：《Ms. Incognito》挑戰超越《Extraordinary Attorney Woo》.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-09-23T10:56:24+08:00</ns1:publication_date>
-      <ns1:title>雙重身份的女人：《Ms. Incognito》挑戰超越《Extraordinary Attorney Woo》</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/金高恩：關係的真相不是信任，而是不願失去你，我們都誤會了愛情的本質.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-09-23T13:16:12+08:00</ns1:publication_date>
-      <ns1:title>金高恩：關係的真相不是信任，而是不願失去你，我們都誤會了愛情的本質</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/千景子的藝術世界重現！首爾博物館展出鮮豔多彩的遺作.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-09-23T15:23:27+08:00</ns1:publication_date>
-      <ns1:title>千景子的藝術世界重現！首爾博物館展出鮮豔多彩的遺作</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/迪士尼+新劇《浑浊的江》：路雲、申藝恩等人挑戰腐敗世界，打造今年最期待的韓劇.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-09-23T16:28:33+08:00</ns1:publication_date>
-      <ns1:title>迪士尼+新劇《浑浊的江》：路雲、申藝恩等人挑戰腐敗世界，打造今年最期待的韓劇</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/韓石圭新劇《申的計劃》首播收視率亮眼！他扮演的炸雞店老闆竟是神秘調解師？.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-09-23T19:14:38+08:00</ns1:publication_date>
-      <ns1:title>韓石圭新劇《申的計劃》首播收視率亮眼！他扮演的炸雞店老闆竟是神秘調解師？</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/電影配樂天才鄭在日跨界挑戰古典音樂！首次交響樂作品《地獄》震撼登場.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-09-23T20:31:26+08:00</ns1:publication_date>
-      <ns1:title>電影配樂天才鄭在日跨界挑戰古典音樂！首次交響樂作品《地獄》震撼登場</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/日本秋季花卉盛開！10個必訪景點讓你沉醉在絢麗的秋色中.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-09-24T16:24:33+08:00</ns1:publication_date>
-      <ns1:title>日本秋季花卉盛開！10個必訪景點讓你沉醉在絢麗的秋色中</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/K-pop巨頭HYBE進軍印度市場：14億人口新疆域的商機與文化風險.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-09-25T06:21:48+08:00</ns1:publication_date>
-      <ns1:title>K-pop巨頭HYBE進軍印度市場：14億人口新疆域的商機與文化風險</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/母親身份下的重生：孫藝真復出大銀幕，重新發現演戲的樂趣.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-09-25T07:15:50+08:00</ns1:publication_date>
-      <ns1:title>母親身份下的重生：孫藝真復出大銀幕，重新發現演戲的樂趣</ns1:title>
-    </ns1:news>
-  </ns0:url>
-</ns0:urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url>
+    <loc>https://www.famechos.me/news/雙重身份的女人：《Ms. Incognito》挑戰超越《Extraordinary Attorney Woo》.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-09-23T10:56:24+08:00</news:publication_date>
+      <news:title>雙重身份的女人：《Ms. Incognito》挑戰超越《Extraordinary Attorney Woo》</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/金高恩：關係的真相不是信任，而是不願失去你，我們都誤會了愛情的本質.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-09-23T13:16:12+08:00</news:publication_date>
+      <news:title>金高恩：關係的真相不是信任，而是不願失去你，我們都誤會了愛情的本質</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/千景子的藝術世界重現！首爾博物館展出鮮豔多彩的遺作.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-09-23T15:23:27+08:00</news:publication_date>
+      <news:title>千景子的藝術世界重現！首爾博物館展出鮮豔多彩的遺作</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/迪士尼+新劇《浑浊的江》：路雲、申藝恩等人挑戰腐敗世界，打造今年最期待的韓劇.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-09-23T16:28:33+08:00</news:publication_date>
+      <news:title>迪士尼+新劇《浑浊的江》：路雲、申藝恩等人挑戰腐敗世界，打造今年最期待的韓劇</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/韓石圭新劇《申的計劃》首播收視率亮眼！他扮演的炸雞店老闆竟是神秘調解師？.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-09-23T19:14:38+08:00</news:publication_date>
+      <news:title>韓石圭新劇《申的計劃》首播收視率亮眼！他扮演的炸雞店老闆竟是神秘調解師？</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/電影配樂天才鄭在日跨界挑戰古典音樂！首次交響樂作品《地獄》震撼登場.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-09-23T20:31:26+08:00</news:publication_date>
+      <news:title>電影配樂天才鄭在日跨界挑戰古典音樂！首次交響樂作品《地獄》震撼登場</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/日本秋季花卉盛開！10個必訪景點讓你沉醉在絢麗的秋色中.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-09-24T16:24:33+08:00</news:publication_date>
+      <news:title>日本秋季花卉盛開！10個必訪景點讓你沉醉在絢麗的秋色中</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/K-pop巨頭HYBE進軍印度市場：14億人口新疆域的商機與文化風險.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-09-25T06:21:48+08:00</news:publication_date>
+      <news:title>K-pop巨頭HYBE進軍印度市場：14億人口新疆域的商機與文化風險</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/母親身份下的重生：孫藝真復出大銀幕，重新發現演戲的樂趣.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-09-25T07:15:50+08:00</news:publication_date>
+      <news:title>母親身份下的重生：孫藝真復出大銀幕，重新發現演戲的樂趣</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/姜河那再度合作導演南大正，新片《第一次搭乘》爆笑之旅來襲.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-09-25T15:17:36+08:00</news:publication_date>
+      <news:title>姜河那再度合作導演南大正，新片《第一次搭乘》爆笑之旅來襲</news:title>
+    </news:news>
+  </url>
+</urlset>
