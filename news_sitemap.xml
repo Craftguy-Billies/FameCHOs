@@ -1,43 +1,53 @@
-<?xml version='1.0' encoding='utf-8'?>
-<ns0:urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9">
-  <ns0:url>
-    <ns0:loc>https://www.famechos.me/news/BIGBANG二十週年紀念首站科切拉音樂節！睽違四年新單曲即將問世.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-09-27T12:19:13+08:00</ns1:publication_date>
-      <ns1:title>BIGBANG二十週年紀念首站科切拉音樂節！睽違四年新單曲即將問世</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/母親的黑暗面：韓劇《螳螂女王》揭露連環殺手的複雜母子關係.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-09-27T13:16:03+08:00</ns1:publication_date>
-      <ns1:title>母親的黑暗面：韓劇《螳螂女王》揭露連環殺手的複雜母子關係</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/東京金屬音樂盛事！JROCK NEWS十周年紀念演唱會PULSE Vol. 1震撼登場.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-09-28T02:20:44+08:00</ns1:publication_date>
-      <ns1:title>東京金屬音樂盛事！JROCK NEWS十周年紀念演唱會PULSE Vol. 1震撼登場</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/東京9月底至10月初活動盛事！賞月、煙花、任天堂派對、美食節等你來.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-09-28T23:15:34+08:00</ns1:publication_date>
-      <ns1:title>東京9月底至10月初活動盛事！賞月、煙花、任天堂派對、美食節等你來</ns1:title>
-    </ns1:news>
-  </ns0:url>
-</ns0:urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url>
+    <loc>https://www.famechos.me/news/BIGBANG二十週年紀念首站科切拉音樂節！睽違四年新單曲即將問世.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-09-27T12:19:13+08:00</news:publication_date>
+      <news:title>BIGBANG二十週年紀念首站科切拉音樂節！睽違四年新單曲即將問世</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/母親的黑暗面：韓劇《螳螂女王》揭露連環殺手的複雜母子關係.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-09-27T13:16:03+08:00</news:publication_date>
+      <news:title>母親的黑暗面：韓劇《螳螂女王》揭露連環殺手的複雜母子關係</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/東京金屬音樂盛事！JROCK NEWS十周年紀念演唱會PULSE Vol. 1震撼登場.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-09-28T02:20:44+08:00</news:publication_date>
+      <news:title>東京金屬音樂盛事！JROCK NEWS十周年紀念演唱會PULSE Vol. 1震撼登場</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/東京9月底至10月初活動盛事！賞月、煙花、任天堂派對、美食節等你來.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-09-28T23:15:34+08:00</news:publication_date>
+      <news:title>東京9月底至10月初活動盛事！賞月、煙花、任天堂派對、美食節等你來</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/宮廷料理遇上奇幻！韓劇新趨勢《Bon Appetit, Your Majesty》掀起年輕觀眾熱潮.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-09-29T12:21:10+08:00</news:publication_date>
+      <news:title>宮廷料理遇上奇幻！韓劇新趨勢《Bon Appetit, Your Majesty》掀起年輕觀眾熱潮</news:title>
+    </news:news>
+  </url>
+</urlset>
