@@ -1,73 +1,83 @@
-<?xml version='1.0' encoding='utf-8'?>
-<ns0:urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9">
-  <ns0:url>
-    <ns0:loc>https://www.famechos.me/news/林允兒再次證實浪漫喜劇女王地位！《美味的國王陛下》收視率破17%登頂.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-10-01T09:16:26+08:00</ns1:publication_date>
-      <ns1:title>林允兒再次證實浪漫喜劇女王地位！《美味的國王陛下》收視率破17%登頂</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/被遺棄的機器人也能找到幸福嗎？韓國音樂劇改編電影《我的最愛的愛情故事》感動登場.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-10-01T11:11:20+08:00</ns1:publication_date>
-      <ns1:title>被遺棄的機器人也能找到幸福嗎？韓國音樂劇改編電影《我的最愛的愛情故事》感動登場</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/林潤娥再登浪漫喜劇女王寶座！新劇《Bon Appetit, Your Majesty》收視率破17%.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-10-01T12:19:34+08:00</ns1:publication_date>
-      <ns1:title>林潤娥再登浪漫喜劇女王寶座！新劇《Bon Appetit, Your Majesty》收視率破17%</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/IZNA新專輯《不僅僅是漂亮》：六位女團成員的蛻變，從視覺系到音樂實力.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-10-01T17:19:30+08:00</ns1:publication_date>
-      <ns1:title>IZNA新專輯《不僅僅是漂亮》：六位女團成員的蛻變，從視覺系到音樂實力</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/K-pop粉絲大戰！光棒設計爭議引發暴力威脅與死亡恐嚇.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-10-02T06:43:20+08:00</ns1:publication_date>
-      <ns1:title>K-pop粉絲大戰！光棒設計爭議引發暴力威脅與死亡恐嚇</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/尹施完挑戰新角色！談《螳螂》拍攝過程與角色解讀.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-10-02T14:23:33+08:00</ns1:publication_date>
-      <ns1:title>尹施完挑戰新角色！談《螳螂》拍攝過程與角色解讀</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/李瑞鎮、金光奎變身「壞脾氣秘書」，帶你看韓星們鮮為人知的一面！.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-10-02T15:16:20+08:00</ns1:publication_date>
-      <ns1:title>李瑞鎮、金光奎變身「壞脾氣秘書」，帶你看韓星們鮮為人知的一面！</ns1:title>
-    </ns1:news>
-  </ns0:url>
-</ns0:urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url>
+    <loc>https://www.famechos.me/news/林允兒再次證實浪漫喜劇女王地位！《美味的國王陛下》收視率破17%登頂.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-10-01T09:16:26+08:00</news:publication_date>
+      <news:title>林允兒再次證實浪漫喜劇女王地位！《美味的國王陛下》收視率破17%登頂</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/被遺棄的機器人也能找到幸福嗎？韓國音樂劇改編電影《我的最愛的愛情故事》感動登場.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-10-01T11:11:20+08:00</news:publication_date>
+      <news:title>被遺棄的機器人也能找到幸福嗎？韓國音樂劇改編電影《我的最愛的愛情故事》感動登場</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/林潤娥再登浪漫喜劇女王寶座！新劇《Bon Appetit, Your Majesty》收視率破17%.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-10-01T12:19:34+08:00</news:publication_date>
+      <news:title>林潤娥再登浪漫喜劇女王寶座！新劇《Bon Appetit, Your Majesty》收視率破17%</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/IZNA新專輯《不僅僅是漂亮》：六位女團成員的蛻變，從視覺系到音樂實力.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-10-01T17:19:30+08:00</news:publication_date>
+      <news:title>IZNA新專輯《不僅僅是漂亮》：六位女團成員的蛻變，從視覺系到音樂實力</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/K-pop粉絲大戰！光棒設計爭議引發暴力威脅與死亡恐嚇.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-10-02T06:43:20+08:00</news:publication_date>
+      <news:title>K-pop粉絲大戰！光棒設計爭議引發暴力威脅與死亡恐嚇</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/尹施完挑戰新角色！談《螳螂》拍攝過程與角色解讀.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-10-02T14:23:33+08:00</news:publication_date>
+      <news:title>尹施完挑戰新角色！談《螳螂》拍攝過程與角色解讀</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/李瑞鎮、金光奎變身「壞脾氣秘書」，帶你看韓星們鮮為人知的一面！.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-10-02T15:16:20+08:00</news:publication_date>
+      <news:title>李瑞鎮、金光奎變身「壞脾氣秘書」，帶你看韓星們鮮為人知的一面！</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/韓流全球掀起熱潮，但歧視亞裔明星的陰影仍揮之不去：Rosé遭裁剪事件再掀爭議.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-10-03T13:16:17+08:00</news:publication_date>
+      <news:title>韓流全球掀起熱潮，但歧視亞裔明星的陰影仍揮之不去：Rosé遭裁剪事件再掀爭議</news:title>
+    </news:news>
+  </url>
+</urlset>
