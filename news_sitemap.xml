@@ -1,43 +1,53 @@
-<?xml version='1.0' encoding='utf-8'?>
-<ns0:urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9">
-  <ns0:url>
-    <ns0:loc>https://www.famechos.me/news/韓流全球掀起熱潮，但歧視亞裔明星的陰影仍揮之不去：Rosé遭裁剪事件再掀爭議.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-10-03T13:16:17+08:00</ns1:publication_date>
-      <ns1:title>韓流全球掀起熱潮，但歧視亞裔明星的陰影仍揮之不去：Rosé遭裁剪事件再掀爭議</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/泰勒·斯威夫特新專輯全球粉絲瘋狂慶祝：流行樂風格大變身.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-10-04T06:15:23+08:00</ns1:publication_date>
-      <ns1:title>泰勒·斯威夫特新專輯全球粉絲瘋狂慶祝：流行樂風格大變身</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/年輕人瘋狂追求！韓國娛樂業幕後工作成熱門職業，頂尖人才爭相入行.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-10-04T14:22:37+08:00</ns1:publication_date>
-      <ns1:title>年輕人瘋狂追求！韓國娛樂業幕後工作成熱門職業，頂尖人才爭相入行</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/亞洲電影新浪潮：跨國合作改變東南亞電影產業，韓國勢力崛起.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-10-04T15:15:09+08:00</ns1:publication_date>
-      <ns1:title>亞洲電影新浪潮：跨國合作改變東南亞電影產業，韓國勢力崛起</ns1:title>
-    </ns1:news>
-  </ns0:url>
-</ns0:urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url>
+    <loc>https://www.famechos.me/news/韓流全球掀起熱潮，但歧視亞裔明星的陰影仍揮之不去：Rosé遭裁剪事件再掀爭議.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-10-03T13:16:17+08:00</news:publication_date>
+      <news:title>韓流全球掀起熱潮，但歧視亞裔明星的陰影仍揮之不去：Rosé遭裁剪事件再掀爭議</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/泰勒·斯威夫特新專輯全球粉絲瘋狂慶祝：流行樂風格大變身.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-10-04T06:15:23+08:00</news:publication_date>
+      <news:title>泰勒·斯威夫特新專輯全球粉絲瘋狂慶祝：流行樂風格大變身</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/年輕人瘋狂追求！韓國娛樂業幕後工作成熱門職業，頂尖人才爭相入行.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-10-04T14:22:37+08:00</news:publication_date>
+      <news:title>年輕人瘋狂追求！韓國娛樂業幕後工作成熱門職業，頂尖人才爭相入行</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/亞洲電影新浪潮：跨國合作改變東南亞電影產業，韓國勢力崛起.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-10-04T15:15:09+08:00</news:publication_date>
+      <news:title>亞洲電影新浪潮：跨國合作改變東南亞電影產業，韓國勢力崛起</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/K-pop幕後英雄變「隱形人」：外籍成員增多，經紀人角色大變革.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-10-05T13:20:46+08:00</news:publication_date>
+      <news:title>K-pop幕後英雄變「隱形人」：外籍成員增多，經紀人角色大變革</news:title>
+    </news:news>
+  </url>
+</urlset>
