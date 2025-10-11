@@ -1,33 +1,43 @@
-<?xml version='1.0' encoding='utf-8'?>
-<ns0:urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9">
-  <ns0:url>
-    <ns0:loc>https://www.famechos.me/news/韓國美妝文化席捲全球！新一代節目結合競爭、明星力量，帶領K-beauty進入國際娛樂圈.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-10-09T17:18:23+08:00</ns1:publication_date>
-      <ns1:title>韓國美妝文化席捲全球！新一代節目結合競爭、明星力量，帶領K-beauty進入國際娛樂圈</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/泰妍十年獨唱巔峰：從少女時代到K-POP最持久的聲音.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-10-10T16:26:45+08:00</ns1:publication_date>
-      <ns1:title>泰妍十年獨唱巔峰：從少女時代到K-POP最持久的聲音</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/綠洲樂團30週年紀念東京登陸！ Gallagher兄弟16年來首次日本演出，東京巨蛋連續兩場演唱會.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-10-10T17:18:59+08:00</ns1:publication_date>
-      <ns1:title>綠洲樂團30週年紀念東京登陸！ Gallagher兄弟16年來首次日本演出，東京巨蛋連續兩場演唱會</ns1:title>
-    </ns1:news>
-  </ns0:url>
-</ns0:urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url>
+    <loc>https://www.famechos.me/news/韓國美妝文化席捲全球！新一代節目結合競爭、明星力量，帶領K-beauty進入國際娛樂圈.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-10-09T17:18:23+08:00</news:publication_date>
+      <news:title>韓國美妝文化席捲全球！新一代節目結合競爭、明星力量，帶領K-beauty進入國際娛樂圈</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/泰妍十年獨唱巔峰：從少女時代到K-POP最持久的聲音.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-10-10T16:26:45+08:00</news:publication_date>
+      <news:title>泰妍十年獨唱巔峰：從少女時代到K-POP最持久的聲音</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/綠洲樂團30週年紀念東京登陸！ Gallagher兄弟16年來首次日本演出，東京巨蛋連續兩場演唱會.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-10-10T17:18:59+08:00</news:publication_date>
+      <news:title>綠洲樂團30週年紀念東京登陸！ Gallagher兄弟16年來首次日本演出，東京巨蛋連續兩場演唱會</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/00後新人男團CORTIS橫掃K-POP界：年輕、狂野、自由的青春精神.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-10-11T11:31:01+08:00</news:publication_date>
+      <news:title>00後新人男團CORTIS橫掃K-POP界：年輕、狂野、自由的青春精神</news:title>
+    </news:news>
+  </url>
+</urlset>
