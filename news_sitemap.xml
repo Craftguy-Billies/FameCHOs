@@ -1,53 +1,63 @@
-<?xml version='1.0' encoding='utf-8'?>
-<ns0:urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9">
-  <ns0:url>
-    <ns0:loc>https://www.famechos.me/news/00後新人男團CORTIS橫掃K-POP界：年輕、狂野、自由的青春精神.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-10-11T11:31:01+08:00</ns1:publication_date>
-      <ns1:title>00後新人男團CORTIS橫掃K-POP界：年輕、狂野、自由的青春精神</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/韓國鋼管舞的蛻變：從物化女性到自主藝術，女性們如何用汗水和堅持贏回尊重.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-10-11T12:18:24+08:00</ns1:publication_date>
-      <ns1:title>韓國鋼管舞的蛻變：從物化女性到自主藝術，女性們如何用汗水和堅持贏回尊重</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/17歲的音樂革命：新生代偶像CORTIS狂野登場，年輕、自由、無所不能.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-10-11T15:15:13+08:00</ns1:publication_date>
-      <ns1:title>17歲的音樂革命：新生代偶像CORTIS狂野登場，年輕、自由、無所不能</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/東京萬聖節瘋狂一週！19大活動帶你體驗日本秋季樂趣.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-10-12T22:17:00+08:00</ns1:publication_date>
-      <ns1:title>東京萬聖節瘋狂一週！19大活動帶你體驗日本秋季樂趣</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/《精靈，許個願》：願望的代價——韓劇新作探索人性的墮落與愛的力量.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-10-13T06:15:01+08:00</ns1:publication_date>
-      <ns1:title>《精靈，許個願》：願望的代價——韓劇新作探索人性的墮落與愛的力量</ns1:title>
-    </ns1:news>
-  </ns0:url>
-</ns0:urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url>
+    <loc>https://www.famechos.me/news/00後新人男團CORTIS橫掃K-POP界：年輕、狂野、自由的青春精神.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-10-11T11:31:01+08:00</news:publication_date>
+      <news:title>00後新人男團CORTIS橫掃K-POP界：年輕、狂野、自由的青春精神</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/韓國鋼管舞的蛻變：從物化女性到自主藝術，女性們如何用汗水和堅持贏回尊重.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-10-11T12:18:24+08:00</news:publication_date>
+      <news:title>韓國鋼管舞的蛻變：從物化女性到自主藝術，女性們如何用汗水和堅持贏回尊重</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/17歲的音樂革命：新生代偶像CORTIS狂野登場，年輕、自由、無所不能.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-10-11T15:15:13+08:00</news:publication_date>
+      <news:title>17歲的音樂革命：新生代偶像CORTIS狂野登場，年輕、自由、無所不能</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/東京萬聖節瘋狂一週！19大活動帶你體驗日本秋季樂趣.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-10-12T22:17:00+08:00</news:publication_date>
+      <news:title>東京萬聖節瘋狂一週！19大活動帶你體驗日本秋季樂趣</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/《精靈，許個願》：願望的代價——韓劇新作探索人性的墮落與愛的力量.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-10-13T06:15:01+08:00</news:publication_date>
+      <news:title>《精靈，許個願》：願望的代價——韓劇新作探索人性的墮落與愛的力量</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/BTS經紀公司HYBE創始人涉嫌內幕交易被調查，隱瞞IPO計劃獲取非法利益？.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-10-13T12:26:39+08:00</news:publication_date>
+      <news:title>BTS經紀公司HYBE創始人涉嫌內幕交易被調查，隱瞞IPO計劃獲取非法利益？</news:title>
+    </news:news>
+  </url>
+</urlset>
