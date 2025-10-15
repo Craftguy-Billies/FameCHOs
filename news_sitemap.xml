@@ -1,43 +1,53 @@
-<?xml version='1.0' encoding='utf-8'?>
-<ns0:urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9">
-  <ns0:url>
-    <ns0:loc>https://www.famechos.me/news/BTS經紀公司HYBE創始人涉嫌內幕交易被調查，隱瞞IPO計劃獲取非法利益？.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-10-13T12:26:39+08:00</ns1:publication_date>
-      <ns1:title>BTS經紀公司HYBE創始人涉嫌內幕交易被調查，隱瞞IPO計劃獲取非法利益？</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/金宇彬變身千年精靈！與金恩淑第三度合作的浪漫喜劇，你準備好哭笑了嗎？.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-10-13T17:20:12+08:00</ns1:publication_date>
-      <ns1:title>金宇彬變身千年精靈！與金恩淑第三度合作的浪漫喜劇，你準備好哭笑了嗎？</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/K-pop女團QWER官方應援棒爭議升級：法律與道德之爭，粉絲文化尊重遭遇挑戰.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-10-14T07:15:08+08:00</ns1:publication_date>
-      <ns1:title>K-pop女團QWER官方應援棒爭議升級：法律與道德之爭，粉絲文化尊重遭遇挑戰</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/首爾世界盃體育場變身K-pop殿堂！文化部長推動大型演唱會.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-10-14T20:33:23+08:00</ns1:publication_date>
-      <ns1:title>首爾世界盃體育場變身K-pop殿堂！文化部長推動大型演唱會</ns1:title>
-    </ns1:news>
-  </ns0:url>
-</ns0:urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url>
+    <loc>https://www.famechos.me/news/BTS經紀公司HYBE創始人涉嫌內幕交易被調查，隱瞞IPO計劃獲取非法利益？.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-10-13T12:26:39+08:00</news:publication_date>
+      <news:title>BTS經紀公司HYBE創始人涉嫌內幕交易被調查，隱瞞IPO計劃獲取非法利益？</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/金宇彬變身千年精靈！與金恩淑第三度合作的浪漫喜劇，你準備好哭笑了嗎？.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-10-13T17:20:12+08:00</news:publication_date>
+      <news:title>金宇彬變身千年精靈！與金恩淑第三度合作的浪漫喜劇，你準備好哭笑了嗎？</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/K-pop女團QWER官方應援棒爭議升級：法律與道德之爭，粉絲文化尊重遭遇挑戰.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-10-14T07:15:08+08:00</news:publication_date>
+      <news:title>K-pop女團QWER官方應援棒爭議升級：法律與道德之爭，粉絲文化尊重遭遇挑戰</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/首爾世界盃體育場變身K-pop殿堂！文化部長推動大型演唱會.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-10-14T20:33:23+08:00</news:publication_date>
+      <news:title>首爾世界盃體育場變身K-pop殿堂！文化部長推動大型演唱會</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/韓國電視劇復古潮：80、90年代的懷舊情懷重現螢幕.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-10-15T12:21:23+08:00</news:publication_date>
+      <news:title>韓國電視劇復古潮：80、90年代的懷舊情懷重現螢幕</news:title>
+    </news:news>
+  </url>
+</urlset>
