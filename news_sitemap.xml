@@ -1,33 +1,43 @@
-<?xml version='1.0' encoding='utf-8'?>
-<ns0:urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9">
-  <ns0:url>
-    <ns0:loc>https://www.famechos.me/news/T-ara咸恩靜嫁給導演金秉宇！韓國演藝圈再添一對創意夫妻檔.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-10-17T11:42:10+08:00</ns1:publication_date>
-      <ns1:title>T-ara咸恩靜嫁給導演金秉宇！韓國演藝圈再添一對創意夫妻檔</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/韓國電影業陷入危機：成功公式不再靈驗，觀眾人數驟降.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-10-17T15:16:33+08:00</ns1:publication_date>
-      <ns1:title>韓國電影業陷入危機：成功公式不再靈驗，觀眾人數驟降</ns1:title>
-    </ns1:news>
-  </ns0:url>
-<ns0:url>
-    <ns0:loc>https://www.famechos.me/news/視覺系傳奇D'ESPAIRSRAY宣布復活！睽違15年重返舞台，成員們的心路歷程與未來計畫大公開.html</ns0:loc>
-    <ns1:news>
-      <ns1:publication>
-        <ns1:name>FamEchos</ns1:name>
-        <ns1:language>zh_TW</ns1:language>
-      </ns1:publication><ns1:publication_date>2025-10-18T03:20:31+08:00</ns1:publication_date>
-      <ns1:title>視覺系傳奇D'ESPAIRSRAY宣布復活！睽違15年重返舞台，成員們的心路歷程與未來計畫大公開</ns1:title>
-    </ns1:news>
-  </ns0:url>
-</ns0:urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ns1="http://www.google.com/schemas/sitemap-news/0.9" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url>
+    <loc>https://www.famechos.me/news/T-ara咸恩靜嫁給導演金秉宇！韓國演藝圈再添一對創意夫妻檔.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-10-17T11:42:10+08:00</news:publication_date>
+      <news:title>T-ara咸恩靜嫁給導演金秉宇！韓國演藝圈再添一對創意夫妻檔</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/韓國電影業陷入危機：成功公式不再靈驗，觀眾人數驟降.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-10-17T15:16:33+08:00</news:publication_date>
+      <news:title>韓國電影業陷入危機：成功公式不再靈驗，觀眾人數驟降</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/視覺系傳奇D'ESPAIRSRAY宣布復活！睽違15年重返舞台，成員們的心路歷程與未來計畫大公開.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-10-18T03:20:31+08:00</news:publication_date>
+      <news:title>視覺系傳奇D'ESPAIRSRAY宣布復活！睽違15年重返舞台，成員們的心路歷程與未來計畫大公開</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://www.famechos.me/news/韓國電影院觀眾人數急劇下滑！大型連鎖影院關閉影院潮，串流媒體成最大威脅.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-10-19T13:16:24+08:00</news:publication_date>
+      <news:title>韓國電影院觀眾人數急劇下滑！大型連鎖影院關閉影院潮，串流媒體成最大威脅</news:title>
+    </news:news>
+  </url>
+</urlset>
