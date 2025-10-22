@@ -120,4 +120,14 @@
       <news:title>Netflix新片《好消息》揭露1970年淀號劫機事件的黑色喜劇真相</news:title>
     </news:news>
   </url>
+<url>
+    <loc>https://www.famechos.me/news/韓國串流媒體Tving與HBO Max強強聯手 進軍亞太市場挑戰Netflix霸權.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-10-22T12:20:48+08:00</news:publication_date>
+      <news:title>韓國串流媒體Tving與HBO Max強強聯手 進軍亞太市場挑戰Netflix霸權</news:title>
+    </news:news>
+  </url>
 </urlset>
