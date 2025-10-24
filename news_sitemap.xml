@@ -50,4 +50,14 @@
       <news:title>東京銀座YOTEL酒店：五大理由讓你住得舒適，體驗東京的現代感</news:title>
     </news:news>
   </url>
+<url>
+    <loc>https://www.famechos.me/news/Netflix奧運會降臨！亞洲版《Physical: 100》匯聚八國傳奇選手爭奪榮耀.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-10-24T16:23:58+08:00</news:publication_date>
+      <news:title>Netflix奧運會降臨！亞洲版《Physical: 100》匯聚八國傳奇選手爭奪榮耀</news:title>
+    </news:news>
+  </url>
 </urlset>
