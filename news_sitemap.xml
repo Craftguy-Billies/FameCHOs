@@ -100,4 +100,14 @@
       <news:title>兩個女人，同一命運：Netflix韓劇《當你站在那裡》探索友情、道德和決心</news:title>
     </news:news>
   </url>
+<url>
+    <loc>https://www.famechos.me/news/允浩首張個人專輯大解密：揭露藝術家的雙面性.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-11-05T16:23:43+08:00</news:publication_date>
+      <news:title>允浩首張個人專輯大解密：揭露藝術家的雙面性</news:title>
+    </news:news>
+  </url>
 </urlset>
