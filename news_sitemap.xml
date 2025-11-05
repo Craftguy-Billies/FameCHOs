@@ -90,4 +90,14 @@
       <news:title>Netflix驚悚劇《當你站在那裡》大解密：角色決定成敗的關鍵點</news:title>
     </news:news>
   </url>
+<url>
+    <loc>https://www.famechos.me/news/兩個女人，同一命運：Netflix韓劇《當你站在那裡》探索友情、道德和決心.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FamEchos</news:name>
+        <news:language>zh_TW</news:language>
+      </news:publication><news:publication_date>2025-11-05T15:17:07+08:00</news:publication_date>
+      <news:title>兩個女人，同一命運：Netflix韓劇《當你站在那裡》探索友情、道德和決心</news:title>
+    </news:news>
+  </url>
 </urlset>
