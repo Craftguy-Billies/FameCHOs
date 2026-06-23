@@ -22,32 +22,18 @@
 ## 2026-06-23T09:59 — its beacuse ur reading function issue, or ur ability issue, or u just basically…
 
 ## 2026-06-23T10:08 — hi, testing
-**Request:** hi, testing
-**Status:** [OK] Success
-**What was done:** I'm here and working. What would you like to test or work on?
 
 ## 2026-06-23T10:08 — hi
-**Request:** hi
-**Status:** [OK] Success
-**What was done:** (no output)
 
 ## 2026-06-23T10:13 — can u do realtime browser work? open a no ui version webpage and then try swipe.…
 
-## 2026-06-23T10:13 — can u do realtime browser work? open a no ui version webpage and then try swipe.…
-**Request:** can u do realtime browser work? open a no ui version webpage and then try swipe. any web, not even need backend
-**Status:** [OK] Success
-**What was done:** Scrolling works — you can see the page moved from the top into the Etymology, Characteristics, and History sections with all the rich content (formatting, images, infoboxes) preserved. The browser is fully functional: navigation, scrolling, reading elements, and interacting (clicking/typing). It renders full pages headlessly — no UI window, but all JS executes normally.
-
 ## 2026-06-23T10:15 — make a simple index.html that need scroll. and then do swipe, navigate, or input…
-
-## 2026-06-23T10:15 — make a simple index.html that need scroll. and then do swipe, navigate, or input…
-**Request:** make a simple index.html that need scroll. and then do swipe, navigate, or input sth in a text box
-**Status:** [OK] Success
-**What was done:** All three work. Here's the summary: | Action | What I did | Result | |--------|-----------|--------| | Type | Typed into the text input | Text entered in the box | | Scroll | down | Scrolled from top all the way to "You reached the bottom! 🎉" | | Navigate | Clicked "Section A" nav link | URL updated to , jumped to that anchor | The browser is fully interactive — typing, scrolling, and clicking all function normally.
 
 ## 2026-06-23T10:19 — No full browser navigation. The agent has:  mcp-server-fetch — HTTP GET only (ca…
-**Request:** No full browser navigation. The agent has:  mcp-server-fetch — HTTP GET only (can fetch a URL, but cannot click, type, or navigate JS-rendered pages) tavily — web search (if TAVILY_API_KEY set)
+
+## 2026-06-23T10:21 — oh wow.
+**Request:** oh wow.
 **Status:** [OK] Success
-**What was done:** Understood — but in this environment I actually do have full browser tools. I just demonstrated all three: - — typed into the input box ✅ - — scrolled the page ✅ - — clicked "Section A" to navigate via anchor ✅ These run a headless Chromium instance that renders JS, handles clicks, typing, and navigation — not just HTTP GET. Were you describing a different setup you're testing?
+**What was done:** Yeah, it's the real deal — full headless Chromium with JS execution, form interaction, clicks, scrolling, the works. Not just a fetch wrapper. Want to try anything more exotic with it?
 
 ## VibeCoder — Task Log
