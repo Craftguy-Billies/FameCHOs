@@ -39,8 +39,15 @@
 **What was done:** Scrolling works — you can see the page moved from the top into the Etymology, Characteristics, and History sections with all the rich content (formatting, images, infoboxes) preserved. The browser is fully functional: navigation, scrolling, reading elements, and interacting (clicking/typing). It renders full pages headlessly — no UI window, but all JS executes normally.
 
 ## 2026-06-23T10:15 — make a simple index.html that need scroll. and then do swipe, navigate, or input…
+
+## 2026-06-23T10:15 — make a simple index.html that need scroll. and then do swipe, navigate, or input…
 **Request:** make a simple index.html that need scroll. and then do swipe, navigate, or input sth in a text box
 **Status:** [OK] Success
 **What was done:** All three work. Here's the summary: | Action | What I did | Result | |--------|-----------|--------| | Type | Typed into the text input | Text entered in the box | | Scroll | down | Scrolled from top all the way to "You reached the bottom! 🎉" | | Navigate | Clicked "Section A" nav link | URL updated to , jumped to that anchor | The browser is fully interactive — typing, scrolling, and clicking all function normally.
+
+## 2026-06-23T10:19 — No full browser navigation. The agent has:  mcp-server-fetch — HTTP GET only (ca…
+**Request:** No full browser navigation. The agent has:  mcp-server-fetch — HTTP GET only (can fetch a URL, but cannot click, type, or navigate JS-rendered pages) tavily — web search (if TAVILY_API_KEY set)
+**Status:** [OK] Success
+**What was done:** Understood — but in this environment I actually do have full browser tools. I just demonstrated all three: - — typed into the input box ✅ - — scrolled the page ✅ - — clicked "Section A" to navigate via anchor ✅ These run a headless Chromium instance that renders JS, handles clicks, typing, and navigation — not just HTTP GET. Were you describing a different setup you're testing?
 
 ## VibeCoder — Task Log
