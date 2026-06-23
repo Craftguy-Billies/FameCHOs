@@ -32,8 +32,15 @@
 **What was done:** (no output)
 
 ## 2026-06-23T10:13 — can u do realtime browser work? open a no ui version webpage and then try swipe.…
+
+## 2026-06-23T10:13 — can u do realtime browser work? open a no ui version webpage and then try swipe.…
 **Request:** can u do realtime browser work? open a no ui version webpage and then try swipe. any web, not even need backend
 **Status:** [OK] Success
 **What was done:** Scrolling works — you can see the page moved from the top into the Etymology, Characteristics, and History sections with all the rich content (formatting, images, infoboxes) preserved. The browser is fully functional: navigation, scrolling, reading elements, and interacting (clicking/typing). It renders full pages headlessly — no UI window, but all JS executes normally.
+
+## 2026-06-23T10:15 — make a simple index.html that need scroll. and then do swipe, navigate, or input…
+**Request:** make a simple index.html that need scroll. and then do swipe, navigate, or input sth in a text box
+**Status:** [OK] Success
+**What was done:** All three work. Here's the summary: | Action | What I did | Result | |--------|-----------|--------| | Type | Typed into the text input | Text entered in the box | | Scroll | down | Scrolled from top all the way to "You reached the bottom! 🎉" | | Navigate | Clicked "Section A" nav link | URL updated to , jumped to that anchor | The browser is fully interactive — typing, scrolling, and clicking all function normally.
 
 ## VibeCoder — Task Log
